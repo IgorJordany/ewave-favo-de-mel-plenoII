@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netcoreapp3.1</TargetFramework>
+        <RootNamespace>Favo_de_mel.Core</RootNamespace>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="FluentValidation.AspNetCore" Version="8.6.2" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="Entities" />
+    </ItemGroup>
+
+</Project>
