@@ -11,15 +11,46 @@
       <e p="Favo-de-mel.sln" t="IncludeFlat" />
       <e p="packages" t="ExcludeRecursive" />
       <e p="src" t="Include">
+        <e p="Favo-de-mel.Application" t="IncludeRecursive">
+          <e p="bin" t="ExcludeRecursive" />
+          <e p="Class1.cs" t="Include" />
+          <e p="Favo-de-mel.Application.csproj" t="IncludeRecursive" />
+          <e p="obj" t="ExcludeRecursive">
+            <e p="Debug" t="Include">
+              <e p="netcoreapp3.1" t="Include">
+                <e p="Favo-de-mel.Application.AssemblyInfo.cs" t="Include" />
+              </e>
+            </e>
+          </e>
+        </e>
         <e p="Favo-de-mel.Core" t="IncludeRecursive">
           <e p="bin" t="ExcludeRecursive" />
           <e p="Class1.cs" t="Include" />
-          <e p="Entities" t="Include" />
+          <e p="Entities" t="Include">
+            <e p="Comanda.cs" t="Include" />
+            <e p="Pedido.cs" t="Include" />
+          </e>
+          <e p="Enums" t="Include">
+            <e p="ComandaStatus.cs" t="Include" />
+            <e p="PedidoStatus.cs" t="Include" />
+          </e>
           <e p="Favo-de-mel.Core.csproj" t="IncludeRecursive" />
           <e p="obj" t="ExcludeRecursive">
             <e p="Debug" t="Include">
               <e p="netcoreapp3.1" t="Include">
                 <e p="Favo-de-mel.Core.AssemblyInfo.cs" t="Include" />
+              </e>
+            </e>
+          </e>
+        </e>
+        <e p="Favo-de-mel.Data" t="IncludeRecursive">
+          <e p="bin" t="ExcludeRecursive" />
+          <e p="Class1.cs" t="Include" />
+          <e p="Favo-de-mel.Data.csproj" t="IncludeRecursive" />
+          <e p="obj" t="ExcludeRecursive">
+            <e p="Debug" t="Include">
+              <e p="netcoreapp3.1" t="Include">
+                <e p="Favo-de-mel.Data.AssemblyInfo.cs" t="Include" />
               </e>
             </e>
           </e>
@@ -50,6 +81,8 @@
       <e p="test" t="Include">
         <e p="Favo-de-mel.Tests" t="IncludeRecursive">
           <e p="bin" t="ExcludeRecursive" />
+          <e p="Commands" t="Include" />
+          <e p="Entities" t="Include" />
           <e p="Favo-de-mel.Tests.csproj" t="IncludeRecursive" />
           <e p="obj" t="ExcludeRecursive">
             <e p="Debug" t="Include">

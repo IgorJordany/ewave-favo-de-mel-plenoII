@@ -1,25 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="595afcd1-38d5-4305-84d9-77ffc4724ae3" name="Default Changelist" comment="" />
+    <list default="true" id="595afcd1-38d5-4305-84d9-77ffc4724ae3" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.Favo-de-mel/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Favo-de-mel.Core/Entities/Comanda.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Favo-de-mel.Core/Enums/ComandaStatus.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Favo-de-mel/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Favo-de-mel/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Favo-de-mel/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Favo-de-mel/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Favo-de-Mel.sln" beforeDir="false" afterPath="$PROJECT_DIR$/Favo-de-Mel.sln" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Favo-de-mel.Core/Favo-de-mel.Core.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/Favo-de-mel.Core/Favo-de-mel.Core.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/Favo-de-mel.Tests/Favo-de-mel.Tests.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/test/Favo-de-mel.Tests/Favo-de-mel.Tests.csproj" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/Favo-de-mel.Core/Enums/ComandaStatus.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/Favo-de-mel.Application/Class1.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/Favo-de-mel.WebApi/Startup.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/test/Favo-de-mel.Tests/UnitTest1.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/Favo-de-mel.Core/Class1.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/Favo-de-mel.Core/Entities/Comanda.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/Favo-de-mel.Data/Class1.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/Favo-de-mel.Core/Class1.cs" />
+        <option value="$PROJECT_DIR$/src/Favo-de-mel.Application/Class1.cs" />
+        <option value="$PROJECT_DIR$/src/Favo-de-mel.Data/Class1.cs" />
+        <option value="$PROJECT_DIR$/src/Favo-de-mel.Core/Enums/ComandaStatus.cs" />
+        <option value="$PROJECT_DIR$/src/Favo-de-mel.Core/Entities/Comanda.cs" />
       </list>
     </option>
   </component>
   <component name="ProjectId" id="1e3T5lAdHRFid0OYlilpq1CVH5A" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -27,6 +59,8 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="TERMINAL_CUSTOM_COMMANDS_GOT_IT" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -34,6 +68,7 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RunManager" selected=".NET Launch Settings Profile.Favo-de-mel.WebApi: Favo_de_mel.WebApi">
     <configuration name="Favo-de-mel.WebApi: Favo_de_mel.WebApi" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
@@ -78,8 +113,16 @@
       <option name="presentableId" value="Default" />
       <updated>1593549095202</updated>
       <workItem from="1593549102273" duration="1553000" />
-      <workItem from="1593628334347" duration="2453000" />
+      <workItem from="1593628334347" duration="8559000" />
     </task>
+    <task id="LOCAL-00001" summary="Start project backend">
+      <created>1593644096895</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1593644096895</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -87,13 +130,26 @@
   </component>
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+    <MESSAGE value="Start project backend" />
+    <option name="LAST_COMMIT_MESSAGE" value="Start project backend" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="320" y="162" key="Rider.ProjectTemplateDialog.Size" timestamp="1593632681176">
+    <state x="320" y="162" key="Rider.ProjectTemplateDialog.Size" timestamp="1593654143611">
       <screen x="0" y="23" width="1440" height="800" />
     </state>
-    <state x="320" y="162" key="Rider.ProjectTemplateDialog.Size/0.23.1440.800@0.23.1440.800" timestamp="1593632681176" />
+    <state x="320" y="162" key="Rider.ProjectTemplateDialog.Size/0.23.1440.800@0.23.1440.800" timestamp="1593654143611" />
   </component>
 </project>

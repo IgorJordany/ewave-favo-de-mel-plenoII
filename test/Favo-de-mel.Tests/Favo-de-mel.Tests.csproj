@@ -18,4 +18,9 @@
     <ProjectReference Include="..\..\src\Favo-de-mel.WebApi\Favo-de-mel.WebApi.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Commands" />
+    <Folder Include="Entities" />
+  </ItemGroup>
+
 </Project>
