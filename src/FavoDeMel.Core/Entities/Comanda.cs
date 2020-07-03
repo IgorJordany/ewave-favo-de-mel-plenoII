@@ -1,8 +1,7 @@
 using System;
 using System.Collections.Generic;
-using Favo_de_mel.Core.Enums;
+using FavoDeMel.Core.Enums;
 using FavoDeMel.Shared.Entities;
-using Flunt.Notifications;
 
 namespace FavoDeMel.Core.Entities
 {

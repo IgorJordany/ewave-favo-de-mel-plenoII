@@ -1,4 +1,4 @@
-namespace Favo_de_mel.Core.Repositories
+namespace FavoDeMel.Core.Repositories
 {
     public interface IPedidoRepository
     {

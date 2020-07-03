@@ -1,8 +1,8 @@
-namespace Favo_de_mel.Core.Enums
+namespace FavoDeMel.Core.Enums
 {
     public enum ComandaStatus : byte
     {
        Aberta = 0,
-       Fechada = 1,
+       Fechada = 1
     }
 }

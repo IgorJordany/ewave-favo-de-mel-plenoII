@@ -7,11 +7,10 @@ namespace FavoDeMel.Core.Repositories
 {
     public interface IComandaRepository
     {
-        Task IncluirAync(Comanda comanda);
-        Task<List<Comanda>> ListarComandasAsync();
-        Task<bool> Deletar(Guid id);
-        Task<bool> Existe(Guid id);
+        Task Incluir(Comanda comanda);
+        Task<List<Comanda>> ListarComandasAbertas();
         Task<Comanda> ConsultarPorId(Guid id);
+        Task<bool> ExisteComandaAbertaParaMesa(byte mesa);
     }
 }
 

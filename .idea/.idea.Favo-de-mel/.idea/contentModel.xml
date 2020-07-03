@@ -54,6 +54,9 @@
               <e p="AbrirComandaCommand.cs" t="Include" />
               <e p="AbrirComandaCommandHandler.cs" t="Include" />
               <e p="AbrirComandaResponse.cs" t="Include" />
+              <e p="FecharComandaCommand.cs" t="Include" />
+              <e p="FecharComandaCommandHandler.cs" t="Include" />
+              <e p="FecharComandaResponse.cs" t="Include" />
             </e>
           </e>
           <e p="FavoDeMel.Application.csproj" t="IncludeRecursive" />

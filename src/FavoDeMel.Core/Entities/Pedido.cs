@@ -1,5 +1,5 @@
 using System;
-using Favo_de_mel.Core.Enums;
+using FavoDeMel.Core.Enums;
 using FavoDeMel.Shared.Entities;
 
 namespace FavoDeMel.Core.Entities

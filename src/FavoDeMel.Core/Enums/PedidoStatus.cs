@@ -1,4 +1,4 @@
-namespace Favo_de_mel.Core.Enums
+namespace FavoDeMel.Core.Enums
 {
     public enum PedidoStatus : byte
     {

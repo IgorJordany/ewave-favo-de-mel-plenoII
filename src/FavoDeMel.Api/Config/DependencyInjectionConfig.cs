@@ -1,4 +1,3 @@
-using Favo_de_mel.Core.Repositories;
 using FavoDeMel.Application.Commands.Comanda;
 using FavoDeMel.Application.Queries.Comanda;
 using FavoDeMel.Core.Repositories;
@@ -15,9 +14,15 @@ namespace FavoDeMel.Api.Config
         public static IServiceCollection ResolveDependencies(this IServiceCollection services)
         {
             services.AddScoped<DatabaseContext, DatabaseContext>();
-
+            
+            //Repositorios
             services.AddScoped<IComandaRepository, ComandaRepository>();
+            
+            //CommandHandlers
             services.AddScoped<AbrirComandaCommandHandler, AbrirComandaCommandHandler>();
+            services.AddScoped<FecharComandaCommandHandler, FecharComandaCommandHandler>();
+
+            //QueryHandlers
             services.AddScoped<ObterComandasAbertasHandler, ObterComandasAbertasHandler>();
 
             services.AddScoped<IUow, Uow>();

@@ -16,13 +16,14 @@ namespace FavoDeMel.Application.Queries.Comanda
 
         public async Task<ObterComandasAbertasResponse> Handle(ObterComandasAbertasRequest request)
         {
-            var comandas = await _comandaRepository.ListarComandasAsync();
+            var comandas = await _comandaRepository.ListarComandasAbertas();
 
             var map = comandas.Select(c => new ObterComandasAbertasResponse.ComandaDto
             {
                 Id = c.Id,
                 Status = c.Status,
-                DataAbertura = c.DataAbertura
+                DataAbertura = c.DataAbertura,
+                Mesa = c.Mesa
             });
             
             return new ObterComandasAbertasResponse

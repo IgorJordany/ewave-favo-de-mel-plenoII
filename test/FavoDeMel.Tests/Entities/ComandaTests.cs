@@ -1,7 +1,7 @@
 using System;
 using System.Linq;
-using Favo_de_mel.Core.Enums;
 using FavoDeMel.Core.Entities;
+using FavoDeMel.Core.Enums;
 using FluentAssertions;
 using FluentAssertions.Execution;
 using Xunit;
