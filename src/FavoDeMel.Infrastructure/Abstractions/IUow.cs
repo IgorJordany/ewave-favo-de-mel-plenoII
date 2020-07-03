@@ -1,4 +1,4 @@
-namespace Favo_de_mel.Infrastructure.Abstractions
+namespace FavoDeMel.Infrastructure.Abstractions
 {
     public interface IUow
     {

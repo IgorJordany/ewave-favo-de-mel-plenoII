@@ -1,4 +1,4 @@
-using Favo_de_mel.Infrastructure.Abstractions;
+using FavoDeMel.Infrastructure.Abstractions;
 using FavoDeMel.Infrastructure.Data;
 
 namespace FavoDeMel.Infrastructure.Transaction

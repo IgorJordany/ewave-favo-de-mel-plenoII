@@ -1,4 +1,4 @@
-using Favo_de_mel.WebApi.Config;
+using FavoDeMel.Api.Config;
 using FavoDeMel.Infrastructure.Data;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -7,7 +7,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 
-namespace Favo_de_mel.WebApi
+namespace FavoDeMel.Api
 {
     public class Startup
     {

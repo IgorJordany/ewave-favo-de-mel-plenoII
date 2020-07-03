@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
-    <RootNamespace>Favo_de_mel.WebApi</RootNamespace>
+    <RootNamespace>FavoDeMel.Api</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>
@@ -14,6 +14,10 @@
 
   <ItemGroup>
     <ProjectReference Include="..\FavoDeMel.Application\FavoDeMel.Application.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Controllers\Queries" />
   </ItemGroup>
 
 

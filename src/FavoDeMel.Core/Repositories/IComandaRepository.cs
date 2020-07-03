@@ -6,7 +6,7 @@ namespace Favo_de_mel.Core.Repositories
 {
     public interface IComandaRepository
     {
-        Task Salvar(Comanda comanda);
+        Task Incluir(Comanda comanda);
         Task<bool> Deletar(Guid id);
         Task<bool> Existe(Guid id);
         Task<Comanda> ConsultarPorId(Guid id);

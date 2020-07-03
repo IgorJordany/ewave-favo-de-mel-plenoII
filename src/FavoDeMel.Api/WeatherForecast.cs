@@ -1,6 +1,6 @@
 using System;
 
-namespace Favo_de_mel.WebApi
+namespace FavoDeMel.Api
 {
     public class WeatherForecast
     {

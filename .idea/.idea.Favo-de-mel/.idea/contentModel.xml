@@ -19,6 +19,10 @@
             <e p="DependencyInjectionConfig.cs" t="Include" />
           </e>
           <e p="Controllers" t="Include">
+            <e p="Commands" t="Include">
+              <e p="ComandaController.cs" t="Include" />
+            </e>
+            <e p="Queries" t="Include" />
             <e p="WeatherForecastController.cs" t="Include" />
           </e>
           <e p="FavoDeMel.Api.csproj" t="IncludeRecursive" />
@@ -38,7 +42,18 @@
         </e>
         <e p="FavoDeMel.Application" t="IncludeRecursive">
           <e p="bin" t="ExcludeRecursive" />
-          <e p="Class1.cs" t="Include" />
+          <e p="Commands" t="Include">
+            <e p="Base" t="Include">
+              <e p="ICommand.cs" t="Include" />
+              <e p="ICommandHandler.cs" t="Include" />
+              <e p="ICommandResponse.cs" t="Include" />
+            </e>
+            <e p="Comanda" t="Include">
+              <e p="AbrirComandaCommand.cs" t="Include" />
+              <e p="AbrirComandaCommandHandler.cs" t="Include" />
+              <e p="AbrirComandaResponse.cs" t="Include" />
+            </e>
+          </e>
           <e p="FavoDeMel.Application.csproj" t="IncludeRecursive" />
           <e p="obj" t="ExcludeRecursive">
             <e p="Debug" t="Include">
@@ -47,10 +62,10 @@
               </e>
             </e>
           </e>
+          <e p="Queries" t="Include" />
         </e>
         <e p="FavoDeMel.Core" t="IncludeRecursive">
           <e p="bin" t="ExcludeRecursive" />
-          <e p="Class1.cs" t="Include" />
           <e p="Entities" t="Include">
             <e p="Comanda.cs" t="Include" />
             <e p="Pedido.cs" t="Include" />

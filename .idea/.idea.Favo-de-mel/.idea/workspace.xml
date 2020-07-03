@@ -11,232 +11,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="595afcd1-38d5-4305-84d9-77ffc4724ae3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/FavoDeMel.Api/Config/DependencyInjectionConfig.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/FavoDeMel.Application/FavoDeMel.Application.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/FavoDeMel.Core/FavoDeMel.Core.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/FavoDeMel.Infrastructure/Migrations/20200703054522_InitialMigration.Designer.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/FavoDeMel.Infrastructure/Migrations/20200703054522_InitialMigration.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/FavoDeMel.Infrastructure/Migrations/DatabaseContextModelSnapshot.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/FavoDeMel.Tests/FavoDeMel.Tests.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/FavoDeMel.Tests/UnitTest1.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/FavoDeMel.Api/Controllers/Commands/ComandaController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/FavoDeMel.Application/Commands/Base/ICommand.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/FavoDeMel.Application/Commands/Base/ICommandHandler.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/FavoDeMel.Application/Commands/Base/ICommandResponse.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/FavoDeMel.Application/Commands/Comanda/AbrirComandaCommand.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/FavoDeMel.Application/Commands/Comanda/AbrirComandaCommandHandler.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/FavoDeMel.Application/Commands/Comanda/AbrirComandaResponse.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Favo-de-mel/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Favo-de-mel/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Favo-de-mel/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Favo-de-mel/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Favo-de-mel/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Favo-de-mel/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Favo-de-Mel.sln" beforeDir="false" afterPath="$PROJECT_DIR$/Favo-de-Mel.sln" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/docker/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/docker-compose-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker/docker-compose-dev.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Favo-de-mel.Application/Class1.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Favo-de-mel.Application/Favo-de-mel.Application.csproj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Favo-de-mel.Application/obj/Debug/netcoreapp3.1/Favo-de-mel.Application.AssemblyInfo.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Favo-de-mel.Application/obj/Debug/netcoreapp3.1/Favo-de-mel.Application.AssemblyInfoInputs.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Favo-de-mel.Application/obj/Debug/netcoreapp3.1/Favo-de-mel.Application.assets.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Favo-de-mel.Application/obj/Debug/netcoreapp3.1/Favo-de-mel.Application.csproj.FileListAbsolute.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Favo-de-mel.Application/obj/Favo-de-mel.Application.csproj.nuget.dgspec.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Favo-de-mel.Application/obj/Favo-de-mel.Application.csproj.nuget.g.props" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Favo-de-mel.Application/obj/Favo-de-mel.Application.csproj.nuget.g.targets" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Favo-de-mel.Application/obj/project.assets.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Favo-de-mel.Application/obj/project.nuget.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Favo-de-mel.Application/obj/project.packagespec.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Favo-de-mel.Core/Entities/Comanda.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/FavoDeMel.Core/Entities/Comanda.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Favo-de-mel.Core/Entities/Pedido.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/FavoDeMel.Core/Entities/Pedido.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Favo-de-mel.Core/Enums/ComandaStatus.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/FavoDeMel.Core/Enums/ComandaStatus.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Favo-de-mel.Core/Enums/PedidoStatus.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/FavoDeMel.Core/Enums/PedidoStatus.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Favo-de-mel.Core/Favo-de-mel.Core.csproj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Favo-de-mel.Core/Repositories/IComandaRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/FavoDeMel.Core/Repositories/IComandaRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Favo-de-mel.Core/Repositories/IPedidoRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/FavoDeMel.Core/Repositories/IPedidoRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Favo-de-mel.Core/bin/Debug/netcoreapp3.1/Favo-de-mel.Core.deps.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Favo-de-mel.Core/bin/Debug/netcoreapp3.1/Favo-de-mel.Core.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Favo-de-mel.Core/bin/Debug/netcoreapp3.1/Favo-de-mel.Core.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Favo-de-mel.Core/bin/Debug/netcoreapp3.1/Favo-de-mel.Shared.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Favo-de-mel.Core/bin/Debug/netcoreapp3.1/Favo-de-mel.Shared.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Favo-de-mel.Core/obj/Debug/netcoreapp3.1/Favo-de-mel.Core.AssemblyInfo.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Favo-de-mel.Core/obj/Debug/netcoreapp3.1/Favo-de-mel.Core.AssemblyInfoInputs.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Favo-de-mel.Core/obj/Debug/netcoreapp3.1/Favo-de-mel.Core.assets.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Favo-de-mel.Core/obj/Debug/netcoreapp3.1/Favo-de-mel.Core.csproj.CopyComplete" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Favo-de-mel.Core/obj/Debug/netcoreapp3.1/Favo-de-mel.Core.csproj.FileListAbsolute.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Favo-de-mel.Core/obj/Debug/netcoreapp3.1/Favo-de-mel.Core.csprojAssemblyReference.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Favo-de-mel.Core/obj/Debug/netcoreapp3.1/Favo-de-mel.Core.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Favo-de-mel.Core/obj/Debug/netcoreapp3.1/Favo-de-mel.Core.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Favo-de-mel.Core/obj/Favo-de-mel.Core.csproj.nuget.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Favo-de-mel.Core/obj/Favo-de-mel.Core.csproj.nuget.dgspec.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Favo-de-mel.Core/obj/Favo-de-mel.Core.csproj.nuget.g.props" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Favo-de-mel.Core/obj/Favo-de-mel.Core.csproj.nuget.g.targets" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Favo-de-mel.Core/obj/project.assets.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Favo-de-mel.Core/obj/project.nuget.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Favo-de-mel.Core/obj/project.packagespec.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Favo-de-mel.Data/Class1.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/FavoDeMel.Core/Class1.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Favo-de-mel.Data/Favo-de-mel.Data.csproj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Favo-de-mel.Data/obj/Debug/netcoreapp3.1/Favo-de-mel.Data.AssemblyInfo.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Favo-de-mel.Data/obj/Debug/netcoreapp3.1/Favo-de-mel.Data.AssemblyInfoInputs.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Favo-de-mel.Data/obj/Debug/netcoreapp3.1/Favo-de-mel.Data.assets.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Favo-de-mel.Data/obj/Favo-de-mel.Data.csproj.nuget.dgspec.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Favo-de-mel.Data/obj/Favo-de-mel.Data.csproj.nuget.g.props" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Favo-de-mel.Data/obj/Favo-de-mel.Data.csproj.nuget.g.targets" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Favo-de-mel.Data/obj/project.assets.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Favo-de-mel.Data/obj/project.nuget.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Favo-de-mel.Data/obj/project.packagespec.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Favo-de-mel.Infrastructure/Abstractions/IUow.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/FavoDeMel.Infrastructure/Abstractions/IUow.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Favo-de-mel.Infrastructure/Data/DatabaseContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/FavoDeMel.Infrastructure/Data/DatabaseContext.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Favo-de-mel.Infrastructure/Data/Mapping/CommandaMaping.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/FavoDeMel.Infrastructure/Data/Mapping/CommandaMaping.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Favo-de-mel.Infrastructure/Data/Mapping/PedidoMaping.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/FavoDeMel.Infrastructure/Data/Mapping/PedidoMaping.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Favo-de-mel.Infrastructure/Favo-de-mel.Infrastructure.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/FavoDeMel.Infrastructure/FavoDeMel.Infrastructure.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Favo-de-mel.Infrastructure/Repositories/ComandaRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/FavoDeMel.Infrastructure/Repositories/ComandaRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Favo-de-mel.Infrastructure/Transaction/Uow.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/FavoDeMel.Infrastructure/Transaction/Uow.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Favo-de-mel.Infrastructure/bin/Debug/netcoreapp3.1/Favo-de-mel.Core.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Favo-de-mel.Infrastructure/bin/Debug/netcoreapp3.1/Favo-de-mel.Core.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Favo-de-mel.Infrastructure/bin/Debug/netcoreapp3.1/Favo-de-mel.Infrastructure.deps.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Favo-de-mel.Infrastructure/bin/Debug/netcoreapp3.1/Favo-de-mel.Infrastructure.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Favo-de-mel.Infrastructure/bin/Debug/netcoreapp3.1/Favo-de-mel.Infrastructure.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Favo-de-mel.Infrastructure/bin/Debug/netcoreapp3.1/Favo-de-mel.Infrastructure.runtimeconfig.dev.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Favo-de-mel.Infrastructure/bin/Debug/netcoreapp3.1/Favo-de-mel.Infrastructure.runtimeconfig.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Favo-de-mel.Infrastructure/bin/Debug/netcoreapp3.1/Favo-de-mel.Shared.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Favo-de-mel.Infrastructure/bin/Debug/netcoreapp3.1/Favo-de-mel.Shared.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Favo-de-mel.Infrastructure/obj/Debug/netcoreapp3.1/Favo-de-mel.Infrastructure.AssemblyInfo.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Favo-de-mel.Infrastructure/obj/Debug/netcoreapp3.1/Favo-de-mel.Infrastructure.AssemblyInfoInputs.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Favo-de-mel.Infrastructure/obj/Debug/netcoreapp3.1/Favo-de-mel.Infrastructure.assets.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Favo-de-mel.Infrastructure/obj/Debug/netcoreapp3.1/Favo-de-mel.Infrastructure.csproj.CopyComplete" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Favo-de-mel.Infrastructure/obj/Debug/netcoreapp3.1/Favo-de-mel.Infrastructure.csproj.FileListAbsolute.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Favo-de-mel.Infrastructure/obj/Debug/netcoreapp3.1/Favo-de-mel.Infrastructure.csprojAssemblyReference.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Favo-de-mel.Infrastructure/obj/Debug/netcoreapp3.1/Favo-de-mel.Infrastructure.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Favo-de-mel.Infrastructure/obj/Debug/netcoreapp3.1/Favo-de-mel.Infrastructure.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Favo-de-mel.Infrastructure/obj/Favo-de-mel.Infrastructure.csproj.EntityFrameworkCore.targets" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Favo-de-mel.Infrastructure/obj/Favo-de-mel.Infrastructure.csproj.nuget.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Favo-de-mel.Infrastructure/obj/Favo-de-mel.Infrastructure.csproj.nuget.dgspec.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Favo-de-mel.Infrastructure/obj/Favo-de-mel.Infrastructure.csproj.nuget.g.props" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Favo-de-mel.Infrastructure/obj/Favo-de-mel.Infrastructure.csproj.nuget.g.targets" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Favo-de-mel.Infrastructure/obj/project.assets.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Favo-de-mel.Infrastructure/obj/project.nuget.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Favo-de-mel.Infrastructure/obj/project.packagespec.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Favo-de-mel.Shared/Class1.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/FavoDeMel.Application/Class1.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Favo-de-mel.Shared/Entities/Entity.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/FavoDeMel.Shared/Entities/Entity.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Favo-de-mel.Shared/Favo-de-mel.Shared.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/FavoDeMel.Shared/FavoDeMel.Shared.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Favo-de-mel.Shared/bin/Debug/netcoreapp3.1/Favo-de-mel.Shared.deps.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Favo-de-mel.Shared/bin/Debug/netcoreapp3.1/Favo-de-mel.Shared.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Favo-de-mel.Shared/bin/Debug/netcoreapp3.1/Favo-de-mel.Shared.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Favo-de-mel.Shared/obj/Debug/netcoreapp3.1/Favo-de-mel.Shared.AssemblyInfo.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Favo-de-mel.Shared/obj/Debug/netcoreapp3.1/Favo-de-mel.Shared.AssemblyInfoInputs.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Favo-de-mel.Shared/obj/Debug/netcoreapp3.1/Favo-de-mel.Shared.assets.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Favo-de-mel.Shared/obj/Debug/netcoreapp3.1/Favo-de-mel.Shared.csproj.FileListAbsolute.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Favo-de-mel.Shared/obj/Debug/netcoreapp3.1/Favo-de-mel.Shared.csprojAssemblyReference.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Favo-de-mel.Shared/obj/Debug/netcoreapp3.1/Favo-de-mel.Shared.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Favo-de-mel.Shared/obj/Debug/netcoreapp3.1/Favo-de-mel.Shared.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Favo-de-mel.Shared/obj/Favo-de-mel.Shared.csproj.nuget.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Favo-de-mel.Shared/obj/Favo-de-mel.Shared.csproj.nuget.dgspec.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Favo-de-mel.Shared/obj/Favo-de-mel.Shared.csproj.nuget.g.props" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Favo-de-mel.Shared/obj/Favo-de-mel.Shared.csproj.nuget.g.targets" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Favo-de-mel.Shared/obj/project.assets.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Favo-de-mel.Shared/obj/project.nuget.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Favo-de-mel.Shared/obj/project.packagespec.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Favo-de-mel.WebApi/Controllers/WeatherForecastController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/FavoDeMel.Api/Controllers/WeatherForecastController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Favo-de-mel.WebApi/Favo-de-mel.WebApi.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/FavoDeMel.Api/FavoDeMel.Api.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Favo-de-mel.WebApi/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/FavoDeMel.Api/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Favo-de-mel.WebApi/Properties/launchSettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/FavoDeMel.Api/Properties/launchSettings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Favo-de-mel.WebApi/Startup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/FavoDeMel.Api/Startup.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Favo-de-mel.WebApi/WeatherForecast.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/FavoDeMel.Api/WeatherForecast.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Favo-de-mel.WebApi/appsettings.Development.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Favo-de-mel.WebApi/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/FavoDeMel.Api/appsettings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Favo-de-mel.WebApi/bin/Debug/netcoreapp3.1/Favo-de-mel.Core.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Favo-de-mel.WebApi/bin/Debug/netcoreapp3.1/Favo-de-mel.Core.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Favo-de-mel.WebApi/bin/Debug/netcoreapp3.1/Favo-de-mel.Infrastructure.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Favo-de-mel.WebApi/bin/Debug/netcoreapp3.1/Favo-de-mel.Infrastructure.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Favo-de-mel.WebApi/bin/Debug/netcoreapp3.1/Favo-de-mel.Shared.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Favo-de-mel.WebApi/bin/Debug/netcoreapp3.1/Favo-de-mel.Shared.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Favo-de-mel.WebApi/bin/Debug/netcoreapp3.1/Favo-de-mel.WebApi" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Favo-de-mel.WebApi/bin/Debug/netcoreapp3.1/Favo-de-mel.WebApi.deps.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Favo-de-mel.WebApi/bin/Debug/netcoreapp3.1/Favo-de-mel.WebApi.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Favo-de-mel.WebApi/bin/Debug/netcoreapp3.1/Favo-de-mel.WebApi.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Favo-de-mel.WebApi/bin/Debug/netcoreapp3.1/Favo-de-mel.WebApi.runtimeconfig.dev.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Favo-de-mel.WebApi/bin/Debug/netcoreapp3.1/Favo-de-mel.WebApi.runtimeconfig.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Favo-de-mel.WebApi/bin/Debug/netcoreapp3.1/FluentValidation.AspNetCore.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Favo-de-mel.WebApi/bin/Debug/netcoreapp3.1/FluentValidation.DependencyInjectionExtensions.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Favo-de-mel.WebApi/bin/Debug/netcoreapp3.1/FluentValidation.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Favo-de-mel.WebApi/bin/Debug/netcoreapp3.1/Flunt.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Favo-de-mel.WebApi/bin/Debug/netcoreapp3.1/Microsoft.AspNetCore.Mvc.Versioning.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Favo-de-mel.WebApi/bin/Debug/netcoreapp3.1/Microsoft.Bcl.AsyncInterfaces.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Favo-de-mel.WebApi/bin/Debug/netcoreapp3.1/Microsoft.Bcl.HashCode.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Favo-de-mel.WebApi/bin/Debug/netcoreapp3.1/Microsoft.Data.SqlClient.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Favo-de-mel.WebApi/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.Abstractions.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Favo-de-mel.WebApi/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.Design.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Favo-de-mel.WebApi/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.Relational.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Favo-de-mel.WebApi/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.SqlServer.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Favo-de-mel.WebApi/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Favo-de-mel.WebApi/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Caching.Abstractions.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Favo-de-mel.WebApi/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Caching.Memory.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Favo-de-mel.WebApi/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Configuration.Abstractions.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Favo-de-mel.WebApi/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Configuration.Binder.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Favo-de-mel.WebApi/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Configuration.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Favo-de-mel.WebApi/bin/Debug/netcoreapp3.1/Microsoft.Extensions.DependencyInjection.Abstractions.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Favo-de-mel.WebApi/bin/Debug/netcoreapp3.1/Microsoft.Extensions.DependencyInjection.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Favo-de-mel.WebApi/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Logging.Abstractions.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Favo-de-mel.WebApi/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Logging.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Favo-de-mel.WebApi/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Options.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Favo-de-mel.WebApi/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Primitives.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Favo-de-mel.WebApi/bin/Debug/netcoreapp3.1/Microsoft.Identity.Client.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Favo-de-mel.WebApi/bin/Debug/netcoreapp3.1/Properties/launchSettings.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Favo-de-mel.WebApi/bin/Debug/netcoreapp3.1/System.Collections.Immutable.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Favo-de-mel.WebApi/bin/Debug/netcoreapp3.1/System.Configuration.ConfigurationManager.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Favo-de-mel.WebApi/bin/Debug/netcoreapp3.1/System.Diagnostics.DiagnosticSource.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Favo-de-mel.WebApi/bin/Debug/netcoreapp3.1/System.Runtime.Caching.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Favo-de-mel.WebApi/bin/Debug/netcoreapp3.1/System.Security.Cryptography.ProtectedData.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Favo-de-mel.WebApi/bin/Debug/netcoreapp3.1/appsettings.Development.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Favo-de-mel.WebApi/bin/Debug/netcoreapp3.1/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/FavoDeMel.Api/appsettings.Development.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Favo-de-mel.WebApi/bin/Debug/netcoreapp3.1/runtimes/unix/lib/netcoreapp2.0/System.Runtime.Caching.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Favo-de-mel.WebApi/bin/Debug/netcoreapp3.1/runtimes/unix/lib/netcoreapp2.1/Microsoft.Data.SqlClient.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Favo-de-mel.WebApi/bin/Debug/netcoreapp3.1/runtimes/win-arm64/native/sni.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Favo-de-mel.WebApi/bin/Debug/netcoreapp3.1/runtimes/win-x64/native/sni.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Favo-de-mel.WebApi/bin/Debug/netcoreapp3.1/runtimes/win-x86/native/sni.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Favo-de-mel.WebApi/bin/Debug/netcoreapp3.1/runtimes/win/lib/netcoreapp2.0/System.Runtime.Caching.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Favo-de-mel.WebApi/bin/Debug/netcoreapp3.1/runtimes/win/lib/netcoreapp2.1/Microsoft.Data.SqlClient.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Favo-de-mel.WebApi/bin/Debug/netcoreapp3.1/runtimes/win/lib/netstandard2.0/System.Security.Cryptography.ProtectedData.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Favo-de-mel.WebApi/obj/Debug/netcoreapp3.1/Favo-de-mel.WebApi" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Favo-de-mel.WebApi/obj/Debug/netcoreapp3.1/Favo-de-mel.WebApi.AssemblyInfo.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Favo-de-mel.WebApi/obj/Debug/netcoreapp3.1/Favo-de-mel.WebApi.AssemblyInfoInputs.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Favo-de-mel.WebApi/obj/Debug/netcoreapp3.1/Favo-de-mel.WebApi.MvcApplicationPartsAssemblyInfo.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Favo-de-mel.WebApi/obj/Debug/netcoreapp3.1/Favo-de-mel.WebApi.MvcApplicationPartsAssemblyInfo.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Favo-de-mel.WebApi/obj/Debug/netcoreapp3.1/Favo-de-mel.WebApi.RazorTargetAssemblyInfo.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Favo-de-mel.WebApi/obj/Debug/netcoreapp3.1/Favo-de-mel.WebApi.assets.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Favo-de-mel.WebApi/obj/Debug/netcoreapp3.1/Favo-de-mel.WebApi.csproj.CopyComplete" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Favo-de-mel.WebApi/obj/Debug/netcoreapp3.1/Favo-de-mel.WebApi.csproj.FileListAbsolute.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Favo-de-mel.WebApi/obj/Debug/netcoreapp3.1/Favo-de-mel.WebApi.csprojAssemblyReference.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Favo-de-mel.WebApi/obj/Debug/netcoreapp3.1/Favo-de-mel.WebApi.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Favo-de-mel.WebApi/obj/Debug/netcoreapp3.1/Favo-de-mel.WebApi.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Favo-de-mel.WebApi/obj/Debug/netcoreapp3.1/staticwebassets/Favo-de-mel.WebApi.StaticWebAssets.Manifest.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Favo-de-mel.WebApi/obj/Debug/netcoreapp3.1/staticwebassets/Favo-de-mel.WebApi.StaticWebAssets.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Favo-de-mel.WebApi/obj/Favo-de-mel.WebApi.csproj.nuget.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Favo-de-mel.WebApi/obj/Favo-de-mel.WebApi.csproj.nuget.dgspec.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Favo-de-mel.WebApi/obj/Favo-de-mel.WebApi.csproj.nuget.g.props" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Favo-de-mel.WebApi/obj/Favo-de-mel.WebApi.csproj.nuget.g.targets" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Favo-de-mel.WebApi/obj/project.assets.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Favo-de-mel.WebApi/obj/project.nuget.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Favo-de-mel.WebApi/obj/project.packagespec.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/Favo-de-mel.Tests/Favo-de-mel.Tests.csproj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/Favo-de-mel.Tests/UnitTest1.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/Favo-de-mel.Tests/obj/Debug/netcoreapp3.1/Favo-de-mel.Domain.Tests.AssemblyInfo.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/Favo-de-mel.Tests/obj/Debug/netcoreapp3.1/Favo-de-mel.Domain.Tests.AssemblyInfoInputs.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/Favo-de-mel.Tests/obj/Debug/netcoreapp3.1/Favo-de-mel.Domain.Tests.assets.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/Favo-de-mel.Tests/obj/Debug/netcoreapp3.1/Favo-de-mel.Tests.AssemblyInfo.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/Favo-de-mel.Tests/obj/Debug/netcoreapp3.1/Favo-de-mel.Tests.AssemblyInfoInputs.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/Favo-de-mel.Tests/obj/Debug/netcoreapp3.1/Favo-de-mel.Tests.assets.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/Favo-de-mel.Tests/obj/Debug/netcoreapp3.1/Favo-de-mel.Tests.csproj.FileListAbsolute.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/Favo-de-mel.Tests/obj/Debug/netcoreapp3.1/Favo-de-mel.Tests.csprojAssemblyReference.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/Favo-de-mel.Tests/obj/Debug/netcoreapp3.1/Favo-de-mel.WebApi.Tests.AssemblyInfo.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/Favo-de-mel.Tests/obj/Debug/netcoreapp3.1/Favo-de-mel.WebApi.Tests.AssemblyInfoInputs.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/Favo-de-mel.Tests/obj/Debug/netcoreapp3.1/Favo-de-mel.WebApi.Tests.assets.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/Favo-de-mel.Tests/obj/Debug/netcoreapp3.1/Favo-de-mel.WebApi.Tests.csprojAssemblyReference.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/Favo-de-mel.Tests/obj/Favo-de-mel.Domain.Tests.csproj.nuget.dgspec.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/Favo-de-mel.Tests/obj/Favo-de-mel.Domain.Tests.csproj.nuget.g.props" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/Favo-de-mel.Tests/obj/Favo-de-mel.Domain.Tests.csproj.nuget.g.targets" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/Favo-de-mel.Tests/obj/Favo-de-mel.Tests.csproj.nuget.dgspec.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/Favo-de-mel.Tests/obj/Favo-de-mel.Tests.csproj.nuget.g.props" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/Favo-de-mel.Tests/obj/Favo-de-mel.Tests.csproj.nuget.g.targets" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/Favo-de-mel.Tests/obj/Favo-de-mel.WebApi.Tests.csproj.nuget.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/Favo-de-mel.Tests/obj/Favo-de-mel.WebApi.Tests.csproj.nuget.dgspec.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/Favo-de-mel.Tests/obj/Favo-de-mel.WebApi.Tests.csproj.nuget.g.props" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/Favo-de-mel.Tests/obj/Favo-de-mel.WebApi.Tests.csproj.nuget.g.targets" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/Favo-de-mel.Tests/obj/project.assets.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/Favo-de-mel.Tests/obj/project.nuget.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/Favo-de-mel.Tests/obj/project.packagespec.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FavoDeMel.Api/Config/DependencyInjectionConfig.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/FavoDeMel.Api/Config/DependencyInjectionConfig.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FavoDeMel.Api/Controllers/WeatherForecastController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/FavoDeMel.Api/Controllers/WeatherForecastController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FavoDeMel.Api/FavoDeMel.Api.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/FavoDeMel.Api/FavoDeMel.Api.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FavoDeMel.Api/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/FavoDeMel.Api/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FavoDeMel.Api/Startup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/FavoDeMel.Api/Startup.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FavoDeMel.Api/WeatherForecast.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/FavoDeMel.Api/WeatherForecast.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FavoDeMel.Application/Class1.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FavoDeMel.Application/FavoDeMel.Application.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/FavoDeMel.Application/FavoDeMel.Application.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FavoDeMel.Core/Class1.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FavoDeMel.Core/Repositories/IComandaRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/FavoDeMel.Core/Repositories/IComandaRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FavoDeMel.Infrastructure/Abstractions/IUow.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/FavoDeMel.Infrastructure/Abstractions/IUow.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FavoDeMel.Infrastructure/Repositories/ComandaRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/FavoDeMel.Infrastructure/Repositories/ComandaRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FavoDeMel.Infrastructure/Transaction/Uow.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/FavoDeMel.Infrastructure/Transaction/Uow.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -247,21 +43,29 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/src/FavoDeMel.Shared/Entities/Entity.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/FavoDeMel.Core/Repositories/IComandaRepository.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/FavoDeMel.Infrastructure/Data/DatabaseContext.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/FavoDeMel.Infrastructure/Migrations/20200703054522_InitialMigration.Designer.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/FavoDeMel.Infrastructure/Data/Mapping/PedidoMaping.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/FavoDeMel.Api/Controllers/WeatherForecastController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/FavoDeMel.Api/Properties/launchSettings.json" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/test/FavoDeMel.Tests/UnitTest1.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/FavoDeMel.Infrastructure/Abstractions/IUow.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/FavoDeMel.Infrastructure/Transaction/Uow.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/FavoDeMel.Application/Commands/Comanda/AbrirComandaResponse.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/FavoDeMel.Application/Commands/Base/ICommandResponse.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/FavoDeMel.Application/Commands/Comanda/AbrirComandaCommandHandler.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/FavoDeMel.Application/Commands/Base/ICommandHandler.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/FavoDeMel.Api/Program.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/FavoDeMel.Api/appsettings.Development.json" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/FavoDeMel.Application/Commands/Base/ICommand.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/FavoDeMel.Api/appsettings.Development.json" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/FavoDeMel.Application/Commands/Comanda/AbrirComandaCommand.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/FavoDeMel.Infrastructure/Data/Mapping/CommandaMaping.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/FavoDeMel.Api/appsettings.json" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/FavoDeMel.Api/Startup.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/FavoDeMel.Api/WeatherForecast.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/FavoDeMel.Application/Class1.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/FavoDeMel.Shared/Entities/Entity.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/FavoDeMel.Infrastructure/Migrations/20200703054522_InitialMigration.Designer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/FavoDeMel.Infrastructure/Data/Mapping/PedidoMaping.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/FavoDeMel.Infrastructure/Abstractions/IUow.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/FavoDeMel.Api/Controllers/Commands/ComandaController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/FavoDeMel.Infrastructure/Transaction/Uow.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/FavoDeMel.Infrastructure/Repositories/ComandaRepository.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/FavoDeMel.Core/Entities/Pedido.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/FavoDeMel.Api/Config/DependencyInjectionConfig.cs" root0="FORCE_HIGHLIGHTING" />
@@ -270,18 +74,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/Favo-de-mel.Application/Class1.cs" />
-        <option value="$PROJECT_DIR$/src/Favo-de-mel.Data/Class1.cs" />
-        <option value="$PROJECT_DIR$/src/Favo-de-mel.Core/Enums/ComandaStatus.cs" />
-        <option value="$PROJECT_DIR$/src/Favo-de-mel.Core/Enums/PedidoStatus.cs" />
-        <option value="$PROJECT_DIR$/src/Favo-de-mel.Shared/Class1.cs" />
-        <option value="$PROJECT_DIR$/src/Favo-de-mel.Shared/Entities/Entity.cs" />
-        <option value="$PROJECT_DIR$/src/Favo-de-mel.Core/Entities/Comanda.cs" />
-        <option value="$PROJECT_DIR$/src/Favo-de-mel.Core/Entities/Pedido.cs" />
-        <option value="$PROJECT_DIR$/src/Favo-de-mel.Infrastructure/Data/Mapping/CommandaMaping.cs" />
-        <option value="$PROJECT_DIR$/src/Favo-de-mel.Infrastructure/Data/Mapping/PedidoMaping.cs" />
-        <option value="$PROJECT_DIR$/src/Favo-de-mel.Infrastructure/Class1.cs" />
-        <option value="$PROJECT_DIR$/src/Favo-de-mel.Core/Repositories/IPedidoRepository.cs" />
         <option value="$PROJECT_DIR$/src/Favo-de-mel.Core/Repositories/IComandaRepository.cs" />
         <option value="$PROJECT_DIR$/src/Favo-de-mel.Infrastructure/Data/Repositories/ComandaRepository.cs" />
         <option value="$PROJECT_DIR$/src/Favo-de-mel.Infrastructure/DatabaseContext.cs" />
@@ -314,13 +106,25 @@
         <option value="$PROJECT_DIR$/src/FavoDeMel.Infrastructure/Data/DatabaseContext.cs" />
         <option value="$PROJECT_DIR$/src/FavoDeMel.Infrastructure/Data/Mapping/CommandaMaping.cs" />
         <option value="$PROJECT_DIR$/src/FavoDeMel.Infrastructure/Data/Mapping/PedidoMaping.cs" />
-        <option value="$PROJECT_DIR$/src/FavoDeMel.Infrastructure/Repositories/ComandaRepository.cs" />
         <option value="$PROJECT_DIR$/src/FavoDeMel.Infrastructure/Transaction/Uow.cs" />
         <option value="$PROJECT_DIR$/src/FavoDeMel.Api/Startup.cs" />
         <option value="$PROJECT_DIR$/src/FavoDeMel.Application/FavoDeMel.Application.csproj" />
         <option value="$PROJECT_DIR$/src/FavoDeMel.Infrastructure/FavoDeMel.Infrastructure.csproj" />
-        <option value="$PROJECT_DIR$/src/FavoDeMel.Api/Config/DependencyInjectionConfig.cs" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/src/FavoDeMel.Api/FavoDeMel.Api.csproj" />
+        <option value="$PROJECT_DIR$/src/FavoDeMel.Application/Class1.cs" />
+        <option value="$PROJECT_DIR$/src/FavoDeMel.Infrastructure/Abstractions/IUow.cs" />
+        <option value="$PROJECT_DIR$/src/FavoDeMel.Application/Commands/Base/ICommand.cs" />
+        <option value="$PROJECT_DIR$/src/FavoDeMel.Application/Commands/Base/a.cs" />
+        <option value="$PROJECT_DIR$/src/FavoDeMel.Application/Commands/Base/ICommandHandler.cs" />
+        <option value="$PROJECT_DIR$/src/FavoDeMel.Application/Commands/Base/ICommandResponse.cs" />
+        <option value="$PROJECT_DIR$/src/FavoDeMel.Application/Commands/Comanda/AbrirComandaCommand.cs" />
+        <option value="$PROJECT_DIR$/src/FavoDeMel.Api/Config/DependencyInjectionConfig.cs" />
+        <option value="$PROJECT_DIR$/src/FavoDeMel.Application/Commands/Comanda/AbrirComandaResponse.cs" />
+        <option value="$PROJECT_DIR$/src/FavoDeMel.Core/Repositories/IComandaRepository.cs" />
+        <option value="$PROJECT_DIR$/src/FavoDeMel.Api/Controllers/Commands/ComandaController.cs" />
+        <option value="$PROJECT_DIR$/src/FavoDeMel.Application/Commands/Comanda/AbrirComandaCommandHandler.cs" />
+        <option value="$PROJECT_DIR$/src/FavoDeMel.Infrastructure/Repositories/ComandaRepository.cs" />
       </list>
     </option>
   </component>
@@ -396,7 +200,7 @@
       <workItem from="1593628334347" duration="34348000" />
       <workItem from="1593753337289" duration="754000" />
       <workItem from="1593754120703" duration="137000" />
-      <workItem from="1593754326566" duration="1542000" />
+      <workItem from="1593754326566" duration="7309000" />
     </task>
     <task id="LOCAL-00001" summary="Start project backend">
       <created>1593644096895</created>
@@ -433,7 +237,14 @@
       <option name="project" value="LOCAL" />
       <updated>1593747108114</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="refatoração nome projetos e framework">
+      <created>1593755976701</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1593755976701</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -460,7 +271,8 @@
     <MESSAGE value="Entidades Comanda e Pedido criadas" />
     <MESSAGE value="Repositorios e maping" />
     <MESSAGE value="Repositorio dockerfile e database" />
-    <option name="LAST_COMMIT_MESSAGE" value="Repositorio dockerfile e database" />
+    <MESSAGE value="refatoração nome projetos e framework" />
+    <option name="LAST_COMMIT_MESSAGE" value="refatoração nome projetos e framework" />
   </component>
   <component name="WindowStateProjectService">
     <state x="205" y="23" key="#Favo-de-mel.WebApi:_Favo_de_mel.WebApi" timestamp="1593750711524">
@@ -471,94 +283,98 @@
       <screen x="0" y="23" width="1440" height="800" />
     </state>
     <state x="320" y="88" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.800@0.23.1440.800" timestamp="1593738356431" />
-    <state width="1398" height="282" key="GridCell.Tab.0.bottom" timestamp="1593750781148">
+    <state width="451" height="445" key="DebuggerActiveHint" timestamp="1593759878403">
       <screen x="0" y="23" width="1440" height="800" />
     </state>
-    <state width="1398" height="282" key="GridCell.Tab.0.bottom/0.23.1440.800@0.23.1440.800" timestamp="1593750781148" />
-    <state width="1398" height="282" key="GridCell.Tab.0.center" timestamp="1593750781147">
+    <state width="451" height="445" key="DebuggerActiveHint/0.23.1440.800@0.23.1440.800" timestamp="1593759878403" />
+    <state width="1398" height="282" key="GridCell.Tab.0.bottom" timestamp="1593760135730">
       <screen x="0" y="23" width="1440" height="800" />
     </state>
-    <state width="1398" height="282" key="GridCell.Tab.0.center/0.23.1440.800@0.23.1440.800" timestamp="1593750781147" />
-    <state width="1398" height="282" key="GridCell.Tab.0.left" timestamp="1593750781147">
+    <state width="1398" height="282" key="GridCell.Tab.0.bottom/0.23.1440.800@0.23.1440.800" timestamp="1593760135730" />
+    <state width="1398" height="282" key="GridCell.Tab.0.center" timestamp="1593760135729">
       <screen x="0" y="23" width="1440" height="800" />
     </state>
-    <state width="1398" height="282" key="GridCell.Tab.0.left/0.23.1440.800@0.23.1440.800" timestamp="1593750781147" />
-    <state width="1398" height="282" key="GridCell.Tab.0.right" timestamp="1593750781148">
+    <state width="1398" height="282" key="GridCell.Tab.0.center/0.23.1440.800@0.23.1440.800" timestamp="1593760135729" />
+    <state width="1398" height="282" key="GridCell.Tab.0.left" timestamp="1593760135729">
       <screen x="0" y="23" width="1440" height="800" />
     </state>
-    <state width="1398" height="282" key="GridCell.Tab.0.right/0.23.1440.800@0.23.1440.800" timestamp="1593750781148" />
-    <state width="1398" height="282" key="GridCell.Tab.1.bottom" timestamp="1593750781149">
+    <state width="1398" height="282" key="GridCell.Tab.0.left/0.23.1440.800@0.23.1440.800" timestamp="1593760135729" />
+    <state width="1398" height="282" key="GridCell.Tab.0.right" timestamp="1593760135730">
       <screen x="0" y="23" width="1440" height="800" />
     </state>
-    <state width="1398" height="282" key="GridCell.Tab.1.bottom/0.23.1440.800@0.23.1440.800" timestamp="1593750781149" />
-    <state width="1398" height="282" key="GridCell.Tab.1.center" timestamp="1593750781149">
+    <state width="1398" height="282" key="GridCell.Tab.0.right/0.23.1440.800@0.23.1440.800" timestamp="1593760135730" />
+    <state width="1398" height="282" key="GridCell.Tab.1.bottom" timestamp="1593760135732">
       <screen x="0" y="23" width="1440" height="800" />
     </state>
-    <state width="1398" height="282" key="GridCell.Tab.1.center/0.23.1440.800@0.23.1440.800" timestamp="1593750781149" />
-    <state width="1398" height="282" key="GridCell.Tab.1.left" timestamp="1593750781148">
+    <state width="1398" height="282" key="GridCell.Tab.1.bottom/0.23.1440.800@0.23.1440.800" timestamp="1593760135732" />
+    <state width="1398" height="282" key="GridCell.Tab.1.center" timestamp="1593760135731">
       <screen x="0" y="23" width="1440" height="800" />
     </state>
-    <state width="1398" height="282" key="GridCell.Tab.1.left/0.23.1440.800@0.23.1440.800" timestamp="1593750781148" />
-    <state width="1398" height="282" key="GridCell.Tab.1.right" timestamp="1593750781149">
+    <state width="1398" height="282" key="GridCell.Tab.1.center/0.23.1440.800@0.23.1440.800" timestamp="1593760135731" />
+    <state width="1398" height="282" key="GridCell.Tab.1.left" timestamp="1593760135731">
       <screen x="0" y="23" width="1440" height="800" />
     </state>
-    <state width="1398" height="282" key="GridCell.Tab.1.right/0.23.1440.800@0.23.1440.800" timestamp="1593750781149" />
-    <state width="1398" height="282" key="GridCell.Tab.2.bottom" timestamp="1593750781150">
+    <state width="1398" height="282" key="GridCell.Tab.1.left/0.23.1440.800@0.23.1440.800" timestamp="1593760135731" />
+    <state width="1398" height="282" key="GridCell.Tab.1.right" timestamp="1593760135732">
       <screen x="0" y="23" width="1440" height="800" />
     </state>
-    <state width="1398" height="282" key="GridCell.Tab.2.bottom/0.23.1440.800@0.23.1440.800" timestamp="1593750781150" />
-    <state width="1398" height="282" key="GridCell.Tab.2.center" timestamp="1593750781150">
+    <state width="1398" height="282" key="GridCell.Tab.1.right/0.23.1440.800@0.23.1440.800" timestamp="1593760135732" />
+    <state width="1398" height="282" key="GridCell.Tab.2.bottom" timestamp="1593760135734">
       <screen x="0" y="23" width="1440" height="800" />
     </state>
-    <state width="1398" height="282" key="GridCell.Tab.2.center/0.23.1440.800@0.23.1440.800" timestamp="1593750781150" />
-    <state width="1398" height="282" key="GridCell.Tab.2.left" timestamp="1593750781150">
+    <state width="1398" height="282" key="GridCell.Tab.2.bottom/0.23.1440.800@0.23.1440.800" timestamp="1593760135734" />
+    <state width="1398" height="282" key="GridCell.Tab.2.center" timestamp="1593760135733">
       <screen x="0" y="23" width="1440" height="800" />
     </state>
-    <state width="1398" height="282" key="GridCell.Tab.2.left/0.23.1440.800@0.23.1440.800" timestamp="1593750781150" />
-    <state width="1398" height="282" key="GridCell.Tab.2.right" timestamp="1593750781150">
+    <state width="1398" height="282" key="GridCell.Tab.2.center/0.23.1440.800@0.23.1440.800" timestamp="1593760135733" />
+    <state width="1398" height="282" key="GridCell.Tab.2.left" timestamp="1593760135733">
       <screen x="0" y="23" width="1440" height="800" />
     </state>
-    <state width="1398" height="282" key="GridCell.Tab.2.right/0.23.1440.800@0.23.1440.800" timestamp="1593750781150" />
-    <state width="1398" height="282" key="GridCell.Tab.3.bottom" timestamp="1593750781151">
+    <state width="1398" height="282" key="GridCell.Tab.2.left/0.23.1440.800@0.23.1440.800" timestamp="1593760135733" />
+    <state width="1398" height="282" key="GridCell.Tab.2.right" timestamp="1593760135733">
       <screen x="0" y="23" width="1440" height="800" />
     </state>
-    <state width="1398" height="282" key="GridCell.Tab.3.bottom/0.23.1440.800@0.23.1440.800" timestamp="1593750781151" />
-    <state width="1398" height="282" key="GridCell.Tab.3.center" timestamp="1593750781151">
+    <state width="1398" height="282" key="GridCell.Tab.2.right/0.23.1440.800@0.23.1440.800" timestamp="1593760135733" />
+    <state width="1398" height="282" key="GridCell.Tab.3.bottom" timestamp="1593760135736">
       <screen x="0" y="23" width="1440" height="800" />
     </state>
-    <state width="1398" height="282" key="GridCell.Tab.3.center/0.23.1440.800@0.23.1440.800" timestamp="1593750781151" />
-    <state width="1398" height="282" key="GridCell.Tab.3.left" timestamp="1593750781151">
+    <state width="1398" height="282" key="GridCell.Tab.3.bottom/0.23.1440.800@0.23.1440.800" timestamp="1593760135736" />
+    <state width="1398" height="282" key="GridCell.Tab.3.center" timestamp="1593760135735">
       <screen x="0" y="23" width="1440" height="800" />
     </state>
-    <state width="1398" height="282" key="GridCell.Tab.3.left/0.23.1440.800@0.23.1440.800" timestamp="1593750781151" />
-    <state width="1398" height="282" key="GridCell.Tab.3.right" timestamp="1593750781151">
+    <state width="1398" height="282" key="GridCell.Tab.3.center/0.23.1440.800@0.23.1440.800" timestamp="1593760135735" />
+    <state width="1398" height="282" key="GridCell.Tab.3.left" timestamp="1593760135734">
       <screen x="0" y="23" width="1440" height="800" />
     </state>
-    <state width="1398" height="282" key="GridCell.Tab.3.right/0.23.1440.800@0.23.1440.800" timestamp="1593750781151" />
-    <state width="1398" height="282" key="GridCell.Tab.4.bottom" timestamp="1593750781152">
+    <state width="1398" height="282" key="GridCell.Tab.3.left/0.23.1440.800@0.23.1440.800" timestamp="1593760135734" />
+    <state width="1398" height="282" key="GridCell.Tab.3.right" timestamp="1593760135735">
       <screen x="0" y="23" width="1440" height="800" />
     </state>
-    <state width="1398" height="282" key="GridCell.Tab.4.bottom/0.23.1440.800@0.23.1440.800" timestamp="1593750781152" />
-    <state width="1398" height="282" key="GridCell.Tab.4.center" timestamp="1593750781151">
+    <state width="1398" height="282" key="GridCell.Tab.3.right/0.23.1440.800@0.23.1440.800" timestamp="1593760135735" />
+    <state width="1398" height="282" key="GridCell.Tab.4.bottom" timestamp="1593760135737">
       <screen x="0" y="23" width="1440" height="800" />
     </state>
-    <state width="1398" height="282" key="GridCell.Tab.4.center/0.23.1440.800@0.23.1440.800" timestamp="1593750781151" />
-    <state width="1398" height="282" key="GridCell.Tab.4.left" timestamp="1593750781151">
+    <state width="1398" height="282" key="GridCell.Tab.4.bottom/0.23.1440.800@0.23.1440.800" timestamp="1593760135737" />
+    <state width="1398" height="282" key="GridCell.Tab.4.center" timestamp="1593760135736">
       <screen x="0" y="23" width="1440" height="800" />
     </state>
-    <state width="1398" height="282" key="GridCell.Tab.4.left/0.23.1440.800@0.23.1440.800" timestamp="1593750781151" />
-    <state width="1398" height="282" key="GridCell.Tab.4.right" timestamp="1593750781152">
+    <state width="1398" height="282" key="GridCell.Tab.4.center/0.23.1440.800@0.23.1440.800" timestamp="1593760135736" />
+    <state width="1398" height="282" key="GridCell.Tab.4.left" timestamp="1593760135736">
       <screen x="0" y="23" width="1440" height="800" />
     </state>
-    <state width="1398" height="282" key="GridCell.Tab.4.right/0.23.1440.800@0.23.1440.800" timestamp="1593750781152" />
+    <state width="1398" height="282" key="GridCell.Tab.4.left/0.23.1440.800@0.23.1440.800" timestamp="1593760135736" />
+    <state width="1398" height="282" key="GridCell.Tab.4.right" timestamp="1593760135737">
+      <screen x="0" y="23" width="1440" height="800" />
+    </state>
+    <state width="1398" height="282" key="GridCell.Tab.4.right/0.23.1440.800@0.23.1440.800" timestamp="1593760135737" />
     <state x="447" y="120" key="Rider.ProjectTemplateDialog.Size" timestamp="1593753591920">
       <screen x="0" y="23" width="1440" height="800" />
     </state>
     <state x="447" y="120" key="Rider.ProjectTemplateDialog.Size/0.23.1440.800@0.23.1440.800" timestamp="1593753591920" />
-    <state x="516" y="120" key="RiderGenerateDialog" timestamp="1593734998005">
+    <state x="516" y="120" key="RiderGenerateDialog" timestamp="1593759092102">
       <screen x="0" y="23" width="1440" height="800" />
     </state>
-    <state x="516" y="120" key="RiderGenerateDialog/0.23.1440.800@0.23.1440.800" timestamp="1593734998005" />
+    <state x="516" y="120" key="RiderGenerateDialog/0.23.1440.800@0.23.1440.800" timestamp="1593759092102" />
     <state x="493" y="140" key="RollbackChangesDialog" timestamp="1593750227927">
       <screen x="0" y="23" width="1440" height="800" />
     </state>
@@ -567,5 +383,37 @@
       <screen x="0" y="23" width="1440" height="800" />
     </state>
     <state x="371" y="149" width="741" height="548" key="find.popup/0.23.1440.800@0.23.1440.800" timestamp="1593750446260" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/src/FavoDeMel.Api/Controllers/Commands/ComandaController.cs</url>
+          <line>26</line>
+          <properties documentPath="$PROJECT_DIR$/src/FavoDeMel.Api/Controllers/Commands/ComandaController.cs" initialLine="21">
+            <startOffsets>
+              <option value="872" />
+            </startOffsets>
+            <endOffsets>
+              <option value="923" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/src/FavoDeMel.Infrastructure/Repositories/ComandaRepository.cs</url>
+          <line>18</line>
+          <properties documentPath="$PROJECT_DIR$/src/FavoDeMel.Infrastructure/Repositories/ComandaRepository.cs" initialLine="18">
+            <startOffsets>
+              <option value="529" />
+            </startOffsets>
+            <endOffsets>
+              <option value="579" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

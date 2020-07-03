@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Hosting;
 
-namespace Favo_de_mel.WebApi
+namespace FavoDeMel.Api
 {
     public class Program
     {

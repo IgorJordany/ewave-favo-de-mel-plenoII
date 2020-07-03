@@ -1,7 +1,12 @@
+using Favo_de_mel.Core.Repositories;
+using FavoDeMel.Application.Commands.Comanda;
+using FavoDeMel.Infrastructure.Abstractions;
 using FavoDeMel.Infrastructure.Data;
+using FavoDeMel.Infrastructure.Repositories;
+using FavoDeMel.Infrastructure.Transaction;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace Favo_de_mel.WebApi.Config
+namespace FavoDeMel.Api.Config
 {
     public static class DependencyInjectionConfig
     {
@@ -9,6 +14,11 @@ namespace Favo_de_mel.WebApi.Config
         {
             services.AddScoped<DatabaseContext, DatabaseContext>();
 
+            services.AddScoped<IComandaRepository, ComandaRepository>();
+            services.AddScoped<AbrirComandaCommandHandler, AbrirComandaCommandHandler>();
+
+            services.AddScoped<IUow, Uow>();
+            
             return services;
         }
     }
