@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "hbyAvVulGFW8AuqDSg7JLm+vPzyyAG/fdUNlVYd+wcuDgBQ/Fk8QOGJX6l1JlUzGzVyUpDRPcNOP0lIwCFriPw==",
+  "success": true,
+  "projectFilePath": "/Users/igorjordanyrichticsilva/Favo-de-mel/src/Favo-de-mel.Shared/Favo-de-mel.Shared.csproj",
+  "expectedPackageFiles": [
+    "/Users/igorjordanyrichticsilva/.nuget/packages/flunt/1.0.5/flunt.1.0.5.nupkg.sha512"
+  ],
+  "logs": []
+}
