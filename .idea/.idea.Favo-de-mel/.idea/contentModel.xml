@@ -11,20 +11,46 @@
       <e p="Favo-de-mel.sln" t="IncludeFlat" />
       <e p="packages" t="ExcludeRecursive" />
       <e p="src" t="Include">
-        <e p="Favo-de-mel.Application" t="IncludeRecursive">
+        <e p="FavoDeMel.Api" t="IncludeRecursive">
+          <e p="appsettings.Development.json" t="Include" />
+          <e p="appsettings.json" t="Include" />
           <e p="bin" t="ExcludeRecursive" />
-          <e p="Class1.cs" t="Include" />
-          <e p="Favo-de-mel.Application.csproj" t="IncludeRecursive" />
+          <e p="Config" t="Include">
+            <e p="DependencyInjectionConfig.cs" t="Include" />
+          </e>
+          <e p="Controllers" t="Include">
+            <e p="WeatherForecastController.cs" t="Include" />
+          </e>
+          <e p="FavoDeMel.Api.csproj" t="IncludeRecursive" />
           <e p="obj" t="ExcludeRecursive">
             <e p="Debug" t="Include">
               <e p="netcoreapp3.1" t="Include">
-                <e p="Favo-de-mel.Application.AssemblyInfo.cs" t="Include" />
+                <e p="FavoDeMel.Api.AssemblyInfo.cs" t="Include" />
+              </e>
+            </e>
+          </e>
+          <e p="Program.cs" t="Include" />
+          <e p="Properties" t="Include">
+            <e p="launchSettings.json" t="Include" />
+          </e>
+          <e p="Startup.cs" t="Include" />
+          <e p="WeatherForecast.cs" t="Include" />
+        </e>
+        <e p="FavoDeMel.Application" t="IncludeRecursive">
+          <e p="bin" t="ExcludeRecursive" />
+          <e p="Class1.cs" t="Include" />
+          <e p="FavoDeMel.Application.csproj" t="IncludeRecursive" />
+          <e p="obj" t="ExcludeRecursive">
+            <e p="Debug" t="Include">
+              <e p="netstandard2.0" t="Include">
+                <e p="FavoDeMel.Application.AssemblyInfo.cs" t="Include" />
               </e>
             </e>
           </e>
         </e>
-        <e p="Favo-de-mel.Core" t="IncludeRecursive">
+        <e p="FavoDeMel.Core" t="IncludeRecursive">
           <e p="bin" t="ExcludeRecursive" />
+          <e p="Class1.cs" t="Include" />
           <e p="Entities" t="Include">
             <e p="Comanda.cs" t="Include" />
             <e p="Pedido.cs" t="Include" />
@@ -33,11 +59,11 @@
             <e p="ComandaStatus.cs" t="Include" />
             <e p="PedidoStatus.cs" t="Include" />
           </e>
-          <e p="Favo-de-mel.Core.csproj" t="IncludeRecursive" />
+          <e p="FavoDeMel.Core.csproj" t="IncludeRecursive" />
           <e p="obj" t="ExcludeRecursive">
             <e p="Debug" t="Include">
-              <e p="netcoreapp3.1" t="Include">
-                <e p="Favo-de-mel.Core.AssemblyInfo.cs" t="Include" />
+              <e p="netstandard2.0" t="Include">
+                <e p="FavoDeMel.Core.AssemblyInfo.cs" t="Include" />
               </e>
             </e>
           </e>
@@ -46,7 +72,7 @@
             <e p="IPedidoRepository.cs" t="Include" />
           </e>
         </e>
-        <e p="Favo-de-mel.Infrastructure" t="IncludeRecursive">
+        <e p="FavoDeMel.Infrastructure" t="IncludeRecursive">
           <e p="Abstractions" t="Include">
             <e p="IUow.cs" t="Include" />
           </e>
@@ -58,11 +84,16 @@
               <e p="PedidoMaping.cs" t="Include" />
             </e>
           </e>
-          <e p="Favo-de-mel.Infrastructure.csproj" t="IncludeRecursive" />
+          <e p="FavoDeMel.Infrastructure.csproj" t="IncludeRecursive" />
+          <e p="Migrations" t="Include">
+            <e p="20200703054522_InitialMigration.cs" t="Include" />
+            <e p="20200703054522_InitialMigration.Designer.cs" t="Include" />
+            <e p="DatabaseContextModelSnapshot.cs" t="Include" />
+          </e>
           <e p="obj" t="ExcludeRecursive">
             <e p="Debug" t="Include">
-              <e p="netcoreapp3.1" t="Include">
-                <e p="Favo-de-mel.Infrastructure.AssemblyInfo.cs" t="Include" />
+              <e p="netstandard2.0" t="Include">
+                <e p="FavoDeMel.Infrastructure.AssemblyInfo.cs" t="Include" />
               </e>
             </e>
           </e>
@@ -73,54 +104,31 @@
             <e p="Uow.cs" t="Include" />
           </e>
         </e>
-        <e p="Favo-de-mel.Shared" t="IncludeRecursive">
+        <e p="FavoDeMel.Shared" t="IncludeRecursive">
           <e p="bin" t="ExcludeRecursive" />
-          <e p="Class1.cs" t="Include" />
           <e p="Entities" t="Include">
             <e p="Entity.cs" t="Include" />
           </e>
-          <e p="Favo-de-mel.Shared.csproj" t="IncludeRecursive" />
+          <e p="FavoDeMel.Shared.csproj" t="IncludeRecursive" />
           <e p="obj" t="ExcludeRecursive">
             <e p="Debug" t="Include">
-              <e p="netcoreapp3.1" t="Include">
-                <e p="Favo-de-mel.Shared.AssemblyInfo.cs" t="Include" />
+              <e p="netstandard2.0" t="Include">
+                <e p="FavoDeMel.Shared.AssemblyInfo.cs" t="Include" />
               </e>
             </e>
           </e>
-        </e>
-        <e p="Favo-de-mel.WebApi" t="IncludeRecursive">
-          <e p="appsettings.Development.json" t="Include" />
-          <e p="appsettings.json" t="Include" />
-          <e p="bin" t="ExcludeRecursive" />
-          <e p="Controllers" t="Include">
-            <e p="WeatherForecastController.cs" t="Include" />
-          </e>
-          <e p="Favo-de-mel.WebApi.csproj" t="IncludeRecursive" />
-          <e p="obj" t="ExcludeRecursive">
-            <e p="Debug" t="Include">
-              <e p="netcoreapp3.1" t="Include">
-                <e p="Favo-de-mel.WebApi.AssemblyInfo.cs" t="Include" />
-              </e>
-            </e>
-          </e>
-          <e p="Program.cs" t="Include" />
-          <e p="Properties" t="Include">
-            <e p="launchSettings.json" t="Include" />
-          </e>
-          <e p="Startup.cs" t="Include" />
-          <e p="WeatherForecast.cs" t="Include" />
         </e>
       </e>
       <e p="test" t="Include">
-        <e p="Favo-de-mel.Tests" t="IncludeRecursive">
+        <e p="FavoDeMel.Tests" t="IncludeRecursive">
           <e p="bin" t="ExcludeRecursive" />
           <e p="Commands" t="Include" />
           <e p="Entities" t="Include" />
-          <e p="Favo-de-mel.Tests.csproj" t="IncludeRecursive" />
+          <e p="FavoDeMel.Tests.csproj" t="IncludeRecursive" />
           <e p="obj" t="ExcludeRecursive">
             <e p="Debug" t="Include">
               <e p="netcoreapp3.1" t="Include">
-                <e p="Favo-de-mel.Tests.AssemblyInfo.cs" t="Include" />
+                <e p="FavoDeMel.Tests.AssemblyInfo.cs" t="Include" />
               </e>
             </e>
           </e>
@@ -131,6 +139,6 @@
     <e p="$APPLICATION_CONFIG_DIR$/consoles/db" t="IncludeRecursive" />
     <e p="$APPLICATION_CONFIG_DIR$/extensions" t="IncludeRecursive" />
     <e p="$PROJECT_DIR$/../Library/Caches/JetBrains/Rider2020.1/extResources" t="IncludeRecursive" />
-    <e p="$PROJECT_DIR$/../Library/Caches/JetBrains/Rider2020.1/resharper-host/local/Transient/ReSharperHost/v201/SolutionCaches/_Favo-de-mel.935428203.00" t="ExcludeRecursive" />
+    <e p="$PROJECT_DIR$/../Library/Caches/JetBrains/Rider2020.1/resharper-host/local/Transient/ReSharperHost/v201/SolutionCaches/_Favo-de-Mel.935428203.00" t="ExcludeRecursive" />
   </component>
 </project>

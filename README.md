@@ -16,7 +16,7 @@ Utilizando Docker
 **Docker (DEV)**
 
 ```
-docker image build -t favo-de-mel-webapi:dev -f docker/Dockerfile .
+docker image build -t favodemel-api:dev -f docker/Dockerfile .
 ```
 Iniciar sql server primeiro para criação do database (primeira criação de ambiente).
 
@@ -53,3 +53,9 @@ Para visualizar que esta executando o container digite:
 ```
 docker container ls 
 ```
+
+```
+dotnet ef migrations add InitialMigration --project FavoDeMel.Infrastructure --startup-project FavoDeMel.Api
+dotnet ef database update --project FavoDeMel.Infrastructure --startup-project FavoDeMel.Api 
+```
+

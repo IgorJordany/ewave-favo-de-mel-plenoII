@@ -2,15 +2,15 @@ version: '3.7'
 
 services:
   api:
-    container_name: favo-de-mel-webapi
+    container_name: favodemel-api
     build: .
-    image: favo-de-mel-webapi:dev
+    image: favodemel-api:dev
     ports:
       - "5000:5000"
     environment: 
       - ASPNETCORE_ENVIRONMENT=Development
     networks: 
-      - favo-de-mel-webapi
+      - favodemel-api
 
   sqlserver:
     restart: unless-stopped
@@ -22,5 +22,5 @@ services:
     image: "mcr.microsoft.com/mssql/server:2017-latest"
       
 networks:
-  favo-de-mel-webapi:
-    name: favo-de-mel-network
+  favodemel-api:
+    name: favodemel-network

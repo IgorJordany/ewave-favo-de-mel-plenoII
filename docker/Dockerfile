@@ -1,20 +1,20 @@
 FROM mcr.microsoft.com/dotnet/core/sdk:3.1 AS build
-WORKDIR /favo-de-mel
+WORKDIR /favodemel
 
 COPY *.sln ./
 
-COPY src/Favo-de-mel.WebApi/Favo-de-mel.WebApi.csproj src/Favo-de-mel.WebApi/
-COPY src/Favo-de-mel.Application/Favo-de-mel.Application.csproj src/Favo-de-mel.Application/
-COPY src/Favo-de-mel.Core/Favo-de-mel.Core.csproj src/Favo-de-mel.Core/
-COPY src/Favo-de-mel.Infrastructure/Favo-de-mel.Infrastructure.csproj src/Favo-de-mel.Infrastructure/
-COPY src/Favo-de-mel.Shared/Favo-de-mel.Shared.csproj src/Favo-de-mel.Shared/
-COPY test/Favo-de-mel.Tests/Favo-de-mel.Tests.csproj test/Favo-de-mel.Tests/
+COPY src/FavoDeMel.Api/FavoDeMel.Api.csproj src/FavoDeMel.Api/
+COPY src/FavoDeMel.Application/FavoDeMel.Application.csproj src/FavoDeMel.Application/
+COPY src/FavoDeMel.Core/FavoDeMel.Core.csproj src/FavoDeMel.Core/
+COPY src/FavoDeMel.Infrastructure/FavoDeMel.Infrastructure.csproj src/FavoDeMel.Infrastructure/
+COPY src/FavoDeMel.Shared/FavoDeMel.Shared.csproj src/FavoDeMel.Shared/
+COPY test/FavoDeMel.Tests/FavoDeMel.Tests.csproj test/FavoDeMel.Tests/
 
 RUN dotnet restore
 
 COPY . .
 
-WORKDIR /favo-de-mel/src/Favo-de-mel.WebApi/
+WORKDIR /favodemel/src/FavoDeMel.Api/
 RUN dotnet build --configuration Release --output /app
 
 FROM build AS publish
@@ -26,4 +26,4 @@ WORKDIR /app
 
 COPY --from=publish /app .
 
-ENTRYPOINT ["dotnet", "./Favo-de-mel.WebApi.dll"]
+ENTRYPOINT ["dotnet", "./FavoDeMel.Api.dll"]
