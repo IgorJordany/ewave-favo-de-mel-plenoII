@@ -1,12 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "36fjAEy6rZjbd98o++eMhj4OCrvcOuz4yloTJAYNXWKs3oJpjTQ4xRWG41hqgCUGF7NEC2ygCTcWhb1/YWrVvw==",
+  "dgSpecHash": "SUctG5Rh25gAMGzO/MwAlyiKqnDu1de3J+TxeIABLX/UF79FjN/+Jau8tS2gX+ve1sQt/ipwJGdwSF/QyC1JaA==",
   "success": true,
   "projectFilePath": "/Users/igorjordanyrichticsilva/Favo-de-mel/src/Favo-de-mel.Core/Favo-de-mel.Core.csproj",
   "expectedPackageFiles": [
     "/Users/igorjordanyrichticsilva/.nuget/packages/fluentvalidation/8.6.2/fluentvalidation.8.6.2.nupkg.sha512",
     "/Users/igorjordanyrichticsilva/.nuget/packages/fluentvalidation.aspnetcore/8.6.2/fluentvalidation.aspnetcore.8.6.2.nupkg.sha512",
     "/Users/igorjordanyrichticsilva/.nuget/packages/fluentvalidation.dependencyinjectionextensions/8.6.2/fluentvalidation.dependencyinjectionextensions.8.6.2.nupkg.sha512",
+    "/Users/igorjordanyrichticsilva/.nuget/packages/flunt/1.0.5/flunt.1.0.5.nupkg.sha512",
     "/Users/igorjordanyrichticsilva/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/2.1.0/microsoft.extensions.dependencyinjection.abstractions.2.1.0.nupkg.sha512",
     "/Users/igorjordanyrichticsilva/.nuget/packages/system.componentmodel.annotations/4.4.1/system.componentmodel.annotations.4.4.1.nupkg.sha512"
   ],

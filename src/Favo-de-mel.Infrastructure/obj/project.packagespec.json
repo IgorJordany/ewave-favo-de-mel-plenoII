@@ -1,10 +1,10 @@
 ﻿{
   "version": "1.0.0",
   "restore": {
-    "projectUniqueName": "/Users/igorjordanyrichticsilva/Favo-de-mel/src/Favo-de-mel.Core/Favo-de-mel.Core.csproj",
-    "projectName": "Favo-de-mel.Core",
-    "projectPath": "/Users/igorjordanyrichticsilva/Favo-de-mel/src/Favo-de-mel.Core/Favo-de-mel.Core.csproj",
-    "outputPath": "/Users/igorjordanyrichticsilva/Favo-de-mel/src/Favo-de-mel.Core/obj/",
+    "projectUniqueName": "/Users/igorjordanyrichticsilva/Favo-de-mel/src/Favo-de-mel.Infrastructure/Favo-de-mel.Infrastructure.csproj",
+    "projectName": "Favo-de-mel.Infrastructure",
+    "projectPath": "/Users/igorjordanyrichticsilva/Favo-de-mel/src/Favo-de-mel.Infrastructure/Favo-de-mel.Infrastructure.csproj",
+    "outputPath": "/Users/igorjordanyrichticsilva/Favo-de-mel/src/Favo-de-mel.Infrastructure/obj/",
     "projectStyle": "PackageReference",
     "fallbackFolders": [
       "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
@@ -18,8 +18,8 @@
     "frameworks": {
       "netcoreapp3.1": {
         "projectReferences": {
-          "/Users/igorjordanyrichticsilva/Favo-de-mel/src/Favo-de-mel.Shared/Favo-de-mel.Shared.csproj": {
-            "projectPath": "/Users/igorjordanyrichticsilva/Favo-de-mel/src/Favo-de-mel.Shared/Favo-de-mel.Shared.csproj"
+          "/Users/igorjordanyrichticsilva/Favo-de-mel/src/Favo-de-mel.Core/Favo-de-mel.Core.csproj": {
+            "projectPath": "/Users/igorjordanyrichticsilva/Favo-de-mel/src/Favo-de-mel.Core/Favo-de-mel.Core.csproj"
           }
         }
       }
@@ -33,9 +33,21 @@
   "frameworks": {
     "netcoreapp3.1": {
       "dependencies": {
-        "FluentValidation.AspNetCore": {
+        "Microsoft.EntityFrameworkCore": {
           "target": "Package",
-          "version": "[8.6.2, )"
+          "version": "[3.1.5, )"
+        },
+        "Microsoft.EntityFrameworkCore.Relational": {
+          "target": "Package",
+          "version": "[3.1.5, )"
+        },
+        "Microsoft.EntityFrameworkCore.SqlServer": {
+          "target": "Package",
+          "version": "[3.1.5, )"
+        },
+        "Microsoft.EntityFrameworkCore.Tools": {
+          "target": "Package",
+          "version": "[3.1.5, )"
         }
       },
       "imports": [

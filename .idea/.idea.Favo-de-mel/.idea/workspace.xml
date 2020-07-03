@@ -11,14 +11,36 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="595afcd1-38d5-4305-84d9-77ffc4724ae3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.Favo-de-mel/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Favo-de-mel.Core/Entities/Comanda.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Favo-de-mel.Core/Enums/ComandaStatus.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Favo-de-mel.Infrastructure/Data/Mapping/CommandaMaping.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Favo-de-mel.Infrastructure/Data/Mapping/PedidoMaping.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Favo-de-mel.Infrastructure/Data/Repositories/ComandaRepository.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Favo-de-mel.Infrastructure/DatabaseContext.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Favo-de-mel.Infrastructure/Favo-de-mel.Infrastructure.csproj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Favo-de-mel.Infrastructure/obj/Debug/netcoreapp3.1/Favo-de-mel.Infrastructure.AssemblyInfo.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Favo-de-mel.Infrastructure/obj/Debug/netcoreapp3.1/Favo-de-mel.Infrastructure.AssemblyInfoInputs.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Favo-de-mel.Infrastructure/obj/Debug/netcoreapp3.1/Favo-de-mel.Infrastructure.assets.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Favo-de-mel.Infrastructure/obj/Debug/netcoreapp3.1/Favo-de-mel.Infrastructure.csprojAssemblyReference.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Favo-de-mel.Infrastructure/obj/Favo-de-mel.Infrastructure.csproj.nuget.dgspec.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Favo-de-mel.Infrastructure/obj/Favo-de-mel.Infrastructure.csproj.nuget.g.props" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Favo-de-mel.Infrastructure/obj/Favo-de-mel.Infrastructure.csproj.nuget.g.targets" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Favo-de-mel.Infrastructure/obj/project.assets.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Favo-de-mel.Infrastructure/obj/project.nuget.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Favo-de-mel.Infrastructure/obj/project.packagespec.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Favo-de-mel.Shared/Class1.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Favo-de-mel.Shared/Entities/Entity.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Favo-de-mel.Shared/Favo-de-mel.Shared.csproj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Favo-de-mel.Shared/obj/Debug/netcoreapp3.1/Favo-de-mel.Shared.csprojAssemblyReference.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Favo-de-mel/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Favo-de-mel/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Favo-de-mel/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Favo-de-mel/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Favo-de-Mel.sln" beforeDir="false" afterPath="$PROJECT_DIR$/Favo-de-Mel.sln" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Favo-de-mel.Core/Entities/Comanda.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Favo-de-mel.Core/Entities/Comanda.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Favo-de-mel.Core/Entities/Pedido.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Favo-de-mel.Core/Entities/Pedido.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Favo-de-mel.Core/Favo-de-mel.Core.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/Favo-de-mel.Core/Favo-de-mel.Core.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/Favo-de-mel.Tests/Favo-de-mel.Tests.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/test/Favo-de-mel.Tests/Favo-de-mel.Tests.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Favo-de-mel.Core/obj/Debug/netcoreapp3.1/Favo-de-mel.Core.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/Favo-de-mel.Core/obj/Debug/netcoreapp3.1/Favo-de-mel.Core.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Favo-de-mel.Core/obj/Favo-de-mel.Core.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/Favo-de-mel.Core/obj/Favo-de-mel.Core.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Favo-de-mel.Core/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/Favo-de-mel.Core/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Favo-de-mel.Core/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/Favo-de-mel.Core/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Favo-de-mel.Core/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/Favo-de-mel.Core/obj/project.packagespec.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,13 +51,20 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/Favo-de-mel.Core/Entities/Pedido.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/Favo-de-mel.Core/Enums/ComandaStatus.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/Favo-de-mel.Shared/Entities/Entity.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/Favo-de-mel.Core/Enums/PedidoStatus.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/Favo-de-mel.Infrastructure/DatabaseContext.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/Favo-de-mel.Infrastructure/Data/Mapping/PedidoMaping.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/Favo-de-mel.Application/Class1.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/Favo-de-mel.WebApi/Startup.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/test/Favo-de-mel.Tests/UnitTest1.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/Favo-de-mel.Core/Class1.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/Favo-de-mel.Core/Entities/Comanda.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/Favo-de-mel.Data/Class1.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/Favo-de-mel.Shared/Class1.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/Favo-de-mel.Infrastructure/Data/Mapping/CommandaMaping.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/Favo-de-mel.WebApi/Startup.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/Favo-de-mel.Infrastructure/Data/Repositories/ComandaRepository.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/Favo-de-mel.Core/Entities/Comanda.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -44,7 +73,16 @@
         <option value="$PROJECT_DIR$/src/Favo-de-mel.Application/Class1.cs" />
         <option value="$PROJECT_DIR$/src/Favo-de-mel.Data/Class1.cs" />
         <option value="$PROJECT_DIR$/src/Favo-de-mel.Core/Enums/ComandaStatus.cs" />
+        <option value="$PROJECT_DIR$/src/Favo-de-mel.Core/Enums/PedidoStatus.cs" />
+        <option value="$PROJECT_DIR$/src/Favo-de-mel.Shared/Class1.cs" />
+        <option value="$PROJECT_DIR$/src/Favo-de-mel.Shared/Entities/Entity.cs" />
         <option value="$PROJECT_DIR$/src/Favo-de-mel.Core/Entities/Comanda.cs" />
+        <option value="$PROJECT_DIR$/src/Favo-de-mel.Core/Entities/Pedido.cs" />
+        <option value="$PROJECT_DIR$/src/Favo-de-mel.Infrastructure/Data/Mapping/CommandaMaping.cs" />
+        <option value="$PROJECT_DIR$/src/Favo-de-mel.Infrastructure/Data/Mapping/PedidoMaping.cs" />
+        <option value="$PROJECT_DIR$/src/Favo-de-mel.Infrastructure/Class1.cs" />
+        <option value="$PROJECT_DIR$/src/Favo-de-mel.Infrastructure/DatabaseContext.cs" />
+        <option value="$PROJECT_DIR$/src/Favo-de-mel.Infrastructure/Data/Repositories/ComandaRepository.cs" />
       </list>
     </option>
   </component>
@@ -57,6 +95,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
@@ -113,7 +152,7 @@
       <option name="presentableId" value="Default" />
       <updated>1593549095202</updated>
       <workItem from="1593549102273" duration="1553000" />
-      <workItem from="1593628334347" duration="8559000" />
+      <workItem from="1593628334347" duration="18247000" />
     </task>
     <task id="LOCAL-00001" summary="Start project backend">
       <created>1593644096895</created>
@@ -122,7 +161,14 @@
       <option name="project" value="LOCAL" />
       <updated>1593644096895</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Entidades Comanda e Pedido criadas">
+      <created>1593656725807</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1593656725807</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -142,14 +188,16 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="Start project backend" />
-    <option name="LAST_COMMIT_MESSAGE" value="Start project backend" />
+    <MESSAGE value="Entidades Comanda e Pedido criadas" />
+    <option name="LAST_COMMIT_MESSAGE" value="Entidades Comanda e Pedido criadas" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="320" y="162" key="Rider.ProjectTemplateDialog.Size" timestamp="1593654143611">
+    <state x="320" y="162" key="Rider.ProjectTemplateDialog.Size" timestamp="1593705132347">
       <screen x="0" y="23" width="1440" height="800" />
     </state>
-    <state x="320" y="162" key="Rider.ProjectTemplateDialog.Size/0.23.1440.800@0.23.1440.800" timestamp="1593654143611" />
+    <state x="320" y="162" key="Rider.ProjectTemplateDialog.Size/0.23.1440.800@0.23.1440.800" timestamp="1593705132347" />
   </component>
 </project>

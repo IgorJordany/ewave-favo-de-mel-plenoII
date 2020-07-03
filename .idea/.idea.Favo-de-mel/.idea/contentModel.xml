@@ -25,7 +25,6 @@
         </e>
         <e p="Favo-de-mel.Core" t="IncludeRecursive">
           <e p="bin" t="ExcludeRecursive" />
-          <e p="Class1.cs" t="Include" />
           <e p="Entities" t="Include">
             <e p="Comanda.cs" t="Include" />
             <e p="Pedido.cs" t="Include" />
@@ -42,15 +41,40 @@
               </e>
             </e>
           </e>
+          <e p="Repositories" t="Include" />
         </e>
-        <e p="Favo-de-mel.Data" t="IncludeRecursive">
+        <e p="Favo-de-mel.Infrastructure" t="IncludeRecursive">
           <e p="bin" t="ExcludeRecursive" />
-          <e p="Class1.cs" t="Include" />
-          <e p="Favo-de-mel.Data.csproj" t="IncludeRecursive" />
+          <e p="Data" t="Include">
+            <e p="Mapping" t="Include">
+              <e p="CommandaMaping.cs" t="Include" />
+              <e p="PedidoMaping.cs" t="Include" />
+            </e>
+            <e p="Repositories" t="Include">
+              <e p="ComandaRepository.cs" t="Include" />
+            </e>
+          </e>
+          <e p="DatabaseContext.cs" t="Include" />
+          <e p="Favo-de-mel.Infrastructure.csproj" t="IncludeRecursive" />
           <e p="obj" t="ExcludeRecursive">
             <e p="Debug" t="Include">
               <e p="netcoreapp3.1" t="Include">
-                <e p="Favo-de-mel.Data.AssemblyInfo.cs" t="Include" />
+                <e p="Favo-de-mel.Infrastructure.AssemblyInfo.cs" t="Include" />
+              </e>
+            </e>
+          </e>
+        </e>
+        <e p="Favo-de-mel.Shared" t="IncludeRecursive">
+          <e p="bin" t="ExcludeRecursive" />
+          <e p="Class1.cs" t="Include" />
+          <e p="Entities" t="Include">
+            <e p="Entity.cs" t="Include" />
+          </e>
+          <e p="Favo-de-mel.Shared.csproj" t="IncludeRecursive" />
+          <e p="obj" t="ExcludeRecursive">
+            <e p="Debug" t="Include">
+              <e p="netcoreapp3.1" t="Include">
+                <e p="Favo-de-mel.Shared.AssemblyInfo.cs" t="Include" />
               </e>
             </e>
           </e>

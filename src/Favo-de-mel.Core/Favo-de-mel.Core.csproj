@@ -9,4 +9,8 @@
       <PackageReference Include="FluentValidation.AspNetCore" Version="8.6.2" />
     </ItemGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\Favo-de-mel.Shared\Favo-de-mel.Shared.csproj" />
+    </ItemGroup>
+
 </Project>

@@ -1,16 +1,24 @@
 using System;
 using System.Collections.Generic;
 using Favo_de_mel.Core.Enums;
+using Favo_de_mel.Shared.Entities;
 
 namespace Favo_de_mel.Core.Entities
 {
-    public class Comanda
+    public class Comanda : Entity
     {
-        public long Id { get; set; }
-        public byte Mesa { get; set; }
-        public ComandaStatus Status { get; set; }
-        public DateTime DataAbertura { get; set; }
-        public DateTime DataFechamento { get; set; }
-        public ICollection<Pedido> Pedidos { get; set; } = new HashSet<Pedido>();
+        public byte Mesa { get; }
+        public ComandaStatus Status { get; }
+        public DateTime DataAbertura { get; }
+        public DateTime? DataFechamento { get; }
+        public ICollection<Pedido> Pedidos { get; } = new HashSet<Pedido>();
+
+        public Comanda(byte mesa, ComandaStatus status, DateTime dataAbertura, DateTime? dataFechamento)
+        {
+            Mesa = mesa;
+            Status = status;
+            DataAbertura = dataAbertura;
+            DataFechamento = dataFechamento;
+        }
     }
 }
