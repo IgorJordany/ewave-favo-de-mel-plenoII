@@ -1,12 +1,14 @@
 using System;
+using System.Collections.Generic;
 using System.Threading.Tasks;
 using FavoDeMel.Core.Entities;
 
-namespace Favo_de_mel.Core.Repositories
+namespace FavoDeMel.Core.Repositories
 {
     public interface IComandaRepository
     {
-        Task Incluir(Comanda comanda);
+        Task IncluirAync(Comanda comanda);
+        Task<List<Comanda>> ListarComandasAsync();
         Task<bool> Deletar(Guid id);
         Task<bool> Existe(Guid id);
         Task<Comanda> ConsultarPorId(Guid id);

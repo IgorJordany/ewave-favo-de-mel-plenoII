@@ -22,7 +22,9 @@
             <e p="Commands" t="Include">
               <e p="ComandaController.cs" t="Include" />
             </e>
-            <e p="Queries" t="Include" />
+            <e p="Queries" t="Include">
+              <e p="ComandaController.cs" t="Include" />
+            </e>
             <e p="WeatherForecastController.cs" t="Include" />
           </e>
           <e p="FavoDeMel.Api.csproj" t="IncludeRecursive" />
@@ -62,7 +64,18 @@
               </e>
             </e>
           </e>
-          <e p="Queries" t="Include" />
+          <e p="Queries" t="Include">
+            <e p="Base" t="Include">
+              <e p="IQueryHandler.cs" t="Include" />
+              <e p="IRequest.cs" t="Include" />
+              <e p="IResponse.cs" t="Include" />
+            </e>
+            <e p="Comanda" t="Include">
+              <e p="ObterComandasAbertasHandler.cs" t="Include" />
+              <e p="ObterComandasAbertasRequest.cs" t="Include" />
+              <e p="ObterComandasAbertasResponse.cs" t="Include" />
+            </e>
+          </e>
         </e>
         <e p="FavoDeMel.Core" t="IncludeRecursive">
           <e p="bin" t="ExcludeRecursive" />
@@ -138,7 +151,9 @@
         <e p="FavoDeMel.Tests" t="IncludeRecursive">
           <e p="bin" t="ExcludeRecursive" />
           <e p="Commands" t="Include" />
-          <e p="Entities" t="Include" />
+          <e p="Entities" t="Include">
+            <e p="ComandaTests.cs" t="Include" />
+          </e>
           <e p="FavoDeMel.Tests.csproj" t="IncludeRecursive" />
           <e p="obj" t="ExcludeRecursive">
             <e p="Debug" t="Include">
@@ -147,7 +162,6 @@
               </e>
             </e>
           </e>
-          <e p="UnitTest1.cs" t="Include" />
         </e>
       </e>
     </e>

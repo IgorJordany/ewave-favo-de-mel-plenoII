@@ -16,9 +16,5 @@
     <ProjectReference Include="..\FavoDeMel.Application\FavoDeMel.Application.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Controllers\Queries" />
-  </ItemGroup>
-
 
 </Project>

@@ -1,8 +1,13 @@
 using System;
+using System.Collections.Generic;
+using System.Linq;
 using System.Threading.Tasks;
+using Favo_de_mel.Core.Enums;
 using Favo_de_mel.Core.Repositories;
 using FavoDeMel.Core.Entities;
+using FavoDeMel.Core.Repositories;
 using FavoDeMel.Infrastructure.Data;
+using Microsoft.EntityFrameworkCore;
 
 namespace FavoDeMel.Infrastructure.Repositories
 {
@@ -14,9 +19,15 @@ namespace FavoDeMel.Infrastructure.Repositories
         {
             _databaseContext = databaseContext;
         }
-        public async Task Incluir(Comanda comanda)
+        public async Task IncluirAync(Comanda comanda)
         {
             await _databaseContext.Comandas.AddAsync(comanda);
+        }
+
+        public Task<List<Comanda>> ListarComandasAsync()
+        {
+            var comandas = _databaseContext.Comandas.Where(c => c.Status == ComandaStatus.Aberta);
+            return Task.FromResult(comandas.ToList());
         }
 
         public Task<bool> Deletar(Guid id)

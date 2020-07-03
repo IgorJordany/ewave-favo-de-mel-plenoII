@@ -11,28 +11,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="595afcd1-38d5-4305-84d9-77ffc4724ae3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/FavoDeMel.Api/Controllers/Commands/ComandaController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/FavoDeMel.Application/Commands/Base/ICommand.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/FavoDeMel.Application/Commands/Base/ICommandHandler.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/FavoDeMel.Application/Commands/Base/ICommandResponse.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/FavoDeMel.Application/Commands/Comanda/AbrirComandaCommand.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/FavoDeMel.Application/Commands/Comanda/AbrirComandaCommandHandler.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/FavoDeMel.Application/Commands/Comanda/AbrirComandaResponse.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/FavoDeMel.Api/Controllers/Queries/ComandaController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/FavoDeMel.Application/Queries/Base/IQueryHandler.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/FavoDeMel.Application/Queries/Base/IRequest.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/FavoDeMel.Application/Queries/Base/IResponse.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/FavoDeMel.Application/Queries/Comanda/ObterComandasAbertasHandler.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/FavoDeMel.Application/Queries/Comanda/ObterComandasAbertasRequest.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/FavoDeMel.Application/Queries/Comanda/ObterComandasAbertasResponse.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/FavoDeMel.Tests/Entities/ComandaTests.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Favo-de-mel/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Favo-de-mel/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Favo-de-mel/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Favo-de-mel/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/FavoDeMel.Api/Config/DependencyInjectionConfig.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/FavoDeMel.Api/Config/DependencyInjectionConfig.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FavoDeMel.Api/Controllers/WeatherForecastController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/FavoDeMel.Api/Controllers/WeatherForecastController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/FavoDeMel.Api/FavoDeMel.Api.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/FavoDeMel.Api/FavoDeMel.Api.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FavoDeMel.Api/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/FavoDeMel.Api/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FavoDeMel.Api/Startup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/FavoDeMel.Api/Startup.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FavoDeMel.Api/WeatherForecast.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/FavoDeMel.Api/WeatherForecast.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FavoDeMel.Application/Class1.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FavoDeMel.Application/Commands/Comanda/AbrirComandaCommandHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/FavoDeMel.Application/Commands/Comanda/AbrirComandaCommandHandler.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/FavoDeMel.Application/FavoDeMel.Application.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/FavoDeMel.Application/FavoDeMel.Application.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FavoDeMel.Core/Class1.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FavoDeMel.Core/Entities/Comanda.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/FavoDeMel.Core/Entities/Comanda.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/FavoDeMel.Core/Repositories/IComandaRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/FavoDeMel.Core/Repositories/IComandaRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FavoDeMel.Infrastructure/Abstractions/IUow.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/FavoDeMel.Infrastructure/Abstractions/IUow.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/FavoDeMel.Infrastructure/Repositories/ComandaRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/FavoDeMel.Infrastructure/Repositories/ComandaRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FavoDeMel.Infrastructure/Transaction/Uow.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/FavoDeMel.Infrastructure/Transaction/Uow.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/FavoDeMel.Tests/FavoDeMel.Tests.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/test/FavoDeMel.Tests/FavoDeMel.Tests.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/FavoDeMel.Tests/UnitTest1.cs" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,10 +41,12 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/src/FavoDeMel.Core/Repositories/IComandaRepository.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/FavoDeMel.Application/Queries/Base/IQueryHandler.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/FavoDeMel.Infrastructure/Data/DatabaseContext.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/FavoDeMel.Application/Queries/Base/IRequest.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/FavoDeMel.Api/Controllers/WeatherForecastController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/FavoDeMel.Api/Properties/launchSettings.json" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/test/FavoDeMel.Tests/UnitTest1.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/FavoDeMel.Application/Queries/Base/IResponse.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/FavoDeMel.Application/Commands/Comanda/AbrirComandaResponse.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/FavoDeMel.Application/Commands/Base/ICommandResponse.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/FavoDeMel.Application/Commands/Comanda/AbrirComandaCommandHandler.cs" root0="FORCE_HIGHLIGHTING" />
@@ -60,33 +59,26 @@
     <setting file="file://$PROJECT_DIR$/src/FavoDeMel.Api/appsettings.json" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/FavoDeMel.Api/Startup.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/FavoDeMel.Api/WeatherForecast.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/FavoDeMel.Api/Controllers/Queries/ComandaController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/FavoDeMel.Shared/Entities/Entity.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/FavoDeMel.Infrastructure/Migrations/20200703054522_InitialMigration.Designer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/FavoDeMel.Infrastructure/Data/Mapping/PedidoMaping.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/D8882BC8-F843-4E99-9BF6-5825FB6C1FF7/d1/8371cb81/Notifiable.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/FavoDeMel.Infrastructure/Abstractions/IUow.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/FavoDeMel.Api/Controllers/Commands/ComandaController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/FavoDeMel.Infrastructure/Transaction/Uow.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/test/FavoDeMel.Tests/Entities/ComandaTests.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/FavoDeMel.Infrastructure/Repositories/ComandaRepository.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/FavoDeMel.Application/Queries/Comanda/ObterComandasAbertasRequest.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/FavoDeMel.Core/Entities/Pedido.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/FavoDeMel.Application/Queries/Comanda/ObterComandasAbertasResponse.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/FavoDeMel.Api/Config/DependencyInjectionConfig.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/FavoDeMel.Core/Entities/Comanda.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/FavoDeMel.Application/Queries/Comanda/ObterComandasAbertasHandler.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/Favo-de-mel.Core/Repositories/IComandaRepository.cs" />
-        <option value="$PROJECT_DIR$/src/Favo-de-mel.Infrastructure/Data/Repositories/ComandaRepository.cs" />
-        <option value="$PROJECT_DIR$/src/Favo-de-mel.Infrastructure/DatabaseContext.cs" />
-        <option value="$PROJECT_DIR$/src/Favo-de-mel.WebApi/Program.cs" />
-        <option value="$PROJECT_DIR$/src/Favo-de-mel.Infrastructure/Favo-de-mel.Infrastructure.csproj" />
-        <option value="$PROJECT_DIR$/src/Favo-de-mel.Infrastructure/Abstractions/a.cs" />
-        <option value="$PROJECT_DIR$/src/Favo-de-mel.Infrastructure/Abstractions/IUow.cs" />
-        <option value="$PROJECT_DIR$/src/Favo-de-mel.Infrastructure/Transaction/a.cs" />
-        <option value="$PROJECT_DIR$/src/Favo-de-mel.Infrastructure/Transaction/Uow.cs" />
-        <option value="$PROJECT_DIR$/src/Favo-de-mel.WebApi/appsettings.json" />
-        <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/src/Favo-de-mel.WebApi/appsettings.Development.json" />
-        <option value="$PROJECT_DIR$/src/Favo-de-mel.WebApi/Startup.cs" />
         <option value="$PROJECT_DIR$/src/Favo-de-mel.Application/Favo-de-mel.Application.csproj" />
         <option value="$PROJECT_DIR$/docker/docker-compose-dev.yml" />
         <option value="$PROJECT_DIR$/docker/Dockerfile" />
@@ -101,7 +93,6 @@
         <option value="$PROJECT_DIR$/Favo-de-Mel.sln" />
         <option value="$PROJECT_DIR$/src/FavoDeMel.Shared/Entities/Entity.cs" />
         <option value="$PROJECT_DIR$/src/FavoDeMel.Core/FavoDeMel.Core.csproj" />
-        <option value="$PROJECT_DIR$/src/FavoDeMel.Core/Entities/Comanda.cs" />
         <option value="$PROJECT_DIR$/src/FavoDeMel.Core/Entities/Pedido.cs" />
         <option value="$PROJECT_DIR$/src/FavoDeMel.Infrastructure/Data/DatabaseContext.cs" />
         <option value="$PROJECT_DIR$/src/FavoDeMel.Infrastructure/Data/Mapping/CommandaMaping.cs" />
@@ -119,12 +110,26 @@
         <option value="$PROJECT_DIR$/src/FavoDeMel.Application/Commands/Base/ICommandHandler.cs" />
         <option value="$PROJECT_DIR$/src/FavoDeMel.Application/Commands/Base/ICommandResponse.cs" />
         <option value="$PROJECT_DIR$/src/FavoDeMel.Application/Commands/Comanda/AbrirComandaCommand.cs" />
-        <option value="$PROJECT_DIR$/src/FavoDeMel.Api/Config/DependencyInjectionConfig.cs" />
         <option value="$PROJECT_DIR$/src/FavoDeMel.Application/Commands/Comanda/AbrirComandaResponse.cs" />
-        <option value="$PROJECT_DIR$/src/FavoDeMel.Core/Repositories/IComandaRepository.cs" />
         <option value="$PROJECT_DIR$/src/FavoDeMel.Api/Controllers/Commands/ComandaController.cs" />
+        <option value="$PROJECT_DIR$/test/FavoDeMel.Tests/Entities/Comanda.cs" />
         <option value="$PROJECT_DIR$/src/FavoDeMel.Application/Commands/Comanda/AbrirComandaCommandHandler.cs" />
+        <option value="$PROJECT_DIR$/test/FavoDeMel.Tests/Entities/ComandaTests.cs" />
+        <option value="$PROJECT_DIR$/src/FavoDeMel.Core/Entities/Comanda.cs" />
+        <option value="$PROJECT_DIR$/src/FavoDeMel.Api/Config/DependencyInjectionConfig.cs" />
+        <option value="$PROJECT_DIR$/src/FavoDeMel.Application/Queries/Comanda/ObterComandasResponse.cs" />
+        <option value="$PROJECT_DIR$/src/FavoDeMel.Application/Queries/Comanda/ObterComandasHandler.cs" />
+        <option value="$PROJECT_DIR$/src/FavoDeMel.Application/Queries/Comanda/ObterComandasRequest.cs" />
         <option value="$PROJECT_DIR$/src/FavoDeMel.Infrastructure/Repositories/ComandaRepository.cs" />
+        <option value="$PROJECT_DIR$/src/FavoDeMel.Core/Repositories/IComandaRepository.cs" />
+        <option value="$PROJECT_DIR$/src/FavoDeMel.Application/Queries/Base/IResponse.cs" />
+        <option value="$PROJECT_DIR$/src/FavoDeMel.Application/Queries/Base/IRequestHandler.cs" />
+        <option value="$PROJECT_DIR$/src/FavoDeMel.Application/Queries/Base/IRequest.cs" />
+        <option value="$PROJECT_DIR$/src/FavoDeMel.Api/Controllers/Queries/ComandaController.cs" />
+        <option value="$PROJECT_DIR$/src/FavoDeMel.Application/Queries/Comanda/ObterComandasAbertasHandler.cs" />
+        <option value="$PROJECT_DIR$/src/FavoDeMel.Application/Queries/Base/IQueryHandler.cs" />
+        <option value="$PROJECT_DIR$/src/FavoDeMel.Application/Queries/Comanda/ObterComandasAbertasResponse.cs" />
+        <option value="$PROJECT_DIR$/src/FavoDeMel.Application/Queries/Comanda/ObterComandasAbertasRequest.cs" />
       </list>
     </option>
   </component>
@@ -200,7 +205,7 @@
       <workItem from="1593628334347" duration="34348000" />
       <workItem from="1593753337289" duration="754000" />
       <workItem from="1593754120703" duration="137000" />
-      <workItem from="1593754326566" duration="7309000" />
+      <workItem from="1593754326566" duration="18562000" />
     </task>
     <task id="LOCAL-00001" summary="Start project backend">
       <created>1593644096895</created>
@@ -244,7 +249,14 @@
       <option name="project" value="LOCAL" />
       <updated>1593755976701</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="endpoint para abertura de comanda e implementação do repositorio">
+      <created>1593763156149</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1593763156149</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -272,7 +284,8 @@
     <MESSAGE value="Repositorios e maping" />
     <MESSAGE value="Repositorio dockerfile e database" />
     <MESSAGE value="refatoração nome projetos e framework" />
-    <option name="LAST_COMMIT_MESSAGE" value="refatoração nome projetos e framework" />
+    <MESSAGE value="endpoint para abertura de comanda e implementação do repositorio" />
+    <option name="LAST_COMMIT_MESSAGE" value="endpoint para abertura de comanda e implementação do repositorio" />
   </component>
   <component name="WindowStateProjectService">
     <state x="205" y="23" key="#Favo-de-mel.WebApi:_Favo_de_mel.WebApi" timestamp="1593750711524">
@@ -287,86 +300,86 @@
       <screen x="0" y="23" width="1440" height="800" />
     </state>
     <state width="451" height="445" key="DebuggerActiveHint/0.23.1440.800@0.23.1440.800" timestamp="1593759878403" />
-    <state width="1398" height="282" key="GridCell.Tab.0.bottom" timestamp="1593760135730">
+    <state width="1398" height="282" key="GridCell.Tab.0.bottom" timestamp="1593785208366">
       <screen x="0" y="23" width="1440" height="800" />
     </state>
-    <state width="1398" height="282" key="GridCell.Tab.0.bottom/0.23.1440.800@0.23.1440.800" timestamp="1593760135730" />
-    <state width="1398" height="282" key="GridCell.Tab.0.center" timestamp="1593760135729">
+    <state width="1398" height="282" key="GridCell.Tab.0.bottom/0.23.1440.800@0.23.1440.800" timestamp="1593785208366" />
+    <state width="1398" height="282" key="GridCell.Tab.0.center" timestamp="1593785208366">
       <screen x="0" y="23" width="1440" height="800" />
     </state>
-    <state width="1398" height="282" key="GridCell.Tab.0.center/0.23.1440.800@0.23.1440.800" timestamp="1593760135729" />
-    <state width="1398" height="282" key="GridCell.Tab.0.left" timestamp="1593760135729">
+    <state width="1398" height="282" key="GridCell.Tab.0.center/0.23.1440.800@0.23.1440.800" timestamp="1593785208366" />
+    <state width="1398" height="282" key="GridCell.Tab.0.left" timestamp="1593785208365">
       <screen x="0" y="23" width="1440" height="800" />
     </state>
-    <state width="1398" height="282" key="GridCell.Tab.0.left/0.23.1440.800@0.23.1440.800" timestamp="1593760135729" />
-    <state width="1398" height="282" key="GridCell.Tab.0.right" timestamp="1593760135730">
+    <state width="1398" height="282" key="GridCell.Tab.0.left/0.23.1440.800@0.23.1440.800" timestamp="1593785208365" />
+    <state width="1398" height="282" key="GridCell.Tab.0.right" timestamp="1593785208366">
       <screen x="0" y="23" width="1440" height="800" />
     </state>
-    <state width="1398" height="282" key="GridCell.Tab.0.right/0.23.1440.800@0.23.1440.800" timestamp="1593760135730" />
-    <state width="1398" height="282" key="GridCell.Tab.1.bottom" timestamp="1593760135732">
+    <state width="1398" height="282" key="GridCell.Tab.0.right/0.23.1440.800@0.23.1440.800" timestamp="1593785208366" />
+    <state width="1398" height="282" key="GridCell.Tab.1.bottom" timestamp="1593785208367">
       <screen x="0" y="23" width="1440" height="800" />
     </state>
-    <state width="1398" height="282" key="GridCell.Tab.1.bottom/0.23.1440.800@0.23.1440.800" timestamp="1593760135732" />
-    <state width="1398" height="282" key="GridCell.Tab.1.center" timestamp="1593760135731">
+    <state width="1398" height="282" key="GridCell.Tab.1.bottom/0.23.1440.800@0.23.1440.800" timestamp="1593785208367" />
+    <state width="1398" height="282" key="GridCell.Tab.1.center" timestamp="1593785208367">
       <screen x="0" y="23" width="1440" height="800" />
     </state>
-    <state width="1398" height="282" key="GridCell.Tab.1.center/0.23.1440.800@0.23.1440.800" timestamp="1593760135731" />
-    <state width="1398" height="282" key="GridCell.Tab.1.left" timestamp="1593760135731">
+    <state width="1398" height="282" key="GridCell.Tab.1.center/0.23.1440.800@0.23.1440.800" timestamp="1593785208367" />
+    <state width="1398" height="282" key="GridCell.Tab.1.left" timestamp="1593785208367">
       <screen x="0" y="23" width="1440" height="800" />
     </state>
-    <state width="1398" height="282" key="GridCell.Tab.1.left/0.23.1440.800@0.23.1440.800" timestamp="1593760135731" />
-    <state width="1398" height="282" key="GridCell.Tab.1.right" timestamp="1593760135732">
+    <state width="1398" height="282" key="GridCell.Tab.1.left/0.23.1440.800@0.23.1440.800" timestamp="1593785208367" />
+    <state width="1398" height="282" key="GridCell.Tab.1.right" timestamp="1593785208367">
       <screen x="0" y="23" width="1440" height="800" />
     </state>
-    <state width="1398" height="282" key="GridCell.Tab.1.right/0.23.1440.800@0.23.1440.800" timestamp="1593760135732" />
-    <state width="1398" height="282" key="GridCell.Tab.2.bottom" timestamp="1593760135734">
+    <state width="1398" height="282" key="GridCell.Tab.1.right/0.23.1440.800@0.23.1440.800" timestamp="1593785208367" />
+    <state width="1398" height="282" key="GridCell.Tab.2.bottom" timestamp="1593785208369">
       <screen x="0" y="23" width="1440" height="800" />
     </state>
-    <state width="1398" height="282" key="GridCell.Tab.2.bottom/0.23.1440.800@0.23.1440.800" timestamp="1593760135734" />
-    <state width="1398" height="282" key="GridCell.Tab.2.center" timestamp="1593760135733">
+    <state width="1398" height="282" key="GridCell.Tab.2.bottom/0.23.1440.800@0.23.1440.800" timestamp="1593785208369" />
+    <state width="1398" height="282" key="GridCell.Tab.2.center" timestamp="1593785208368">
       <screen x="0" y="23" width="1440" height="800" />
     </state>
-    <state width="1398" height="282" key="GridCell.Tab.2.center/0.23.1440.800@0.23.1440.800" timestamp="1593760135733" />
-    <state width="1398" height="282" key="GridCell.Tab.2.left" timestamp="1593760135733">
+    <state width="1398" height="282" key="GridCell.Tab.2.center/0.23.1440.800@0.23.1440.800" timestamp="1593785208368" />
+    <state width="1398" height="282" key="GridCell.Tab.2.left" timestamp="1593785208368">
       <screen x="0" y="23" width="1440" height="800" />
     </state>
-    <state width="1398" height="282" key="GridCell.Tab.2.left/0.23.1440.800@0.23.1440.800" timestamp="1593760135733" />
-    <state width="1398" height="282" key="GridCell.Tab.2.right" timestamp="1593760135733">
+    <state width="1398" height="282" key="GridCell.Tab.2.left/0.23.1440.800@0.23.1440.800" timestamp="1593785208368" />
+    <state width="1398" height="282" key="GridCell.Tab.2.right" timestamp="1593785208368">
       <screen x="0" y="23" width="1440" height="800" />
     </state>
-    <state width="1398" height="282" key="GridCell.Tab.2.right/0.23.1440.800@0.23.1440.800" timestamp="1593760135733" />
-    <state width="1398" height="282" key="GridCell.Tab.3.bottom" timestamp="1593760135736">
+    <state width="1398" height="282" key="GridCell.Tab.2.right/0.23.1440.800@0.23.1440.800" timestamp="1593785208368" />
+    <state width="1398" height="282" key="GridCell.Tab.3.bottom" timestamp="1593785208369">
       <screen x="0" y="23" width="1440" height="800" />
     </state>
-    <state width="1398" height="282" key="GridCell.Tab.3.bottom/0.23.1440.800@0.23.1440.800" timestamp="1593760135736" />
-    <state width="1398" height="282" key="GridCell.Tab.3.center" timestamp="1593760135735">
+    <state width="1398" height="282" key="GridCell.Tab.3.bottom/0.23.1440.800@0.23.1440.800" timestamp="1593785208369" />
+    <state width="1398" height="282" key="GridCell.Tab.3.center" timestamp="1593785208369">
       <screen x="0" y="23" width="1440" height="800" />
     </state>
-    <state width="1398" height="282" key="GridCell.Tab.3.center/0.23.1440.800@0.23.1440.800" timestamp="1593760135735" />
-    <state width="1398" height="282" key="GridCell.Tab.3.left" timestamp="1593760135734">
+    <state width="1398" height="282" key="GridCell.Tab.3.center/0.23.1440.800@0.23.1440.800" timestamp="1593785208369" />
+    <state width="1398" height="282" key="GridCell.Tab.3.left" timestamp="1593785208369">
       <screen x="0" y="23" width="1440" height="800" />
     </state>
-    <state width="1398" height="282" key="GridCell.Tab.3.left/0.23.1440.800@0.23.1440.800" timestamp="1593760135734" />
-    <state width="1398" height="282" key="GridCell.Tab.3.right" timestamp="1593760135735">
+    <state width="1398" height="282" key="GridCell.Tab.3.left/0.23.1440.800@0.23.1440.800" timestamp="1593785208369" />
+    <state width="1398" height="282" key="GridCell.Tab.3.right" timestamp="1593785208369">
       <screen x="0" y="23" width="1440" height="800" />
     </state>
-    <state width="1398" height="282" key="GridCell.Tab.3.right/0.23.1440.800@0.23.1440.800" timestamp="1593760135735" />
-    <state width="1398" height="282" key="GridCell.Tab.4.bottom" timestamp="1593760135737">
+    <state width="1398" height="282" key="GridCell.Tab.3.right/0.23.1440.800@0.23.1440.800" timestamp="1593785208369" />
+    <state width="1398" height="282" key="GridCell.Tab.4.bottom" timestamp="1593785208370">
       <screen x="0" y="23" width="1440" height="800" />
     </state>
-    <state width="1398" height="282" key="GridCell.Tab.4.bottom/0.23.1440.800@0.23.1440.800" timestamp="1593760135737" />
-    <state width="1398" height="282" key="GridCell.Tab.4.center" timestamp="1593760135736">
+    <state width="1398" height="282" key="GridCell.Tab.4.bottom/0.23.1440.800@0.23.1440.800" timestamp="1593785208370" />
+    <state width="1398" height="282" key="GridCell.Tab.4.center" timestamp="1593785208369">
       <screen x="0" y="23" width="1440" height="800" />
     </state>
-    <state width="1398" height="282" key="GridCell.Tab.4.center/0.23.1440.800@0.23.1440.800" timestamp="1593760135736" />
-    <state width="1398" height="282" key="GridCell.Tab.4.left" timestamp="1593760135736">
+    <state width="1398" height="282" key="GridCell.Tab.4.center/0.23.1440.800@0.23.1440.800" timestamp="1593785208369" />
+    <state width="1398" height="282" key="GridCell.Tab.4.left" timestamp="1593785208369">
       <screen x="0" y="23" width="1440" height="800" />
     </state>
-    <state width="1398" height="282" key="GridCell.Tab.4.left/0.23.1440.800@0.23.1440.800" timestamp="1593760135736" />
-    <state width="1398" height="282" key="GridCell.Tab.4.right" timestamp="1593760135737">
+    <state width="1398" height="282" key="GridCell.Tab.4.left/0.23.1440.800@0.23.1440.800" timestamp="1593785208369" />
+    <state width="1398" height="282" key="GridCell.Tab.4.right" timestamp="1593785208370">
       <screen x="0" y="23" width="1440" height="800" />
     </state>
-    <state width="1398" height="282" key="GridCell.Tab.4.right/0.23.1440.800@0.23.1440.800" timestamp="1593760135737" />
+    <state width="1398" height="282" key="GridCell.Tab.4.right/0.23.1440.800@0.23.1440.800" timestamp="1593785208370" />
     <state x="447" y="120" key="Rider.ProjectTemplateDialog.Size" timestamp="1593753591920">
       <screen x="0" y="23" width="1440" height="800" />
     </state>
@@ -383,32 +396,23 @@
       <screen x="0" y="23" width="1440" height="800" />
     </state>
     <state x="371" y="149" width="741" height="548" key="find.popup/0.23.1440.800@0.23.1440.800" timestamp="1593750446260" />
+    <state x="383" y="144" width="672" height="678" key="search.everywhere.popup" timestamp="1593793710376">
+      <screen x="0" y="23" width="1440" height="800" />
+    </state>
+    <state x="383" y="144" width="672" height="678" key="search.everywhere.popup/0.23.1440.800@0.23.1440.800" timestamp="1593793710376" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/src/FavoDeMel.Api/Controllers/Commands/ComandaController.cs</url>
-          <line>26</line>
-          <properties documentPath="$PROJECT_DIR$/src/FavoDeMel.Api/Controllers/Commands/ComandaController.cs" initialLine="21">
-            <startOffsets>
-              <option value="872" />
-            </startOffsets>
-            <endOffsets>
-              <option value="923" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/src/FavoDeMel.Infrastructure/Repositories/ComandaRepository.cs</url>
-          <line>18</line>
+          <line>23</line>
           <properties documentPath="$PROJECT_DIR$/src/FavoDeMel.Infrastructure/Repositories/ComandaRepository.cs" initialLine="18">
             <startOffsets>
-              <option value="529" />
+              <option value="688" />
             </startOffsets>
             <endOffsets>
-              <option value="579" />
+              <option value="738" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="2" />

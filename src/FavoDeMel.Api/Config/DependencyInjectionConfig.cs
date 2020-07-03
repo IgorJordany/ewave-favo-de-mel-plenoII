@@ -1,5 +1,7 @@
 using Favo_de_mel.Core.Repositories;
 using FavoDeMel.Application.Commands.Comanda;
+using FavoDeMel.Application.Queries.Comanda;
+using FavoDeMel.Core.Repositories;
 using FavoDeMel.Infrastructure.Abstractions;
 using FavoDeMel.Infrastructure.Data;
 using FavoDeMel.Infrastructure.Repositories;
@@ -16,6 +18,7 @@ namespace FavoDeMel.Api.Config
 
             services.AddScoped<IComandaRepository, ComandaRepository>();
             services.AddScoped<AbrirComandaCommandHandler, AbrirComandaCommandHandler>();
+            services.AddScoped<ObterComandasAbertasHandler, ObterComandasAbertasHandler>();
 
             services.AddScoped<IUow, Uow>();
             
