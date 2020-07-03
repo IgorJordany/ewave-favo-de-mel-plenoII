@@ -6,11 +6,15 @@ services:
     build: .
     image: favodemel-api:dev
     ports:
-      - "5000:5000"
+      - "5000:80"
     environment: 
       - ASPNETCORE_ENVIRONMENT=Development
-    networks: 
-      - favodemel-api
+      - >-
+          ConnectionStrings__favo-de-mel=Server=sqlserver;Initial Catalog=favodemel;User Id=SA;Password=@favodemel1234
+    networks:
+      - favodemel-network
+    depends_on:
+      - sqlserver
 
   sqlserver:
     restart: unless-stopped
@@ -20,7 +24,10 @@ services:
       SA_PASSWORD: "@favodemel1234"
       ACCEPT_EULA: "Y"
     image: "mcr.microsoft.com/mssql/server:2017-latest"
-      
+    networks:
+      - favodemel-network
+
 networks:
-  favodemel-api:
+  favodemel-network:
     name: favodemel-network
+    driver: 'bridge'
