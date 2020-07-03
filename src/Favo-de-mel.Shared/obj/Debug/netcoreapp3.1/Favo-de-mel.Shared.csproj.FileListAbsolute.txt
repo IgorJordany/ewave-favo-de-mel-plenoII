@@ -1,0 +1,8 @@
+/Users/igorjordanyrichticsilva/Favo-de-mel/src/Favo-de-mel.Shared/bin/Debug/netcoreapp3.1/Favo-de-mel.Shared.deps.json
+/Users/igorjordanyrichticsilva/Favo-de-mel/src/Favo-de-mel.Shared/bin/Debug/netcoreapp3.1/Favo-de-mel.Shared.dll
+/Users/igorjordanyrichticsilva/Favo-de-mel/src/Favo-de-mel.Shared/bin/Debug/netcoreapp3.1/Favo-de-mel.Shared.pdb
+/Users/igorjordanyrichticsilva/Favo-de-mel/src/Favo-de-mel.Shared/obj/Debug/netcoreapp3.1/Favo-de-mel.Shared.csprojAssemblyReference.cache
+/Users/igorjordanyrichticsilva/Favo-de-mel/src/Favo-de-mel.Shared/obj/Debug/netcoreapp3.1/Favo-de-mel.Shared.AssemblyInfoInputs.cache
+/Users/igorjordanyrichticsilva/Favo-de-mel/src/Favo-de-mel.Shared/obj/Debug/netcoreapp3.1/Favo-de-mel.Shared.AssemblyInfo.cs
+/Users/igorjordanyrichticsilva/Favo-de-mel/src/Favo-de-mel.Shared/obj/Debug/netcoreapp3.1/Favo-de-mel.Shared.dll
+/Users/igorjordanyrichticsilva/Favo-de-mel/src/Favo-de-mel.Shared/obj/Debug/netcoreapp3.1/Favo-de-mel.Shared.pdb

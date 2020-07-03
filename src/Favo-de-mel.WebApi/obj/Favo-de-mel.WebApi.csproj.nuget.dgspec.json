@@ -4,14 +4,158 @@
     "/Users/igorjordanyrichticsilva/Favo-de-mel/src/Favo-de-mel.WebApi/Favo-de-mel.WebApi.csproj": {}
   },
   "projects": {
-    "/Users/igorjordanyrichticsilva/Favo-de-mel/src/Favo-de-mel.WebApi/Favo-de-mel.WebApi.csproj": {
+    "/Users/igorjordanyrichticsilva/Favo-de-mel/src/Favo-de-mel.Core/Favo-de-mel.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/igorjordanyrichticsilva/Favo-de-mel/src/Favo-de-mel.WebApi/Favo-de-mel.WebApi.csproj",
-        "projectName": "Favo-de-mel.WebApi",
-        "projectPath": "/Users/igorjordanyrichticsilva/Favo-de-mel/src/Favo-de-mel.WebApi/Favo-de-mel.WebApi.csproj",
+        "projectUniqueName": "/Users/igorjordanyrichticsilva/Favo-de-mel/src/Favo-de-mel.Core/Favo-de-mel.Core.csproj",
+        "projectName": "Favo-de-mel.Core",
+        "projectPath": "/Users/igorjordanyrichticsilva/Favo-de-mel/src/Favo-de-mel.Core/Favo-de-mel.Core.csproj",
         "packagesPath": "/Users/igorjordanyrichticsilva/.nuget/packages/",
-        "outputPath": "/Users/igorjordanyrichticsilva/Favo-de-mel/src/Favo-de-mel.WebApi/obj/",
+        "outputPath": "/Users/igorjordanyrichticsilva/Favo-de-mel/src/Favo-de-mel.Core/obj/",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "/Users/igorjordanyrichticsilva/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "/Users/igorjordanyrichticsilva/Favo-de-mel/src/Favo-de-mel.Shared/Favo-de-mel.Shared.csproj": {
+                "projectPath": "/Users/igorjordanyrichticsilva/Favo-de-mel/src/Favo-de-mel.Shared/Favo-de-mel.Shared.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "FluentValidation.AspNetCore": {
+              "target": "Package",
+              "version": "[8.6.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.100/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/igorjordanyrichticsilva/Favo-de-mel/src/Favo-de-mel.Infrastructure/Favo-de-mel.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/igorjordanyrichticsilva/Favo-de-mel/src/Favo-de-mel.Infrastructure/Favo-de-mel.Infrastructure.csproj",
+        "projectName": "Favo-de-mel.Infrastructure",
+        "projectPath": "/Users/igorjordanyrichticsilva/Favo-de-mel/src/Favo-de-mel.Infrastructure/Favo-de-mel.Infrastructure.csproj",
+        "packagesPath": "/Users/igorjordanyrichticsilva/.nuget/packages/",
+        "outputPath": "/Users/igorjordanyrichticsilva/Favo-de-mel/src/Favo-de-mel.Infrastructure/obj/",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "/Users/igorjordanyrichticsilva/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "/Users/igorjordanyrichticsilva/Favo-de-mel/src/Favo-de-mel.Core/Favo-de-mel.Core.csproj": {
+                "projectPath": "/Users/igorjordanyrichticsilva/Favo-de-mel/src/Favo-de-mel.Core/Favo-de-mel.Core.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.1.5, )"
+            },
+            "Microsoft.EntityFrameworkCore.Relational": {
+              "target": "Package",
+              "version": "[3.1.5, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[3.1.5, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "target": "Package",
+              "version": "[3.1.5, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.100/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/igorjordanyrichticsilva/Favo-de-mel/src/Favo-de-mel.Shared/Favo-de-mel.Shared.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/igorjordanyrichticsilva/Favo-de-mel/src/Favo-de-mel.Shared/Favo-de-mel.Shared.csproj",
+        "projectName": "Favo-de-mel.Shared",
+        "projectPath": "/Users/igorjordanyrichticsilva/Favo-de-mel/src/Favo-de-mel.Shared/Favo-de-mel.Shared.csproj",
+        "packagesPath": "/Users/igorjordanyrichticsilva/.nuget/packages/",
+        "outputPath": "/Users/igorjordanyrichticsilva/Favo-de-mel/src/Favo-de-mel.Shared/obj/",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
@@ -38,6 +182,87 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "dependencies": {
+            "Flunt": {
+              "target": "Package",
+              "version": "[1.0.5, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.100/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/igorjordanyrichticsilva/Favo-de-mel/src/Favo-de-mel.WebApi/Favo-de-mel.WebApi.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/igorjordanyrichticsilva/Favo-de-mel/src/Favo-de-mel.WebApi/Favo-de-mel.WebApi.csproj",
+        "projectName": "Favo-de-mel.WebApi",
+        "projectPath": "/Users/igorjordanyrichticsilva/Favo-de-mel/src/Favo-de-mel.WebApi/Favo-de-mel.WebApi.csproj",
+        "packagesPath": "/Users/igorjordanyrichticsilva/.nuget/packages/",
+        "outputPath": "/Users/igorjordanyrichticsilva/Favo-de-mel/src/Favo-de-mel.WebApi/obj/",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "/Users/igorjordanyrichticsilva/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "/Users/igorjordanyrichticsilva/Favo-de-mel/src/Favo-de-mel.Infrastructure/Favo-de-mel.Infrastructure.csproj": {
+                "projectPath": "/Users/igorjordanyrichticsilva/Favo-de-mel/src/Favo-de-mel.Infrastructure/Favo-de-mel.Infrastructure.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "AspNetCore.HealthChecks.UI": {
+              "target": "Package",
+              "version": "[3.1.0, )"
+            },
+            "AspNetCore.HealthChecks.UI.Client": {
+              "target": "Package",
+              "version": "[3.1.0, )"
+            },
+            "Flunt": {
+              "target": "Package",
+              "version": "[1.0.5, )"
+            },
+            "Microsoft.AspNetCore.Mvc.Versioning": {
+              "target": "Package",
+              "version": "[4.1.1, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

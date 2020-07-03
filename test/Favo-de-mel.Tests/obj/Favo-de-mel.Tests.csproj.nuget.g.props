@@ -19,7 +19,7 @@
     <Import Project="$(NuGetPackageRoot)xunit.core/2.4.0/build/xunit.core.props" Condition="Exists('$(NuGetPackageRoot)xunit.core/2.4.0/build/xunit.core.props')" />
   </ImportGroup>
   <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
-    <PkgNewtonsoft_Json Condition=" '$(PkgNewtonsoft_Json)' == '' ">/usr/local/share/dotnet/sdk/NuGetFallbackFolder/newtonsoft.json/9.0.1</PkgNewtonsoft_Json>
     <Pkgxunit_analyzers Condition=" '$(Pkgxunit_analyzers)' == '' ">/Users/igorjordanyrichticsilva/.nuget/packages/xunit.analyzers/0.10.0</Pkgxunit_analyzers>
+    <PkgMicrosoft_EntityFrameworkCore_Tools Condition=" '$(PkgMicrosoft_EntityFrameworkCore_Tools)' == '' ">/Users/igorjordanyrichticsilva/.nuget/packages/microsoft.entityframeworkcore.tools/3.1.5</PkgMicrosoft_EntityFrameworkCore_Tools>
   </PropertyGroup>
 </Project>

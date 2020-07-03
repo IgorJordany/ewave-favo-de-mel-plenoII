@@ -5,5 +5,16 @@
     <RootNamespace>Favo_de_mel.WebApi</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Favo-de-mel.Infrastructure\Favo-de-mel.Infrastructure.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AspNetCore.HealthChecks.UI" Version="3.1.0" />
+    <PackageReference Include="AspNetCore.HealthChecks.UI.Client" Version="3.1.0" />
+    <PackageReference Include="Flunt" Version="1.0.5" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Versioning" Version="4.1.1" />
+  </ItemGroup>
+
 
 </Project>

@@ -41,20 +41,23 @@
               </e>
             </e>
           </e>
-          <e p="Repositories" t="Include" />
+          <e p="Repositories" t="Include">
+            <e p="IComandaRepository.cs" t="Include" />
+            <e p="IPedidoRepository.cs" t="Include" />
+          </e>
         </e>
         <e p="Favo-de-mel.Infrastructure" t="IncludeRecursive">
+          <e p="Abstractions" t="Include">
+            <e p="IUow.cs" t="Include" />
+          </e>
           <e p="bin" t="ExcludeRecursive" />
           <e p="Data" t="Include">
+            <e p="DatabaseContext.cs" t="Include" />
             <e p="Mapping" t="Include">
               <e p="CommandaMaping.cs" t="Include" />
               <e p="PedidoMaping.cs" t="Include" />
             </e>
-            <e p="Repositories" t="Include">
-              <e p="ComandaRepository.cs" t="Include" />
-            </e>
           </e>
-          <e p="DatabaseContext.cs" t="Include" />
           <e p="Favo-de-mel.Infrastructure.csproj" t="IncludeRecursive" />
           <e p="obj" t="ExcludeRecursive">
             <e p="Debug" t="Include">
@@ -62,6 +65,12 @@
                 <e p="Favo-de-mel.Infrastructure.AssemblyInfo.cs" t="Include" />
               </e>
             </e>
+          </e>
+          <e p="Repositories" t="Include">
+            <e p="ComandaRepository.cs" t="Include" />
+          </e>
+          <e p="Transaction" t="Include">
+            <e p="Uow.cs" t="Include" />
           </e>
         </e>
         <e p="Favo-de-mel.Shared" t="IncludeRecursive">

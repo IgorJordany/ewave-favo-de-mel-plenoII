@@ -17,7 +17,11 @@
     },
     "frameworks": {
       "netcoreapp3.1": {
-        "projectReferences": {}
+        "projectReferences": {
+          "/Users/igorjordanyrichticsilva/Favo-de-mel/src/Favo-de-mel.Infrastructure/Favo-de-mel.Infrastructure.csproj": {
+            "projectPath": "/Users/igorjordanyrichticsilva/Favo-de-mel/src/Favo-de-mel.Infrastructure/Favo-de-mel.Infrastructure.csproj"
+          }
+        }
       }
     },
     "warningProperties": {
@@ -28,6 +32,24 @@
   },
   "frameworks": {
     "netcoreapp3.1": {
+      "dependencies": {
+        "AspNetCore.HealthChecks.UI": {
+          "target": "Package",
+          "version": "[3.1.0, )"
+        },
+        "AspNetCore.HealthChecks.UI.Client": {
+          "target": "Package",
+          "version": "[3.1.0, )"
+        },
+        "Flunt": {
+          "target": "Package",
+          "version": "[1.0.5, )"
+        },
+        "Microsoft.AspNetCore.Mvc.Versioning": {
+          "target": "Package",
+          "version": "[4.1.1, )"
+        }
+      },
       "imports": [
         "net461",
         "net462",

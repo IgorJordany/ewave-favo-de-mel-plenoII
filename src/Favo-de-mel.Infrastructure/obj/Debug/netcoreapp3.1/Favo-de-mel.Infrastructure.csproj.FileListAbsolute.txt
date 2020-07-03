@@ -1,0 +1,15 @@
+/Users/igorjordanyrichticsilva/Favo-de-mel/src/Favo-de-mel.Infrastructure/bin/Debug/netcoreapp3.1/Favo-de-mel.Infrastructure.deps.json
+/Users/igorjordanyrichticsilva/Favo-de-mel/src/Favo-de-mel.Infrastructure/bin/Debug/netcoreapp3.1/Favo-de-mel.Infrastructure.runtimeconfig.json
+/Users/igorjordanyrichticsilva/Favo-de-mel/src/Favo-de-mel.Infrastructure/bin/Debug/netcoreapp3.1/Favo-de-mel.Infrastructure.runtimeconfig.dev.json
+/Users/igorjordanyrichticsilva/Favo-de-mel/src/Favo-de-mel.Infrastructure/bin/Debug/netcoreapp3.1/Favo-de-mel.Infrastructure.dll
+/Users/igorjordanyrichticsilva/Favo-de-mel/src/Favo-de-mel.Infrastructure/bin/Debug/netcoreapp3.1/Favo-de-mel.Infrastructure.pdb
+/Users/igorjordanyrichticsilva/Favo-de-mel/src/Favo-de-mel.Infrastructure/bin/Debug/netcoreapp3.1/Favo-de-mel.Core.dll
+/Users/igorjordanyrichticsilva/Favo-de-mel/src/Favo-de-mel.Infrastructure/bin/Debug/netcoreapp3.1/Favo-de-mel.Shared.dll
+/Users/igorjordanyrichticsilva/Favo-de-mel/src/Favo-de-mel.Infrastructure/bin/Debug/netcoreapp3.1/Favo-de-mel.Core.pdb
+/Users/igorjordanyrichticsilva/Favo-de-mel/src/Favo-de-mel.Infrastructure/bin/Debug/netcoreapp3.1/Favo-de-mel.Shared.pdb
+/Users/igorjordanyrichticsilva/Favo-de-mel/src/Favo-de-mel.Infrastructure/obj/Debug/netcoreapp3.1/Favo-de-mel.Infrastructure.csprojAssemblyReference.cache
+/Users/igorjordanyrichticsilva/Favo-de-mel/src/Favo-de-mel.Infrastructure/obj/Debug/netcoreapp3.1/Favo-de-mel.Infrastructure.AssemblyInfoInputs.cache
+/Users/igorjordanyrichticsilva/Favo-de-mel/src/Favo-de-mel.Infrastructure/obj/Debug/netcoreapp3.1/Favo-de-mel.Infrastructure.AssemblyInfo.cs
+/Users/igorjordanyrichticsilva/Favo-de-mel/src/Favo-de-mel.Infrastructure/obj/Debug/netcoreapp3.1/Favo-de-mel.Infrastructure.csproj.CopyComplete
+/Users/igorjordanyrichticsilva/Favo-de-mel/src/Favo-de-mel.Infrastructure/obj/Debug/netcoreapp3.1/Favo-de-mel.Infrastructure.dll
+/Users/igorjordanyrichticsilva/Favo-de-mel/src/Favo-de-mel.Infrastructure/obj/Debug/netcoreapp3.1/Favo-de-mel.Infrastructure.pdb

@@ -1,8 +1,9 @@
 ﻿using Favo_de_mel.Core.Entities;
 using Favo_de_mel.Infrastructure.Data.Mapping;
+using Flunt.Notifications;
 using Microsoft.EntityFrameworkCore;
 
-namespace Favo_de_mel.Infrastructure
+namespace Favo_de_mel.Infrastructure.Data
 {
     public class DatabaseContext : DbContext
     {
@@ -16,6 +17,8 @@ namespace Favo_de_mel.Infrastructure
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            modelBuilder.Ignore<Notification>();
+            
             new CommandaMaping(modelBuilder.Entity<Comanda>());
             new PedidoMaping(modelBuilder.Entity<Pedido>());
         }
