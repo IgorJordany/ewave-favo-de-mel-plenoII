@@ -7,7 +7,11 @@ Projeto restaurante favo de mel.
 ### Tecnologias
 
 **.NET Core**
-
+**Testes de Unidade**
+**Conteinerização**
+**REST**
+**DDD**
+**CQRS**
 
 ##### Instalação
 
@@ -17,23 +21,6 @@ Utilizando Docker
 
 ```
 docker image build -t favodemel-api:dev -f docker/Dockerfile .
-```
-Iniciar sql server primeiro para criação do database (primeira criação de ambiente).
-
-```
-docker-compose -f docker/docker-compose-dev.yml up -d sqlserver
-```
-
-Acessar o banco e criar database
-
-Server=localhost
-Port=1433:1433
-Database=favodemel
-User Id=SA
-Password=@favodemel1234
-
-```
-CREATE DATABASE favodemel
 ```
 
 Inicia o container
@@ -52,10 +39,5 @@ Para visualizar que esta executando o container digite:
 
 ```
 docker container ls 
-```
-
-```
-dotnet ef migrations add InitialMigration --project FavoDeMel.Infrastructure --startup-project FavoDeMel.Api
-dotnet ef database update --project FavoDeMel.Infrastructure --startup-project FavoDeMel.Api 
 ```
 

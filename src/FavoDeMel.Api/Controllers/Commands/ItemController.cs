@@ -8,7 +8,7 @@ namespace FavoDeMel.Api.Controllers.Commands
 {
     [ApiController]
     [Route("commands/item")]
-    public class ItemController
+    public class ItemController : ControllerBase
     {
         private readonly InserirItemCommandHandler _inserirItemCommandHandler;
         private readonly IUow _uow;

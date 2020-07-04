@@ -12,13 +12,14 @@ namespace FavoDeMel.Core.Entities
         public DateTime DataAbertura { get; } 
         public DateTime? DataFechamento { get; private set; }
         public ICollection<Pedido> Pedidos { get; } = new HashSet<Pedido>();
+        public decimal TotalPagar { get; private set; }
 
-        public Comanda(byte mesa, ComandaStatus status, DateTime dataAbertura, DateTime? dataFechamento)
+        public Comanda(byte mesa)
         {
             Mesa = mesa;
-            Status = status;
-            DataAbertura = dataAbertura;
-            DataFechamento = dataFechamento;
+            Status = ComandaStatus.Aberta;
+            DataAbertura = DateTime.Now;
+            TotalPagar = 0;
         }
 
         public void Fechar(DateTime dataFechamento)
@@ -31,6 +32,12 @@ namespace FavoDeMel.Core.Entities
 
             Status = ComandaStatus.Fechada;
             DataFechamento = dataFechamento;
+
+            foreach (var pedido in Pedidos)
+            {
+                if (pedido.Status != PedidoStatus.Cancelado)
+                    TotalPagar += pedido.Valor * pedido.Quantidade;
+            }
         }
     }
 }

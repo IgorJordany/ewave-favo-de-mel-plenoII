@@ -22,10 +22,12 @@
             <e p="Commands" t="Include">
               <e p="ComandaController.cs" t="Include" />
               <e p="ItemController.cs" t="Include" />
+              <e p="PedidoController.cs" t="Include" />
             </e>
             <e p="Queries" t="Include">
               <e p="ComandaController.cs" t="Include" />
               <e p="ItemController.cs" t="Include" />
+              <e p="PedidoController.cs" t="Include" />
             </e>
             <e p="WeatherForecastController.cs" t="Include" />
           </e>
@@ -56,9 +58,6 @@
               <e p="AbrirComandaCommand.cs" t="Include" />
               <e p="AbrirComandaCommandHandler.cs" t="Include" />
               <e p="AbrirComandaResponse.cs" t="Include" />
-              <e p="AdicionarPedidoCommand.cs" t="Include" />
-              <e p="AdicionarPedidoCommandHandler.cs" t="Include" />
-              <e p="AdicionarPedidoResponse.cs" t="Include" />
               <e p="FecharComandaCommand.cs" t="Include" />
               <e p="FecharComandaCommandHandler.cs" t="Include" />
               <e p="FecharComandaResponse.cs" t="Include" />
@@ -67,6 +66,20 @@
               <e p="InserirItemCommand.cs" t="Include" />
               <e p="InserirItemCommandHandler.cs" t="Include" />
               <e p="InserirItemResponse.cs" t="Include" />
+            </e>
+            <e p="Pedido" t="Include">
+              <e p="AdicionarPedidoCommand.cs" t="Include" />
+              <e p="AdicionarPedidoCommandHandler.cs" t="Include" />
+              <e p="AdicionarPedidoResponse.cs" t="Include" />
+              <e p="CancelarPedidoCommand.cs" t="Include" />
+              <e p="CancelarPedidoCommandHandler.cs" t="Include" />
+              <e p="CancelarPedidoResponse.cs" t="Include" />
+              <e p="FinalizarPedidoCommand.cs" t="Include" />
+              <e p="FinalizarPedidoCommandHandler.cs" t="Include" />
+              <e p="FinalizarPedidoResponse.cs" t="Include" />
+              <e p="IniciarPreparoPedidoCommand.cs" t="Include" />
+              <e p="IniciarPreparoPedidoCommandHandler.cs" t="Include" />
+              <e p="IniciarPreparoPedidoResponse.cs" t="Include" />
             </e>
           </e>
           <e p="FavoDeMel.Application.csproj" t="IncludeRecursive" />
@@ -84,9 +97,20 @@
               <e p="IResponse.cs" t="Include" />
             </e>
             <e p="Comanda" t="Include">
+              <e p="ObterComandaHandler.cs" t="Include" />
+              <e p="ObterComandaRequest.cs" t="Include" />
+              <e p="ObterComandaResponse.cs" t="Include" />
               <e p="ObterComandasAbertasHandler.cs" t="Include" />
               <e p="ObterComandasAbertasRequest.cs" t="Include" />
               <e p="ObterComandasAbertasResponse.cs" t="Include" />
+            </e>
+            <e p="Pedido" t="Include">
+              <e p="ObterPedidoHandler.cs" t="Include" />
+              <e p="ObterPedidoRequest.cs" t="Include" />
+              <e p="ObterPedidoResponse.cs" t="Include" />
+              <e p="ObterPedidosCozinhaHandler.cs" t="Include" />
+              <e p="ObterPedidosCozinhaRequest.cs" t="Include" />
+              <e p="ObterPedidosCozinhaResponse.cs" t="Include" />
             </e>
           </e>
         </e>
@@ -140,6 +164,16 @@
             <e p="20200704065747_ajusteForeingkey.Designer.cs" t="Include" />
             <e p="20200704070404_ajusteForeingkey2.cs" t="Include" />
             <e p="20200704070404_ajusteForeingkey2.Designer.cs" t="Include" />
+            <e p="20200704165921_AdicionaDataInicioPreparo.cs" t="Include" />
+            <e p="20200704165921_AdicionaDataInicioPreparo.Designer.cs" t="Include" />
+            <e p="20200704175238_AdicionaCozinhaEmPedido.cs" t="Include" />
+            <e p="20200704175238_AdicionaCozinhaEmPedido.Designer.cs" t="Include" />
+            <e p="20200704180058_FixColumnTypeValor.cs" t="Include" />
+            <e p="20200704180058_FixColumnTypeValor.Designer.cs" t="Include" />
+            <e p="20200704210211_TotalPagarComanda.cs" t="Include" />
+            <e p="20200704210211_TotalPagarComanda.Designer.cs" t="Include" />
+            <e p="20200704211115_ValorPedido.cs" t="Include" />
+            <e p="20200704211115_ValorPedido.Designer.cs" t="Include" />
             <e p="DatabaseContextModelSnapshot.cs" t="Include" />
           </e>
           <e p="obj" t="ExcludeRecursive">
@@ -152,6 +186,7 @@
           <e p="Repositories" t="Include">
             <e p="ComandaRepository.cs" t="Include" />
             <e p="ItemRepository.cs" t="Include" />
+            <e p="PedidoRepository.cs" t="Include" />
           </e>
           <e p="Transaction" t="Include">
             <e p="Uow.cs" t="Include" />
@@ -178,6 +213,7 @@
           <e p="Commands" t="Include" />
           <e p="Entities" t="Include">
             <e p="ComandaTests.cs" t="Include" />
+            <e p="PedidoTests.cs" t="Include" />
           </e>
           <e p="FavoDeMel.Tests.csproj" t="IncludeRecursive" />
           <e p="obj" t="ExcludeRecursive">

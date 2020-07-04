@@ -1,6 +1,8 @@
 using FavoDeMel.Application.Commands.Comanda;
 using FavoDeMel.Application.Commands.Item;
+using FavoDeMel.Application.Commands.Pedido;
 using FavoDeMel.Application.Queries.Comanda;
+using FavoDeMel.Application.Queries.Pedido;
 using FavoDeMel.Core.Repositories;
 using FavoDeMel.Infrastructure.Abstractions;
 using FavoDeMel.Infrastructure.Data;
@@ -18,17 +20,29 @@ namespace FavoDeMel.Api.Config
             
             //Repositorios
             services.AddScoped<IComandaRepository, ComandaRepository>();
+            services.AddScoped<IPedidoRepository, PedidoRepository>();
             services.AddScoped<IItemRepository, ItemRepository>();
 
             //CommandHandlers
+            //Comanda
             services.AddScoped<AbrirComandaCommandHandler, AbrirComandaCommandHandler>();
             services.AddScoped<FecharComandaCommandHandler, FecharComandaCommandHandler>();
+            
+            //Pedido
             services.AddScoped<AdicionarPedidoCommandHandler, AdicionarPedidoCommandHandler>();
+            services.AddScoped<CancelarPedidoCommandHandler, CancelarPedidoCommandHandler>();
+            services.AddScoped<IniciarPreparoPedidoCommandHandler, IniciarPreparoPedidoCommandHandler>();
+            services.AddScoped<FinalizarPedidoCommandHandler, FinalizarPedidoCommandHandler>();
+
+            //Item
             services.AddScoped<InserirItemCommandHandler, InserirItemCommandHandler>();
 
             //QueryHandlers
             services.AddScoped<ObterComandasAbertasHandler, ObterComandasAbertasHandler>();
-
+            services.AddScoped<ObterPedidosCozinhaHandler, ObterPedidosCozinhaHandler>();
+            services.AddScoped<ObterComandaHandler, ObterComandaHandler>();
+            services.AddScoped<ObterPedidoHandler, ObterPedidoHandler>();
+            
             services.AddScoped<IUow, Uow>();
             
             return services;

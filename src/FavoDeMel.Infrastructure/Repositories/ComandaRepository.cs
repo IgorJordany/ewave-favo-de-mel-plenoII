@@ -31,14 +31,18 @@ namespace FavoDeMel.Infrastructure.Repositories
 
         public Task<Comanda> ConsultarPorId(Guid id)
         {
-            return _databaseContext.Comandas
-                .Include(c => c.Pedidos)
+            return _databaseContext.Comandas.Include(c => c.Pedidos)
                 .SingleOrDefaultAsync(c => c.Id == id);
         }
         
         public Task<bool> ExisteComandaAbertaParaMesa(byte mesa)
         {
             return _databaseContext.Comandas.AnyAsync(c => c.Mesa == mesa && c.Status == ComandaStatus.Aberta);
+        }
+
+        public Task<bool> ExisteComandaAbertaPorId(Guid id)
+        {
+            return _databaseContext.Comandas.AnyAsync(c => c.Id == id && c.Status == ComandaStatus.Aberta);
         }
     }
 }

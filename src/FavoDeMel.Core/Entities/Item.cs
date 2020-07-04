@@ -18,5 +18,7 @@ namespace FavoDeMel.Core.Entities
             Nome = nome;
             Descricao = descricao;
         }
+        
+        //TODO: Implementar softDelete
     }
 }

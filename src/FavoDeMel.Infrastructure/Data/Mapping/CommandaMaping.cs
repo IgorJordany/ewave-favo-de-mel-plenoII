@@ -26,6 +26,10 @@ namespace FavoDeMel.Infrastructure.Data.Mapping
             
             builder.Property(c => c.DataFechamento)
                 .HasColumnName("DataFechamento");
+            
+            builder.Property(c => c.TotalPagar)
+                .HasColumnName("TotalPagar")
+                .HasColumnType("decimal(13, 2)");
 
             builder
                 .HasMany(c => c.Pedidos)

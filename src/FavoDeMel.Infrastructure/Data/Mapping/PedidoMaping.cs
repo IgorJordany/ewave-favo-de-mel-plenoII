@@ -27,6 +27,9 @@ namespace FavoDeMel.Infrastructure.Data.Mapping
             builder.Property(c => c.DataCancelamento)
                 .HasColumnName("DataCancelamento");
             
+            builder.Property(c => c.DataInicioPreparo)
+                .HasColumnName("DataInicioPreparo");
+            
             builder.Property(c => c.DataPronto)
                 .HasColumnName("DataPronto");
             
@@ -37,6 +40,14 @@ namespace FavoDeMel.Infrastructure.Data.Mapping
             builder.Property(c => c.ItemId)
                 .HasColumnName("ItemId")
                 .IsRequired();
+            
+            builder.Property(c => c.Cozinha)
+                .HasColumnName("Cozinha")
+                .IsRequired();
+            
+            builder.Property(i => i.Valor)
+                .HasColumnName("Valor")
+                .HasColumnType("decimal(13, 2)");
         }
     }
 }

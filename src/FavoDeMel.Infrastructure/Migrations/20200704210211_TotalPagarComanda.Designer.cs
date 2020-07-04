@@ -4,14 +4,16 @@ using FavoDeMel.Infrastructure.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace FavoDeMel.Infrastructure.Migrations
 {
     [DbContext(typeof(DatabaseContext))]
-    partial class DatabaseContextModelSnapshot : ModelSnapshot
+    [Migration("20200704210211_TotalPagarComanda")]
+    partial class TotalPagarComanda
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -119,10 +121,6 @@ namespace FavoDeMel.Infrastructure.Migrations
                     b.Property<byte>("Status")
                         .HasColumnName("Status")
                         .HasColumnType("tinyint");
-
-                    b.Property<decimal>("Valor")
-                        .HasColumnName("Valor")
-                        .HasColumnType("decimal(13, 2)");
 
                     b.HasKey("Id");
 

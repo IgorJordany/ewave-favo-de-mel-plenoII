@@ -10,11 +10,9 @@ namespace Favo_de_mel.WebApi.Tests.Entities
 {
     public class ComandaTests
     {
-        private Comanda ComandaAberta(byte mesa)
+        private Comanda ComandaAbertaGenerator(byte mesa)
         {
-            const ComandaStatus status = ComandaStatus.Aberta;
-            var dataAbertura = DateTime.Now;
-            return new Comanda(mesa, status, dataAbertura, null);
+            return new Comanda(mesa);
         }
 
         [Fact]
@@ -22,8 +20,7 @@ namespace Favo_de_mel.WebApi.Tests.Entities
         {
             const byte mesa = 1;
             const ComandaStatus status = ComandaStatus.Aberta;
-            var dataAbertura = DateTime.Now;
-            var comanda = new Comanda(mesa, status, dataAbertura, null);
+            var comanda = new Comanda(mesa);
 
             using (new AssertionScope())
             {
@@ -31,7 +28,6 @@ namespace Favo_de_mel.WebApi.Tests.Entities
                 
                 comanda.Mesa.Should().Be(mesa);
                 comanda.Status.Should().Be(ComandaStatus.Aberta);
-                comanda.DataAbertura.Should().Be(dataAbertura);
             }
         }
         
@@ -41,7 +37,7 @@ namespace Favo_de_mel.WebApi.Tests.Entities
             const byte mesa = 1;
             var dataFechamento = DateTime.Now;
             
-            var comanda = ComandaAberta(mesa);
+            var comanda = ComandaAbertaGenerator(mesa);
             
             comanda.Fechar(dataFechamento);
             
@@ -61,7 +57,7 @@ namespace Favo_de_mel.WebApi.Tests.Entities
             const byte mesa = 1;
             var dataFechamento = DateTime.Now;
             
-            var comanda = ComandaAberta(mesa);
+            var comanda = ComandaAbertaGenerator(mesa);
             
             comanda.Fechar(dataFechamento);
             comanda.Fechar(dataFechamento);

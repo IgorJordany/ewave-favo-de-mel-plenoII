@@ -1,3 +1,4 @@
+using System;
 using System.Threading.Tasks;
 using FavoDeMel.Application.Queries.Comanda;
 using Microsoft.AspNetCore.Mvc;
@@ -8,17 +9,29 @@ namespace FavoDeMel.Api.Controllers.Queries
     [Route("queries/comandas")]
     public class ComandaController : ControllerBase
     {
-        private readonly ObterComandasAbertasHandler _obterComandasHandler;
+        private readonly ObterComandasAbertasHandler _obterComandasAbertasHandler;
+        private readonly ObterComandaHandler _obterComandaHandler;
 
-        public ComandaController(ObterComandasAbertasHandler obterComandasHandler)
+        public ComandaController(
+            ObterComandasAbertasHandler obterComandasAbertasHandler,
+            ObterComandaHandler obterComandaHandler)
         {
-            _obterComandasHandler = obterComandasHandler;
+            _obterComandasAbertasHandler = obterComandasAbertasHandler;
+            _obterComandaHandler = obterComandaHandler;
         }
         
-        [HttpGet("")]
-        public async Task<ObterComandasAbertasResponse> ObterLista()
+        [HttpGet("abertas")]
+        public async Task<ObterComandasAbertasResponse> ObterComandasAbertas()
         {
-            var response = await _obterComandasHandler.Handle(new ObterComandasAbertasRequest());
+            var response = await _obterComandasAbertasHandler.Handle(new ObterComandasAbertasRequest());
+            return response;
+        }
+        
+        [HttpGet("{comandaId}")]
+        public async Task<ObterComandaResponse> ObterComanda([FromRoute] Guid comandaId)
+        {
+            var response = await _obterComandaHandler.Handle(new ObterComandaRequest{ComandaId = comandaId});
+            
             return response;
         }
     }

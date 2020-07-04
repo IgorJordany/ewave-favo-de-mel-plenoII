@@ -22,9 +22,10 @@ namespace FavoDeMel.Infrastructure.Data.Mapping
             builder.Property(i => i.Cozinha)
                 .HasColumnName("Cozinha")
                 .IsRequired();
-            
+
             builder.Property(i => i.Valor)
-                .HasColumnName("Valor");
+                .HasColumnName("Valor")
+                .HasColumnType("decimal(13, 2)");
 
             builder
                 .HasMany(i => i.Pedidos)

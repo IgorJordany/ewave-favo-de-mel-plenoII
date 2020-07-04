@@ -11,6 +11,7 @@ namespace FavoDeMel.Core.Repositories
         Task<List<Comanda>> ListarComandasAbertas();
         Task<Comanda> ConsultarPorId(Guid id);
         Task<bool> ExisteComandaAbertaParaMesa(byte mesa);
+        Task<bool> ExisteComandaAbertaPorId(Guid id);
     }
 }
 
