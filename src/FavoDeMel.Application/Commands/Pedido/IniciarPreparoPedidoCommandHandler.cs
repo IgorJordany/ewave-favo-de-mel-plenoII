@@ -6,7 +6,7 @@ using Flunt.Notifications;
 
 namespace FavoDeMel.Application.Commands.Pedido
 {
-    public class IniciarPreparoPedidoCommandHandler : ICommandHandler<IniciarPreparoPedidoCommand>
+    public class IniciarPreparoPedidoCommandHandler : ICommandHandler<IniciarPreparoPedidoCommand, IniciarPreparoPedidoResponse>
     {
         private readonly IPedidoRepository _pedidoRepository;
 
@@ -15,7 +15,7 @@ namespace FavoDeMel.Application.Commands.Pedido
         {
             _pedidoRepository = pedidoRepository;
         }
-        public async Task<ICommandResponse> Handler(IniciarPreparoPedidoCommand command)
+        public async Task<IniciarPreparoPedidoResponse> Handler(IniciarPreparoPedidoCommand command)
         {
             var pedido = await _pedidoRepository.ConsultarPorId(command.PedidoId);
 

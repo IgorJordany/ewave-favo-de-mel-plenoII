@@ -11,64 +11,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="595afcd1-38d5-4305-84d9-77ffc4724ae3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/FavoDeMel.Api/Controllers/Commands/PedidoController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/FavoDeMel.Api/Controllers/Queries/PedidoController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/FavoDeMel.Application/Commands/Pedido/AdicionarPedidoCommandHandler.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/FavoDeMel.Application/Commands/Pedido/CancelarPedidoCommand.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/FavoDeMel.Application/Commands/Pedido/CancelarPedidoCommandHandler.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/FavoDeMel.Application/Commands/Pedido/CancelarPedidoResponse.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/FavoDeMel.Application/Commands/Pedido/FinalizarPedidoCommand.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/FavoDeMel.Application/Commands/Pedido/FinalizarPedidoCommandHandler.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/FavoDeMel.Application/Commands/Pedido/FinalizarPedidoResponse.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/FavoDeMel.Application/Commands/Pedido/IniciarPreparoPedidoCommand.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/FavoDeMel.Application/Commands/Pedido/IniciarPreparoPedidoCommandHandler.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/FavoDeMel.Application/Commands/Pedido/IniciarPreparoPedidoResponse.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/FavoDeMel.Application/Queries/Comanda/ObterComandaHandler.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/FavoDeMel.Application/Queries/Comanda/ObterComandaRequest.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/FavoDeMel.Application/Queries/Comanda/ObterComandaResponse.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/FavoDeMel.Application/Queries/Pedido/ObterPedidoHandler.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/FavoDeMel.Application/Queries/Pedido/ObterPedidoRequest.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/FavoDeMel.Application/Queries/Pedido/ObterPedidoResponse.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/FavoDeMel.Application/Queries/Pedido/ObterPedidosCozinhaHandler.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/FavoDeMel.Application/Queries/Pedido/ObterPedidosCozinhaRequest.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/FavoDeMel.Application/Queries/Pedido/ObterPedidosCozinhaResponse.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/FavoDeMel.Infrastructure/Migrations/20200704165921_AdicionaDataInicioPreparo.Designer.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/FavoDeMel.Infrastructure/Migrations/20200704165921_AdicionaDataInicioPreparo.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/FavoDeMel.Infrastructure/Migrations/20200704175238_AdicionaCozinhaEmPedido.Designer.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/FavoDeMel.Infrastructure/Migrations/20200704175238_AdicionaCozinhaEmPedido.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/FavoDeMel.Infrastructure/Migrations/20200704180058_FixColumnTypeValor.Designer.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/FavoDeMel.Infrastructure/Migrations/20200704180058_FixColumnTypeValor.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/FavoDeMel.Infrastructure/Migrations/20200704210211_TotalPagarComanda.Designer.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/FavoDeMel.Infrastructure/Migrations/20200704210211_TotalPagarComanda.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/FavoDeMel.Infrastructure/Migrations/20200704211115_ValorPedido.Designer.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/FavoDeMel.Infrastructure/Migrations/20200704211115_ValorPedido.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/FavoDeMel.Infrastructure/Repositories/PedidoRepository.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/FavoDeMel.Tests/Entities/PedidoTests.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Favo-de-mel/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Favo-de-mel/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Favo-de-mel/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Favo-de-mel/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FavoDeMel.Api/Config/DependencyInjectionConfig.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/FavoDeMel.Api/Config/DependencyInjectionConfig.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/FavoDeMel.Api/Controllers/Commands/ComandaController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/FavoDeMel.Api/Controllers/Commands/ComandaController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FavoDeMel.Api/Controllers/Commands/ItemController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/FavoDeMel.Api/Controllers/Commands/ItemController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FavoDeMel.Api/Controllers/Queries/ComandaController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/FavoDeMel.Api/Controllers/Queries/ComandaController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/FavoDeMel.Application/Commands/Comanda/AbrirComandaCommandHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/FavoDeMel.Application/Commands/Comanda/AbrirComandaCommandHandler.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FavoDeMel.Application/Commands/Comanda/AdicionarPedidoCommand.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/FavoDeMel.Application/Commands/Pedido/AdicionarPedidoCommand.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FavoDeMel.Application/Commands/Comanda/AdicionarPedidoCommandHandler.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FavoDeMel.Application/Commands/Comanda/AdicionarPedidoResponse.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/FavoDeMel.Application/Commands/Pedido/AdicionarPedidoResponse.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FavoDeMel.Application/Commands/Comanda/FecharComandaCommandHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/FavoDeMel.Application/Commands/Comanda/FecharComandaCommandHandler.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FavoDeMel.Application/Commands/Item/InserirItemCommandHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/FavoDeMel.Application/Commands/Item/InserirItemCommandHandler.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FavoDeMel.Core/Entities/Comanda.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/FavoDeMel.Core/Entities/Comanda.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FavoDeMel.Core/Entities/Item.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/FavoDeMel.Core/Entities/Item.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FavoDeMel.Core/Entities/Pedido.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/FavoDeMel.Core/Entities/Pedido.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FavoDeMel.Core/Repositories/IComandaRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/FavoDeMel.Core/Repositories/IComandaRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FavoDeMel.Core/Repositories/IItemRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/FavoDeMel.Core/Repositories/IItemRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FavoDeMel.Core/Repositories/IPedidoRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/FavoDeMel.Core/Repositories/IPedidoRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FavoDeMel.Infrastructure/Data/Mapping/CommandaMaping.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/FavoDeMel.Infrastructure/Data/Mapping/CommandaMaping.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FavoDeMel.Infrastructure/Data/Mapping/ItemMapping.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/FavoDeMel.Infrastructure/Data/Mapping/ItemMapping.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FavoDeMel.Infrastructure/Data/Mapping/PedidoMaping.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/FavoDeMel.Infrastructure/Data/Mapping/PedidoMaping.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FavoDeMel.Infrastructure/Migrations/DatabaseContextModelSnapshot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/FavoDeMel.Infrastructure/Migrations/DatabaseContextModelSnapshot.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FavoDeMel.Infrastructure/Repositories/ComandaRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/FavoDeMel.Infrastructure/Repositories/ComandaRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FavoDeMel.Infrastructure/Repositories/ItemRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/FavoDeMel.Infrastructure/Repositories/ItemRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/FavoDeMel.Tests/Entities/ComandaTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/test/FavoDeMel.Tests/Entities/ComandaTests.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,7 +39,9 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/2050C92A-D081-4D01-836E-66C4768FC8A5/1D8/ExceptionDispatchInfo.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/FavoDeMel.Api/Controllers/Queries/PedidoController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/FavoDeMel.Application/Queries/Pedido/ObterPedidosCozinhaResponse.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///ObterComandaResponse.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/FavoDeMel.Application/Queries/Pedido/ObterPedidosCozinhaHandler.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/D8882BC8-F843-4E99-9BF6-5825FB6C1FF7/d8/6dec165b/Notification.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/FavoDeMel.Application/Queries/Pedido/ObterPedidosCozinhaRequest.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/FavoDeMel.Application/Commands/Pedido/CancelarPedidoCommandHandler.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/FavoDeMel.Application/Commands/Pedido/CancelarPedidoCommand.cs" root0="FORCE_HIGHLIGHTING" />
@@ -127,6 +73,7 @@
     <setting file="file://$PROJECT_DIR$/src/FavoDeMel.Api/appsettings.Development.json" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/FavoDeMel.Application/Commands/Comanda/AbrirComandaCommand.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/FavoDeMel.Application/Commands/Pedido/AdicionarPedidoCommandHandler.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/FavoDeMel.Infrastructure/Migrations/20200704165921_AdicionaDataInicioPreparo.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/FavoDeMel.Application/Commands/Pedido/AdicionarPedidoResponse.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/FavoDeMel.Infrastructure/Data/Mapping/CommandaMaping.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/FavoDeMel.Api/appsettings.json" root0="FORCE_HIGHLIGHTING" />
@@ -156,9 +103,11 @@
     <setting file="file://$PROJECT_DIR$/src/FavoDeMel.Application/Commands/Item/InserirItemResponse.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/FavoDeMel.Infrastructure/Transaction/Uow.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/FavoDeMel.Infrastructure/Data/Mapping/ItemMapping.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///AbrirComandaCommandHandler.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/test/FavoDeMel.Tests/Entities/ComandaTests.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/FavoDeMel.Infrastructure/Repositories/ComandaRepository.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/FavoDeMel.Application/Queries/Comanda/ObterComandasAbertasRequest.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///AbrirComandaResponse.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/FavoDeMel.Application/Queries/Comanda/ObterComandasAbertasResponse.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/FavoDeMel.Api/Config/DependencyInjectionConfig.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/FavoDeMel.Application/Queries/Comanda/ObterComandasAbertasHandler.cs" root0="FORCE_HIGHLIGHTING" />
@@ -166,24 +115,9 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/test/FavoDeMel.Tests/Entities/ComandaTests.cs" />
-        <option value="$PROJECT_DIR$/src/FavoDeMel.Core/Repositories/IItemRepository.cs" />
-        <option value="$PROJECT_DIR$/src/FavoDeMel.Infrastructure/Repositories/ItemRepository.cs" />
-        <option value="$PROJECT_DIR$/src/FavoDeMel.Infrastructure/Data/Mapping/ItemMapping.cs" />
-        <option value="$PROJECT_DIR$/src/FavoDeMel.Application/Commands/Comanda/CancelarPedidoCommand - Copy.cs" />
-        <option value="$PROJECT_DIR$/src/FavoDeMel.Application/Commands/Comanda/CancelarPedidoCommandHandler - Copy.cs" />
-        <option value="$PROJECT_DIR$/src/FavoDeMel.Application/Commands/Comanda/CancelarPedidoResponse - Copy.cs" />
-        <option value="$PROJECT_DIR$/src/FavoDeMel.Application/Commands/Comanda/AdicionarPedidoCommandHandler.cs" />
-        <option value="$PROJECT_DIR$/src/FavoDeMel.Application/Commands/Comanda/CancelarPedidoCommandHandler.cs" />
-        <option value="$PROJECT_DIR$/src/FavoDeMel.Application/Commands/Comanda/IniciarPreparoPedidoCommandHandler.cs" />
-        <option value="$PROJECT_DIR$/src/FavoDeMel.Application/Commands/Comanda/IniciarPreparoPedidoCommand - Copy.cs" />
-        <option value="$PROJECT_DIR$/src/FavoDeMel.Application/Commands/Comanda/IniciarPreparoPedidoCommandHandler - Copy.cs" />
-        <option value="$PROJECT_DIR$/src/FavoDeMel.Application/Commands/Comanda/FinalizarPedidoCommandHandler.cs" />
-        <option value="$PROJECT_DIR$/src/FavoDeMel.Application/Commands/Comanda/IniciarPreparoPedidoResponse - Copy.cs" />
         <option value="$PROJECT_DIR$/src/FavoDeMel.Application/Commands/Pedido/FinalizarPedidoResponse.cs" />
         <option value="$PROJECT_DIR$/src/FavoDeMel.Application/Commands/Pedido/FinalizarPedidoCommandHandler.cs" />
         <option value="$PROJECT_DIR$/src/FavoDeMel.Application/Commands/Pedido/IniciarPreparoPedidoCommandHandler.cs" />
-        <option value="$PROJECT_DIR$/src/FavoDeMel.Application/Commands/Item/InserirItemCommandHandler.cs" />
         <option value="$PROJECT_DIR$/src/FavoDeMel.Application/Queries/Pedido/ObterComandasAbertasHandler.cs" />
         <option value="$PROJECT_DIR$/src/FavoDeMel.Application/Queries/Pedido/ObterComandasAbertasRequest.cs" />
         <option value="$PROJECT_DIR$/src/FavoDeMel.Application/Queries/Pedido/ObterComandasAbertasResponse.cs" />
@@ -191,7 +125,6 @@
         <option value="$PROJECT_DIR$/src/FavoDeMel.Application/Queries/Pedido/ObterPedidosCozinhaRequest.cs" />
         <option value="$PROJECT_DIR$/src/FavoDeMel.Core/Repositories/IPedidoRepository.cs" />
         <option value="$PROJECT_DIR$/src/FavoDeMel.Api/Controllers/Commands/ItemController.cs" />
-        <option value="$PROJECT_DIR$/src/FavoDeMel.Api/Controllers/Commands/ComandaController.cs" />
         <option value="$PROJECT_DIR$/src/FavoDeMel.Api/Controllers/Commands/PedidoController.cs" />
         <option value="$PROJECT_DIR$/src/FavoDeMel.Application/Queries/Comanda/ObterComandasAbertasHandler - Copy.cs" />
         <option value="$PROJECT_DIR$/src/FavoDeMel.Application/Queries/Comanda/ObterComandasAbertasRequest - Copy.cs" />
@@ -212,11 +145,27 @@
         <option value="$PROJECT_DIR$/src/FavoDeMel.Api/Controllers/Queries/PedidoController.cs" />
         <option value="$PROJECT_DIR$/src/FavoDeMel.Core/Entities/Pedido.cs" />
         <option value="$PROJECT_DIR$/test/FavoDeMel.Tests/Entities/PedidoTests.cs" />
-        <option value="$PROJECT_DIR$/src/FavoDeMel.Application/Commands/Pedido/AdicionarPedidoCommandHandler.cs" />
         <option value="$PROJECT_DIR$/src/FavoDeMel.Infrastructure/Data/Mapping/PedidoMaping.cs" />
         <option value="$PROJECT_DIR$/src/FavoDeMel.Infrastructure/Data/Mapping/CommandaMaping.cs" />
         <option value="$PROJECT_DIR$/src/FavoDeMel.Core/Entities/Comanda.cs" />
         <option value="$PROJECT_DIR$/src/FavoDeMel.Infrastructure/Repositories/PedidoRepository.cs" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/src/FavoDeMel.Application/Commands/Comanda/FecharComandaCommandHandler.cs" />
+        <option value="$PROJECT_DIR$/src/FavoDeMel.Application/Commands/Comanda/FecharComandaResponse.cs" />
+        <option value="$PROJECT_DIR$/src/FavoDeMel.Application/Commands/Item/InserirItemCommandHandler.cs" />
+        <option value="$PROJECT_DIR$/src/FavoDeMel.Application/Commands/Pedido/CancelarPedidoCommandHandler.cs" />
+        <option value="$PROJECT_DIR$/src/FavoDeMel.Application/Commands/Pedido/CancelarPedidoResponse.cs" />
+        <option value="$PROJECT_DIR$/src/FavoDeMel.Application/Commands/Pedido/AdicionarPedidoCommandHandler.cs" />
+        <option value="$PROJECT_DIR$/src/FavoDeMel.Application/Commands/Pedido/AdicionarPedidoResponse.cs" />
+        <option value="$PROJECT_DIR$/src/FavoDeMel.Application/Commands/Item/InserirItemResponse.cs" />
+        <option value="$PROJECT_DIR$/src/FavoDeMel.Application/Commands/Base/T.cs" />
+        <option value="$PROJECT_DIR$/src/FavoDeMel.Application/Commands/Base/ICommandResponse.cs" />
+        <option value="$PROJECT_DIR$/src/FavoDeMel.Application/Commands/Comanda/AbrirComandaResponse.cs" />
+        <option value="$PROJECT_DIR$/src/FavoDeMel.Application/Commands/Base/ICommandHandler.cs" />
+        <option value="$PROJECT_DIR$/src/FavoDeMel.Application/Queries/Comanda/ObterComandaResponse.cs" />
+        <option value="$PROJECT_DIR$/src/FavoDeMel.Application/Queries/Base/IResponse.cs" />
+        <option value="$PROJECT_DIR$/src/FavoDeMel.Api/Controllers/Commands/ComandaController.cs" />
+        <option value="$PROJECT_DIR$/src/FavoDeMel.Application/Commands/Comanda/AbrirComandaCommandHandler.cs" />
       </list>
     </option>
   </component>
@@ -293,7 +242,7 @@
       <workItem from="1593753337289" duration="754000" />
       <workItem from="1593754120703" duration="137000" />
       <workItem from="1593754326566" duration="29686000" />
-      <workItem from="1593814305981" duration="32845000" />
+      <workItem from="1593814305981" duration="36623000" />
     </task>
     <task id="LOCAL-00001" summary="Start project backend">
       <created>1593644096895</created>
@@ -372,7 +321,14 @@
       <option name="project" value="LOCAL" />
       <updated>1593848190020</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Chuva de endpoints">
+      <created>1593898776380</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1593898776380</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -405,7 +361,8 @@
     <MESSAGE value="Adicionado Swagger e configuração docker" />
     <MESSAGE value="Fechar comanda e ajuste response comandas" />
     <MESSAGE value="Command Inserir Item, adicionar pedido e item repository" />
-    <option name="LAST_COMMIT_MESSAGE" value="Command Inserir Item, adicionar pedido e item repository" />
+    <MESSAGE value="Chuva de endpoints" />
+    <option name="LAST_COMMIT_MESSAGE" value="Chuva de endpoints" />
   </component>
   <component name="WindowStateProjectService">
     <state x="205" y="23" key="#Favo-de-mel.WebApi:_Favo_de_mel.WebApi" timestamp="1593750711524">
@@ -508,14 +465,14 @@
       <screen x="0" y="23" width="1440" height="800" />
     </state>
     <state x="447" y="120" key="Rider.ProjectTemplateDialog.Size/0.23.1440.800@0.23.1440.800" timestamp="1593753591920" />
-    <state x="516" y="120" key="RiderGenerateDialog" timestamp="1593839415380">
+    <state x="516" y="120" key="RiderGenerateDialog" timestamp="1593904836252">
       <screen x="0" y="23" width="1440" height="800" />
     </state>
-    <state x="516" y="120" key="RiderGenerateDialog/0.23.1440.800@0.23.1440.800" timestamp="1593839415380" />
-    <state x="493" y="140" key="RollbackChangesDialog" timestamp="1593750227927">
+    <state x="516" y="120" key="RiderGenerateDialog/0.23.1440.800@0.23.1440.800" timestamp="1593904836252" />
+    <state x="493" y="140" key="RollbackChangesDialog" timestamp="1593904857578">
       <screen x="0" y="23" width="1440" height="800" />
     </state>
-    <state x="493" y="140" key="RollbackChangesDialog/0.23.1440.800@0.23.1440.800" timestamp="1593750227927" />
+    <state x="493" y="140" key="RollbackChangesDialog/0.23.1440.800@0.23.1440.800" timestamp="1593904857578" />
     <state x="320" y="163" key="Vcs.Push.Dialog.v2" timestamp="1593839984231">
       <screen x="0" y="23" width="1440" height="800" />
     </state>
@@ -524,9 +481,9 @@
       <screen x="0" y="23" width="1440" height="800" />
     </state>
     <state x="371" y="149" width="741" height="548" key="find.popup/0.23.1440.800@0.23.1440.800" timestamp="1593896868789" />
-    <state x="383" y="144" width="672" height="678" key="search.everywhere.popup" timestamp="1593898305848">
+    <state x="383" y="144" width="672" height="678" key="search.everywhere.popup" timestamp="1593904758074">
       <screen x="0" y="23" width="1440" height="800" />
     </state>
-    <state x="383" y="144" width="672" height="678" key="search.everywhere.popup/0.23.1440.800@0.23.1440.800" timestamp="1593898305848" />
+    <state x="383" y="144" width="672" height="678" key="search.everywhere.popup/0.23.1440.800@0.23.1440.800" timestamp="1593904758074" />
   </component>
 </project>

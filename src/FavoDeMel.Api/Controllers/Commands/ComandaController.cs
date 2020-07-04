@@ -30,7 +30,7 @@ namespace FavoDeMel.Api.Controllers.Commands
         }
         
         [HttpPost("abrir/{mesa}")]
-        public async Task<ICommandResponse> AbrirComanda([FromRoute] byte mesa)
+        public async Task<AbrirComandaResponse> AbrirComanda([FromRoute] byte mesa)
         {
             var command = new AbrirComandaCommand
             {

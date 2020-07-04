@@ -4,7 +4,7 @@ using FavoDeMel.Core.Repositories;
 
 namespace FavoDeMel.Application.Commands.Item
 {
-    public class InserirItemCommandHandler : ICommandHandler<InserirItemCommand>
+    public class InserirItemCommandHandler : ICommandHandler<InserirItemCommand, InserirItemResponse>
     {
         private readonly IItemRepository _itemRepository;
 
@@ -13,7 +13,7 @@ namespace FavoDeMel.Application.Commands.Item
             _itemRepository = itemRepository;
         }
 
-        public async Task<ICommandResponse> Handler(InserirItemCommand command)
+        public async Task<InserirItemResponse> Handler(InserirItemCommand command)
         {
             var item = new Core.Entities.Item(
                 command.Nome,

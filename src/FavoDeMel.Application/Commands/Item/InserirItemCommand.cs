@@ -2,7 +2,7 @@ using FavoDeMel.Application.Commands.Base;
 
 namespace FavoDeMel.Application.Commands.Item
 {
-    public class InserirItemCommand : ICommand
+    public class InserirItemCommand : ICommand<InserirItemResponse>
     {
         public string Nome { get; set; }
         public string Descricao { get; set; }

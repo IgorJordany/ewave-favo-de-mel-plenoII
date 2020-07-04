@@ -8,7 +8,7 @@ using Flunt.Notifications;
 
 namespace FavoDeMel.Application.Commands.Comanda
 {
-    public class AbrirComandaCommandHandler : ICommandHandler<AbrirComandaCommand>
+    public class AbrirComandaCommandHandler : ICommandHandler<AbrirComandaCommand, AbrirComandaResponse>
     {
         private readonly IComandaRepository _comandaRepository;
 
@@ -16,7 +16,7 @@ namespace FavoDeMel.Application.Commands.Comanda
         {
             _comandaRepository = comandaRepository;
         }
-        public async Task<ICommandResponse> Handler(AbrirComandaCommand command)
+        public async Task<AbrirComandaResponse> Handler(AbrirComandaCommand command)
         {
             if (await _comandaRepository.ExisteComandaAbertaParaMesa(command.Mesa))
             {

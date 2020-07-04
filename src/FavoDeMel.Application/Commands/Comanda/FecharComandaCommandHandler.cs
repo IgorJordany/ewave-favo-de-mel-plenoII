@@ -7,7 +7,7 @@ using Flunt.Notifications;
 
 namespace FavoDeMel.Application.Commands.Comanda
 {
-    public class FecharComandaCommandHandler : ICommandHandler<FecharComandaCommand>
+    public class FecharComandaCommandHandler : ICommandHandler<FecharComandaCommand, FecharComandaResponse>
     {
         private readonly IComandaRepository _comandaRepository;
 
@@ -15,7 +15,7 @@ namespace FavoDeMel.Application.Commands.Comanda
         {
             _comandaRepository = comandaRepository;
         }
-        public async Task<ICommandResponse> Handler(FecharComandaCommand command)
+        public async Task<FecharComandaResponse> Handler(FecharComandaCommand command)
         {
             var comanda = await _comandaRepository.ConsultarPorId(command.Id);
 

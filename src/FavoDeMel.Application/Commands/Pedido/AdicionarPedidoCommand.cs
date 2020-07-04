@@ -3,7 +3,7 @@ using FavoDeMel.Application.Commands.Base;
 
 namespace FavoDeMel.Application.Commands.Pedido
 {
-    public class AdicionarPedidoCommand : ICommand
+    public class AdicionarPedidoCommand : ICommand<AdicionarPedidoResponse>
     {
         public Guid ComandaId { get; set; }
         public Guid ItemId { get; set; }
