@@ -31,7 +31,9 @@ namespace FavoDeMel.Infrastructure.Repositories
 
         public Task<Comanda> ConsultarPorId(Guid id)
         {
-            return _databaseContext.Comandas.SingleOrDefaultAsync(c => c.Id == id);
+            return _databaseContext.Comandas
+                .Include(c => c.Pedidos)
+                .SingleOrDefaultAsync(c => c.Id == id);
         }
         
         public Task<bool> ExisteComandaAbertaParaMesa(byte mesa)

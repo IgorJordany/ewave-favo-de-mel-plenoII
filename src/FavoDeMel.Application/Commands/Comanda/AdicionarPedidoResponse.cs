@@ -1,10 +1,10 @@
-using FavoDeMel.Application.Queries.Base;
+using FavoDeMel.Application.Commands.Base;
 
-namespace FavoDeMel.Application.Queries.Comanda
+namespace FavoDeMel.Application.Commands.Comanda
 {
-    public class ObterComandasAbertasResponse : IResponse
+    public class AdicionarPedidoResponse : ICommandResponse
     {
-        public ObterComandasAbertasResponse(bool sucesso, string mensagem, object data)
+        public AdicionarPedidoResponse(bool sucesso, string mensagem, object data)
         {
             Sucesso = sucesso;
             Mensagem = mensagem;

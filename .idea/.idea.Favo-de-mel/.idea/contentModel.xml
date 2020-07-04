@@ -21,9 +21,11 @@
           <e p="Controllers" t="Include">
             <e p="Commands" t="Include">
               <e p="ComandaController.cs" t="Include" />
+              <e p="ItemController.cs" t="Include" />
             </e>
             <e p="Queries" t="Include">
               <e p="ComandaController.cs" t="Include" />
+              <e p="ItemController.cs" t="Include" />
             </e>
             <e p="WeatherForecastController.cs" t="Include" />
           </e>
@@ -54,9 +56,17 @@
               <e p="AbrirComandaCommand.cs" t="Include" />
               <e p="AbrirComandaCommandHandler.cs" t="Include" />
               <e p="AbrirComandaResponse.cs" t="Include" />
+              <e p="AdicionarPedidoCommand.cs" t="Include" />
+              <e p="AdicionarPedidoCommandHandler.cs" t="Include" />
+              <e p="AdicionarPedidoResponse.cs" t="Include" />
               <e p="FecharComandaCommand.cs" t="Include" />
               <e p="FecharComandaCommandHandler.cs" t="Include" />
               <e p="FecharComandaResponse.cs" t="Include" />
+            </e>
+            <e p="Item" t="Include">
+              <e p="InserirItemCommand.cs" t="Include" />
+              <e p="InserirItemCommandHandler.cs" t="Include" />
+              <e p="InserirItemResponse.cs" t="Include" />
             </e>
           </e>
           <e p="FavoDeMel.Application.csproj" t="IncludeRecursive" />
@@ -84,6 +94,7 @@
           <e p="bin" t="ExcludeRecursive" />
           <e p="Entities" t="Include">
             <e p="Comanda.cs" t="Include" />
+            <e p="Item.cs" t="Include" />
             <e p="Pedido.cs" t="Include" />
           </e>
           <e p="Enums" t="Include">
@@ -100,6 +111,7 @@
           </e>
           <e p="Repositories" t="Include">
             <e p="IComandaRepository.cs" t="Include" />
+            <e p="IItemRepository.cs" t="Include" />
             <e p="IPedidoRepository.cs" t="Include" />
           </e>
         </e>
@@ -112,6 +124,7 @@
             <e p="DatabaseContext.cs" t="Include" />
             <e p="Mapping" t="Include">
               <e p="CommandaMaping.cs" t="Include" />
+              <e p="ItemMapping.cs" t="Include" />
               <e p="PedidoMaping.cs" t="Include" />
             </e>
           </e>
@@ -119,6 +132,14 @@
           <e p="Migrations" t="Include">
             <e p="20200703054522_InitialMigration.cs" t="Include" />
             <e p="20200703054522_InitialMigration.Designer.cs" t="Include" />
+            <e p="20200704045306_itemTable.cs" t="Include" />
+            <e p="20200704045306_itemTable.Designer.cs" t="Include" />
+            <e p="20200704052624_tableaItem.cs" t="Include" />
+            <e p="20200704052624_tableaItem.Designer.cs" t="Include" />
+            <e p="20200704065747_ajusteForeingkey.cs" t="Include" />
+            <e p="20200704065747_ajusteForeingkey.Designer.cs" t="Include" />
+            <e p="20200704070404_ajusteForeingkey2.cs" t="Include" />
+            <e p="20200704070404_ajusteForeingkey2.Designer.cs" t="Include" />
             <e p="DatabaseContextModelSnapshot.cs" t="Include" />
           </e>
           <e p="obj" t="ExcludeRecursive">
@@ -130,6 +151,7 @@
           </e>
           <e p="Repositories" t="Include">
             <e p="ComandaRepository.cs" t="Include" />
+            <e p="ItemRepository.cs" t="Include" />
           </e>
           <e p="Transaction" t="Include">
             <e p="Uow.cs" t="Include" />

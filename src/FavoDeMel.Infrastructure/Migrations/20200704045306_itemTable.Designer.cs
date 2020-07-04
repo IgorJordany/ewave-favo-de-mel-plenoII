@@ -4,14 +4,16 @@ using FavoDeMel.Infrastructure.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace FavoDeMel.Infrastructure.Migrations
 {
     [DbContext(typeof(DatabaseContext))]
-    partial class DatabaseContextModelSnapshot : ModelSnapshot
+    [Migration("20200704045306_itemTable")]
+    partial class itemTable
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -44,34 +46,6 @@ namespace FavoDeMel.Infrastructure.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Comanda");
-                });
-
-            modelBuilder.Entity("FavoDeMel.Core.Entities.Item", b =>
-                {
-                    b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<bool>("Cozinha")
-                        .HasColumnName("Cozinha")
-                        .HasColumnType("bit");
-
-                    b.Property<string>("Descricao")
-                        .HasColumnName("Descricao")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Nome")
-                        .IsRequired()
-                        .HasColumnName("Nome")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<decimal>("Valor")
-                        .HasColumnName("Valor")
-                        .HasColumnType("decimal(18,2)");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("Item");
                 });
 
             modelBuilder.Entity("FavoDeMel.Core.Entities.Pedido", b =>
@@ -112,22 +86,14 @@ namespace FavoDeMel.Infrastructure.Migrations
 
                     b.HasIndex("ComandaId");
 
-                    b.HasIndex("ItemId");
-
                     b.ToTable("Pedido");
                 });
 
             modelBuilder.Entity("FavoDeMel.Core.Entities.Pedido", b =>
                 {
-                    b.HasOne("FavoDeMel.Core.Entities.Comanda", "Comanda")
+                    b.HasOne("FavoDeMel.Core.Entities.Comanda", null)
                         .WithMany("Pedidos")
                         .HasForeignKey("ComandaId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("FavoDeMel.Core.Entities.Item", null)
-                        .WithMany("Pedidos")
-                        .HasForeignKey("ItemId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
                 });

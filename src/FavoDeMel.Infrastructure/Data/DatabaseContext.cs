@@ -14,6 +14,8 @@ namespace FavoDeMel.Infrastructure.Data
 
         public DbSet<Comanda> Comandas { get; set; }
         public DbSet<Pedido> Pedidos { get; set; }
+        public DbSet<Item> Itens { get; set; }
+
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -21,6 +23,7 @@ namespace FavoDeMel.Infrastructure.Data
             
             new CommandaMaping(modelBuilder.Entity<Comanda>());
             new PedidoMaping(modelBuilder.Entity<Pedido>());
+            new ItemMapping(modelBuilder.Entity<Item>());
         }
     }
 }

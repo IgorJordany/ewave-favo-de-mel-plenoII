@@ -1,4 +1,5 @@
 using FavoDeMel.Application.Commands.Comanda;
+using FavoDeMel.Application.Commands.Item;
 using FavoDeMel.Application.Queries.Comanda;
 using FavoDeMel.Core.Repositories;
 using FavoDeMel.Infrastructure.Abstractions;
@@ -17,10 +18,13 @@ namespace FavoDeMel.Api.Config
             
             //Repositorios
             services.AddScoped<IComandaRepository, ComandaRepository>();
-            
+            services.AddScoped<IItemRepository, ItemRepository>();
+
             //CommandHandlers
             services.AddScoped<AbrirComandaCommandHandler, AbrirComandaCommandHandler>();
             services.AddScoped<FecharComandaCommandHandler, FecharComandaCommandHandler>();
+            services.AddScoped<AdicionarPedidoCommandHandler, AdicionarPedidoCommandHandler>();
+            services.AddScoped<InserirItemCommandHandler, InserirItemCommandHandler>();
 
             //QueryHandlers
             services.AddScoped<ObterComandasAbertasHandler, ObterComandasAbertasHandler>();

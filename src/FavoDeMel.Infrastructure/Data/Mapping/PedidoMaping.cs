@@ -29,6 +29,14 @@ namespace FavoDeMel.Infrastructure.Data.Mapping
             
             builder.Property(c => c.DataPronto)
                 .HasColumnName("DataPronto");
+            
+            builder.Property(c => c.Quantidade)
+                .HasColumnName("Quantidade")
+                .IsRequired();
+            
+            builder.Property(c => c.ItemId)
+                .HasColumnName("ItemId")
+                .IsRequired();
         }
     }
 }

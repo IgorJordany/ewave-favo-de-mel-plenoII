@@ -13,15 +13,18 @@ namespace FavoDeMel.Api.Controllers.Commands
     {
         private readonly AbrirComandaCommandHandler _abrirComandaCommandHandler;
         private readonly FecharComandaCommandHandler _fecharComandaCommandHandler;
+        private readonly AdicionarPedidoCommandHandler _adicionarPedidoCommandHandler;
         private readonly IUow _uow;
 
         public ComandaController(
             AbrirComandaCommandHandler abrirComandaCommandHandler,
             FecharComandaCommandHandler fecharComandaCommandHandler,
+            AdicionarPedidoCommandHandler adicionarPedidoCommandHandler,
             IUow uow)
         {
             _abrirComandaCommandHandler = abrirComandaCommandHandler;
             _fecharComandaCommandHandler = fecharComandaCommandHandler;
+            _adicionarPedidoCommandHandler = adicionarPedidoCommandHandler;
             _uow = uow;
         }
         
@@ -49,6 +52,18 @@ namespace FavoDeMel.Api.Controllers.Commands
             };
             
             var response = await _fecharComandaCommandHandler.Handler(command);
+            
+            _uow.Commit();
+
+            return response;
+        }
+        
+        [HttpPost("{id}/adicionar-pedido")]
+        public async Task<ICommandResponse> AdicionarPedido([FromRoute] Guid id, [FromBody] AdicionarPedidoCommand command)
+        {
+            command.Id = id;
+            
+            var response = await _adicionarPedidoCommandHandler.Handler(command);
             
             _uow.Commit();
 

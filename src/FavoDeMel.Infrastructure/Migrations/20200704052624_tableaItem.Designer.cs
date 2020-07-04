@@ -4,14 +4,16 @@ using FavoDeMel.Infrastructure.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace FavoDeMel.Infrastructure.Migrations
 {
     [DbContext(typeof(DatabaseContext))]
-    partial class DatabaseContextModelSnapshot : ModelSnapshot
+    [Migration("20200704052624_tableaItem")]
+    partial class tableaItem
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -119,7 +121,7 @@ namespace FavoDeMel.Infrastructure.Migrations
 
             modelBuilder.Entity("FavoDeMel.Core.Entities.Pedido", b =>
                 {
-                    b.HasOne("FavoDeMel.Core.Entities.Comanda", "Comanda")
+                    b.HasOne("FavoDeMel.Core.Entities.Comanda", null)
                         .WithMany("Pedidos")
                         .HasForeignKey("ComandaId")
                         .OnDelete(DeleteBehavior.Cascade)

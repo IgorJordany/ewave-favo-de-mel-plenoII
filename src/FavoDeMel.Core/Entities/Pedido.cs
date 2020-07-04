@@ -11,14 +11,18 @@ namespace FavoDeMel.Core.Entities
         public DateTime DataCriacao { get; }
         public DateTime? DataCancelamento { get; }
         public DateTime? DataPronto { get; }
+        public Guid ItemId { get; }
+        public byte Quantidade { get; }
 
-        public Pedido(PedidoStatus status, DateTime dataCriacao, DateTime? dataCancelamento, DateTime? dataPronto, Guid comandaId)
+        public Pedido(PedidoStatus status, DateTime dataCriacao, DateTime? dataCancelamento, DateTime? dataPronto, Guid comandaId, Guid itemId, byte quantidade)
         {
             Status = status;
             DataCriacao = dataCriacao;
             DataCancelamento = dataCancelamento;
             DataPronto = dataPronto;
             ComandaId = comandaId;
+            ItemId = itemId;
+            Quantidade = quantidade;
         }
     }
 }
