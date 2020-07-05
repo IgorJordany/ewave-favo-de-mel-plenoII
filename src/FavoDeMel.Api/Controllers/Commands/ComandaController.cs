@@ -1,6 +1,5 @@
 using System;
 using System.Threading.Tasks;
-using FavoDeMel.Application.Commands.Base;
 using FavoDeMel.Application.Commands.Comanda;
 using FavoDeMel.Application.Commands.Pedido;
 using FavoDeMel.Infrastructure.Abstractions;
@@ -45,7 +44,7 @@ namespace FavoDeMel.Api.Controllers.Commands
         }
         
         [HttpPost("{comandaId}/fechar")]
-        public async Task<ICommandResponse> FecharComanda([FromRoute] Guid comandaId)
+        public async Task<FecharComandaResponse> FecharComanda([FromRoute] Guid comandaId)
         {
             var command = new FecharComandaCommand
             {
@@ -60,7 +59,7 @@ namespace FavoDeMel.Api.Controllers.Commands
         }
         
         [HttpPost("{comandaId}/adicionar-pedido")]
-        public async Task<ICommandResponse> AdicionarPedido([FromRoute] Guid comandaId, [FromBody] AdicionarPedidoCommand command)
+        public async Task<AdicionarPedidoResponse> AdicionarPedido([FromRoute] Guid comandaId, [FromBody] AdicionarPedidoCommand command)
         {
             command.ComandaId = comandaId;
             
