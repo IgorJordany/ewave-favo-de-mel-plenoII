@@ -24,11 +24,13 @@ namespace FavoDeMel.Application.Queries.Comanda
             {
                 Comanda = new ComandaResponse
                 {
+                    Id = comanda.Id,
                     DataAbertura = comanda.DataAbertura,
                     DataFechamento = comanda.DataFechamento,
                     Mesa = comanda.Mesa,
                     Pedidos = comanda.Pedidos.Select(p => new PedidoResponse
                     {
+                        Id = p.Id,
                         ComandaId = p.ComandaId,
                         Cozinha = p.Cozinha,
                         DataCancelamento = p.DataCancelamento,

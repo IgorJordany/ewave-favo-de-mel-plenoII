@@ -10,9 +10,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="595afcd1-38d5-4305-84d9-77ffc4724ae3" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/FavoDeMel.Application/Commands/Pedido/AdicionarPedidoCommand.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/FavoDeMel.Application/Commands/Pedido/AdicionarPedidoCommand.cs" afterDir="false" />
-    </list>
+    <list default="true" id="595afcd1-38d5-4305-84d9-77ffc4724ae3" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -256,7 +254,7 @@
       <workItem from="1593753337289" duration="754000" />
       <workItem from="1593754120703" duration="137000" />
       <workItem from="1593754326566" duration="29686000" />
-      <workItem from="1593814305981" duration="46330000" />
+      <workItem from="1593814305981" duration="46801000" />
     </task>
     <task id="LOCAL-00001" summary="Start project backend">
       <created>1593644096895</created>
@@ -398,7 +396,14 @@
       <option name="project" value="LOCAL" />
       <updated>1593915654276</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="Validação campo quantidade do pedido">
+      <created>1593916085392</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1593916085392</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -438,7 +443,8 @@
     <MESSAGE value="Pedidos que não são da cozinha já são criados como prontos" />
     <MESSAGE value="Fix retorno fechar commanda" />
     <MESSAGE value="remove código não necessário" />
-    <option name="LAST_COMMIT_MESSAGE" value="remove código não necessário" />
+    <MESSAGE value="Validação campo quantidade do pedido" />
+    <option name="LAST_COMMIT_MESSAGE" value="Validação campo quantidade do pedido" />
   </component>
   <component name="WindowStateProjectService">
     <state x="205" y="23" key="#Favo-de-mel.WebApi:_Favo_de_mel.WebApi" timestamp="1593750711524">

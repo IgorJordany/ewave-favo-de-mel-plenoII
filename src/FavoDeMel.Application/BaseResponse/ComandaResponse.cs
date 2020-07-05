@@ -6,6 +6,7 @@ namespace FavoDeMel.Application.BaseResponse
 {
     public class ComandaResponse
     {
+        public Guid Id { get; set; }
         public byte Mesa { get; set; }
         public ComandaStatus Status { get; set; }
         public DateTime DataAbertura { get; set; } 

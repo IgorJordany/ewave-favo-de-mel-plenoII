@@ -5,6 +5,7 @@ namespace FavoDeMel.Application.BaseResponse
 {
     public class PedidoResponse
     {
+        public Guid Id { get; set; }
         public Guid ComandaId { get; set; }
         public PedidoStatus Status { get; set; }
         public DateTime DataCriacao { get; set; }

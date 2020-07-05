@@ -22,6 +22,7 @@ namespace FavoDeMel.Application.Queries.Pedido
             {
                 Pedido = new PedidoResponse
                 {
+                    Id = pedido.Id,
                     ComandaId = pedido.ComandaId,
                     Cozinha = pedido.Cozinha,
                     DataCancelamento = pedido.DataCancelamento,
