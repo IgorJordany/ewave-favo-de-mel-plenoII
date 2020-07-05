@@ -21,17 +21,17 @@ namespace FavoDeMel.Application.Commands.Pedido
 
             if (pedido == null)
             {
-                return new CancelarPedidoResponse(false, "Erro", new Notification(nameof(command.PedidoId), "Não existe esse pedido"));
+                return new CancelarPedidoResponse{Erro = new Notification(nameof(command.PedidoId), "Não existe esse pedido")};
             }
             
             pedido.Cancelar();
             
             if (pedido.Notifications.Any())
             {
-                return new CancelarPedidoResponse(false, "Erro", pedido.Notifications);
+                return new CancelarPedidoResponse{Erro = pedido.Notifications};
             }
             
-            return new CancelarPedidoResponse(true, "Pedido Cancelado com sucesso", pedido);
+            return new CancelarPedidoResponse{PedidoId = pedido.Id};
         }
     }
 }

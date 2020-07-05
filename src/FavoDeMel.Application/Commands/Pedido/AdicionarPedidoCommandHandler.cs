@@ -25,14 +25,14 @@ namespace FavoDeMel.Application.Commands.Pedido
         {
             if (!await _comandaRepository.ExisteComandaAbertaPorId(command.ComandaId))
             {
-                return new AdicionarPedidoResponse(false, "Erro", new Notification(nameof(command.ComandaId), "Essa comanda não está aberta para inserir pedido"));
+                return new AdicionarPedidoResponse{Erro = new Notification(nameof(command.ComandaId), "Essa comanda não está aberta para inserir pedido")};
             }
 
             var item = await _itemRepository.ConsultarPorId(command.ItemId);
             
             if (item == null)
             {
-                return new AdicionarPedidoResponse(false, "Erro", new Notification(nameof(command.ItemId), "Não existe esse item"));
+                return new AdicionarPedidoResponse{Erro = new Notification(nameof(command.ItemId), "Não existe esse item")};
             }
             
             var pedido = new Core.Entities.Pedido(
@@ -44,12 +44,12 @@ namespace FavoDeMel.Application.Commands.Pedido
 
             if (pedido.Notifications.Any())
             {
-                return new AdicionarPedidoResponse(false, "Erro", pedido.Notifications);
+                return new AdicionarPedidoResponse{Erro = pedido.Notifications};
             }
             
             await _pedidoRepository.Incluir(pedido);
 
-            return new AdicionarPedidoResponse(true, "Pedido adicionado com sucesso", pedido);
+            return new AdicionarPedidoResponse{PedidoId = pedido.Id};
         }
     }
 }

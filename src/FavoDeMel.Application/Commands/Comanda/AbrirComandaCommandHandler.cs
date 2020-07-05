@@ -20,19 +20,19 @@ namespace FavoDeMel.Application.Commands.Comanda
         {
             if (await _comandaRepository.ExisteComandaAbertaParaMesa(command.Mesa))
             {
-                return new AbrirComandaResponse(false, "Erro", new Notification(nameof(command.Mesa), "Já existe comanda aberta para essa mesa"));
+                return new AbrirComandaResponse{Erro = new Notification(nameof(command.Mesa), "Já existe comanda aberta para essa mesa")};
             }
             
             var comanda = new Core.Entities.Comanda(command.Mesa);
 
             if (comanda.Notifications.Any())
             {
-                return new AbrirComandaResponse(false, "Erro", comanda.Notifications);
+                return new AbrirComandaResponse{Erro = comanda.Notifications};
             }
             
             await _comandaRepository.Incluir(comanda);
 
-            return new AbrirComandaResponse(true, "Comanda aberta com sucesso", comanda);
+            return new AbrirComandaResponse{ComandaId = comanda.Id};
         }
     }
 }

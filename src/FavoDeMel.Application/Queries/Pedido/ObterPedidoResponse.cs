@@ -1,18 +1,9 @@
-using FavoDeMel.Application.Queries.Base;
+using FavoDeMel.Application.BaseResponse;
 
 namespace FavoDeMel.Application.Queries.Pedido
 {
-    public class ObterPedidoResponse : IResponse
+    public class ObterPedidoResponse
     {
-        public ObterPedidoResponse(bool sucesso, string mensagem, object data)
-        {
-            Sucesso = sucesso;
-            Mensagem = mensagem;
-            Data = data;
-        }
-
-        public bool Sucesso { get; }
-        public string Mensagem { get; }
-        public object Data { get; }
+        public PedidoResponse Pedido { get; set; }
     }
 }

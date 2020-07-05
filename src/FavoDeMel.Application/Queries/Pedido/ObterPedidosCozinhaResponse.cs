@@ -1,18 +1,10 @@
-using FavoDeMel.Application.Queries.Base;
+using System.Collections.Generic;
+using FavoDeMel.Application.BaseResponse;
 
 namespace FavoDeMel.Application.Queries.Pedido
 {
-    public class ObterPedidosCozinhaResponse : IResponse
+    public class ObterPedidosCozinhaResponse
     {
-        public ObterPedidosCozinhaResponse(bool sucesso, string mensagem, object data)
-        {
-            Sucesso = sucesso;
-            Mensagem = mensagem;
-            Data = data;
-        }
-
-        public bool Sucesso { get; }
-        public string Mensagem { get; }
-        public object Data { get; }
+        public List<PedidoResponse> Pedidos { get; set; }
     }
 }

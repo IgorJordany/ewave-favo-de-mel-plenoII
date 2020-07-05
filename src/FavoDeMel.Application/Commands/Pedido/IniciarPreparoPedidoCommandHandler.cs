@@ -21,17 +21,17 @@ namespace FavoDeMel.Application.Commands.Pedido
 
             if (pedido == null)
             {
-                return new IniciarPreparoPedidoResponse(false, "Erro", new Notification(nameof(command.PedidoId), "Não existe esse pedido"));
+                return new IniciarPreparoPedidoResponse{Erro = new Notification(nameof(command.PedidoId), "Não existe esse pedido")};
             }
             
             pedido.IniciarPreparo();
             
             if (pedido.Notifications.Any())
             {
-                return new IniciarPreparoPedidoResponse(false, "Erro", pedido.Notifications);
+                return new IniciarPreparoPedidoResponse{Erro = pedido.Notifications};
             }
             
-            return new IniciarPreparoPedidoResponse(true, "Preparo pedido iniciado com sucesso", pedido);
+            return new IniciarPreparoPedidoResponse{PedidoId = pedido.Id};
         }
     }
 }

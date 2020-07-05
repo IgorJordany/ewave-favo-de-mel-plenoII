@@ -21,17 +21,17 @@ namespace FavoDeMel.Application.Commands.Comanda
 
             if (comanda == null)
             {
-                return new FecharComandaResponse(false, "Erro", new Notification(nameof(command.Id), "Essa comanda não existe"));
+                return new FecharComandaResponse {Erro = new Notification(nameof(command.Id), "Essa comanda não existe")};
             }
 
             comanda.Fechar(DateTime.Now);
 
             if (comanda.Notifications.Any())
             {
-                return new FecharComandaResponse(false, "Erro", comanda.Notifications);
+                return new FecharComandaResponse{Erro = comanda.Notifications};
             }
             
-            return new FecharComandaResponse(true, "Comanda fechada com sucesso", comanda);
+            return new FecharComandaResponse{ComandaId = comanda.Id};
         }
     }
 }

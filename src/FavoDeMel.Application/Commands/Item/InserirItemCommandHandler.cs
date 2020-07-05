@@ -23,7 +23,7 @@ namespace FavoDeMel.Application.Commands.Item
 
             await _itemRepository.Incluir(item);
 
-            return new InserirItemResponse(true, "Item inserido com sucesso", item);
+            return new InserirItemResponse{ItemId = item.Id};
         }
     }
 }

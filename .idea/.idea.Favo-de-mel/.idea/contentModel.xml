@@ -47,6 +47,10 @@
           <e p="WeatherForecast.cs" t="Include" />
         </e>
         <e p="FavoDeMel.Application" t="IncludeRecursive">
+          <e p="BaseResponse" t="Include">
+            <e p="ComandaResponse.cs" t="Include" />
+            <e p="PedidoResponse.cs" t="Include" />
+          </e>
           <e p="bin" t="ExcludeRecursive" />
           <e p="Commands" t="Include">
             <e p="Base" t="Include">
