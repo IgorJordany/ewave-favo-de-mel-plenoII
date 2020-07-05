@@ -28,6 +28,10 @@ Funcionalidade que permite o restaurante Favo de Mel adicionar seus itens do car
 ### Pedido
 Funcionalidade onde o garçon faz a criação do pedido vinculando a uma comanda, para cada pedido somente um tipo de item pode ser adicionado, com sua respectiva quantidade. Os pedidos com flag cozinha true vão para o status AguardandoPreparo, quando iniciado o preparo vão para o status EmPreparo, após o termino do pedido pela cozinha o status do mesmo vai para Pronto. Os pedidos da cozinha não podem ser cancelados depois de prontos. Os pedidos com a flag cozinha false vão direto para o status Pronto. Os pedidos de cozinha são listados decrescente por criação, somente pedidos prontos não aparecem na listagem da cozinha. Como implementação futura ficam a priorização de pedidos, enpoints dedicados para listagem de histórico e tempo de permanencia de pedidos cancelados na fila.
 
+## Melhorias
+
+Implementar um response cabeçalho comum para todas as requisições.
+
 # Executar o Projeto
 
 Para executar o projeto, é necessário [docker](https://app.dbdesigner.net/signup  "docker")
