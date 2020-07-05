@@ -31,7 +31,7 @@ namespace FavoDeMel.Application.Commands.Comanda
                 return new FecharComandaResponse{Erro = comanda.Notifications};
             }
             
-            return new FecharComandaResponse{ComandaId = comanda.Id};
+            return new FecharComandaResponse{ComandaId = comanda.Id, TotalPagar = comanda.TotalPagar};
         }
     }
 }

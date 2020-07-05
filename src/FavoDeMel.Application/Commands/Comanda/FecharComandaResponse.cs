@@ -7,5 +7,6 @@ namespace FavoDeMel.Application.Commands.Comanda
     {
         public object Erro { get; set; }
         public Guid ComandaId { get; set; }
+        public decimal TotalPagar { get; set; }
     }
 }
