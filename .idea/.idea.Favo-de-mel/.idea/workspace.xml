@@ -10,7 +10,13 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="595afcd1-38d5-4305-84d9-77ffc4724ae3" name="Default Changelist" comment="" />
+    <list default="true" id="595afcd1-38d5-4305-84d9-77ffc4724ae3" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/FavoDeMel.Infrastructure/Migrations/20200705034938_FixTipoNomeDescricao.Designer.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/FavoDeMel.Infrastructure/Migrations/20200705034938_FixTipoNomeDescricao.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Favo-de-mel/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Favo-de-mel/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FavoDeMel.Infrastructure/Data/Mapping/ItemMapping.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/FavoDeMel.Infrastructure/Data/Mapping/ItemMapping.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FavoDeMel.Infrastructure/Migrations/DatabaseContextModelSnapshot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/FavoDeMel.Infrastructure/Migrations/DatabaseContextModelSnapshot.cs" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -130,7 +136,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/FavoDeMel.Application/Commands/Base/IBaseResponse.cs" />
         <option value="$PROJECT_DIR$/src/FavoDeMel.Application/Commands/Base/ICommand.cs" />
         <option value="$PROJECT_DIR$/src/FavoDeMel.Application/Commands/Base/ICommandHandler.cs" />
         <option value="$PROJECT_DIR$/src/FavoDeMel.Application/Commands/Comanda/AbrirComandaCommand.cs" />
@@ -177,10 +182,11 @@
         <option value="$PROJECT_DIR$/src/FavoDeMel.Application/Queries/Comanda/ObterComandaResponse - Copy.cs" />
         <option value="$PROJECT_DIR$/src/FavoDeMel.Application/Queries/Comanda/ObterComandasResponse.cs" />
         <option value="$PROJECT_DIR$/src/FavoDeMel.Core/Repositories/IComandaRepository.cs" />
-        <option value="$PROJECT_DIR$/src/FavoDeMel.Infrastructure/Repositories/ComandaRepository.cs" />
         <option value="$PROJECT_DIR$/src/FavoDeMel.Application/Queries/Comanda/ObterComandasHandler.cs" />
         <option value="$PROJECT_DIR$/src/FavoDeMel.Api/Controllers/Queries/ComandaController.cs" />
         <option value="$PROJECT_DIR$/src/FavoDeMel.Api/Config/DependencyInjectionConfig.cs" />
+        <option value="$PROJECT_DIR$/src/FavoDeMel.Infrastructure/Repositories/ComandaRepository.cs" />
+        <option value="$PROJECT_DIR$/src/FavoDeMel.Infrastructure/Data/Mapping/ItemMapping.cs" />
       </list>
     </option>
   </component>
@@ -257,7 +263,7 @@
       <workItem from="1593753337289" duration="754000" />
       <workItem from="1593754120703" duration="137000" />
       <workItem from="1593754326566" duration="29686000" />
-      <workItem from="1593814305981" duration="47742000" />
+      <workItem from="1593814305981" duration="50040000" />
     </task>
     <task id="LOCAL-00001" summary="Start project backend">
       <created>1593644096895</created>
@@ -420,7 +426,21 @@
       <option name="project" value="LOCAL" />
       <updated>1593917445440</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="Repositorio comanda include pedidos">
+      <created>1593917685230</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1593917685230</updated>
+    </task>
+    <task id="LOCAL-00025" summary="modelagem banco">
+      <created>1593920517744</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1593920517744</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -463,7 +483,9 @@
     <MESSAGE value="Validação campo quantidade do pedido" />
     <MESSAGE value="Aiciona campo Id no retorno de pedido e comanda" />
     <MESSAGE value="Endpoint para listar todas as comandas" />
-    <option name="LAST_COMMIT_MESSAGE" value="Endpoint para listar todas as comandas" />
+    <MESSAGE value="Repositorio comanda include pedidos" />
+    <MESSAGE value="modelagem banco" />
+    <option name="LAST_COMMIT_MESSAGE" value="modelagem banco" />
   </component>
   <component name="WindowStateProjectService">
     <state x="205" y="23" key="#Favo-de-mel.WebApi:_Favo_de_mel.WebApi" timestamp="1593750711524">
@@ -474,10 +496,10 @@
       <screen x="0" y="23" width="1440" height="800" />
     </state>
     <state x="498" y="215" key="#Web_Browsers/0.23.1440.800@0.23.1440.800" timestamp="1593795332351" />
-    <state x="175" y="92" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1593800762765">
+    <state x="175" y="92" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1593920234292">
       <screen x="0" y="23" width="1440" height="800" />
     </state>
-    <state x="175" y="92" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.800@0.23.1440.800" timestamp="1593800762765" />
+    <state x="175" y="92" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.800@0.23.1440.800" timestamp="1593920234292" />
     <state width="525" height="445" key="DebuggerActiveHint" timestamp="1593897746961">
       <screen x="0" y="23" width="1440" height="800" />
     </state>
@@ -586,9 +608,9 @@
       <screen x="0" y="23" width="1440" height="800" />
     </state>
     <state x="355" y="257" width="741" height="548" key="find.popup/0.23.1440.800@0.23.1440.800" timestamp="1593907489712" />
-    <state x="383" y="144" width="672" height="678" key="search.everywhere.popup" timestamp="1593914141917">
+    <state x="383" y="144" width="672" height="678" key="search.everywhere.popup" timestamp="1593920747106">
       <screen x="0" y="23" width="1440" height="800" />
     </state>
-    <state x="383" y="144" width="672" height="678" key="search.everywhere.popup/0.23.1440.800@0.23.1440.800" timestamp="1593914141917" />
+    <state x="383" y="144" width="672" height="678" key="search.everywhere.popup/0.23.1440.800@0.23.1440.800" timestamp="1593920747106" />
   </component>
 </project>

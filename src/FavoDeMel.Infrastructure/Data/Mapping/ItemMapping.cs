@@ -14,10 +14,12 @@ namespace FavoDeMel.Infrastructure.Data.Mapping
 
             builder.Property(i => i.Nome)
                 .HasColumnName("Nome")
+                .HasColumnType("varchar(50)")
                 .IsRequired();
 
             builder.Property(i => i.Descricao)
-                .HasColumnName("Descricao");
+                .HasColumnName("Descricao")
+                .HasColumnType("varchar(255)");
 
             builder.Property(i => i.Cozinha)
                 .HasColumnName("Cozinha")
