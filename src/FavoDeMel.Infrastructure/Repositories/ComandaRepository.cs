@@ -29,6 +29,11 @@ namespace FavoDeMel.Infrastructure.Repositories
             return Task.FromResult(comandas.ToList());
         }
 
+        public Task<List<Comanda>> ListarComandas()
+        {
+            var comandas = _databaseContext.Comandas;
+            return Task.FromResult(comandas.ToList());        }
+
         public Task<Comanda> ConsultarPorId(Guid id)
         {
             return _databaseContext.Comandas.Include(c => c.Pedidos)

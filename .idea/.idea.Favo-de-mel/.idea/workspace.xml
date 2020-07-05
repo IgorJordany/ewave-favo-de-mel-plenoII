@@ -150,13 +150,8 @@
         <option value="$PROJECT_DIR$/src/FavoDeMel.Application/Queries/Comanda/ObterComandasAbertasRequest.cs" />
         <option value="$PROJECT_DIR$/src/FavoDeMel.Application/Queries/Comanda/ObterComandasAbertasResponse.cs" />
         <option value="$PROJECT_DIR$/src/FavoDeMel.Application/Queries/Comanda/ObterComandaResponse.cs" />
-        <option value="$PROJECT_DIR$/src/FavoDeMel.Application/BaseResponse/ComandaResponse.cs" />
-        <option value="$PROJECT_DIR$/src/FavoDeMel.Application/Queries/Comanda/ObterComandaHandler.cs" />
-        <option value="$PROJECT_DIR$/src/FavoDeMel.Application/Queries/Comanda/ObterComandasAbertasHandler.cs" />
-        <option value="$PROJECT_DIR$/src/FavoDeMel.Application/Queries/Pedido/ObterPedidosCozinhaHandler.cs" />
         <option value="$PROJECT_DIR$/src/FavoDeMel.Application/Queries/Pedido/ObterPedidosCozinhaResponse.cs" />
         <option value="$PROJECT_DIR$/src/FavoDeMel.Application/Queries/Pedido/ObterPedidoResponse.cs" />
-        <option value="$PROJECT_DIR$/src/FavoDeMel.Application/Queries/Pedido/ObterPedidoHandler.cs" />
         <option value="$PROJECT_DIR$/src/FavoDeMel.Application/Commands/Comanda/AbrirComandaCommandHandler.cs" />
         <option value="$PROJECT_DIR$/src/FavoDeMel.Application/Commands/Comanda/AbrirComandaResponse.cs" />
         <option value="$PROJECT_DIR$/src/FavoDeMel.Application/Commands/Base/ICommandResponse.cs" />
@@ -172,12 +167,17 @@
         <option value="$PROJECT_DIR$/src/FavoDeMel.Application/Commands/Pedido/IniciarPreparoPedidoCommandHandler.cs" />
         <option value="$PROJECT_DIR$/src/FavoDeMel.Api/Controllers/Commands/ItemController.cs" />
         <option value="$PROJECT_DIR$/src/FavoDeMel.Api/Controllers/Commands/PedidoController.cs" />
-        <option value="$PROJECT_DIR$/src/FavoDeMel.Application/BaseResponse/PedidoResponse.cs" />
         <option value="$PROJECT_DIR$/test/FavoDeMel.Tests/Entities/PedidoTests.cs" />
         <option value="$PROJECT_DIR$/src/FavoDeMel.Application/Commands/Comanda/FecharComandaResponse.cs" />
         <option value="$PROJECT_DIR$/src/FavoDeMel.Application/Commands/Comanda/FecharComandaCommandHandler.cs" />
         <option value="$PROJECT_DIR$/src/FavoDeMel.Core/Entities/Pedido.cs" />
         <option value="$PROJECT_DIR$/src/FavoDeMel.Application/Commands/Pedido/AdicionarPedidoCommand.cs" />
+        <option value="$PROJECT_DIR$/src/FavoDeMel.Application/BaseResponse/ComandaResponse.cs" />
+        <option value="$PROJECT_DIR$/src/FavoDeMel.Application/BaseResponse/PedidoResponse.cs" />
+        <option value="$PROJECT_DIR$/src/FavoDeMel.Application/Queries/Pedido/ObterPedidosCozinhaHandler.cs" />
+        <option value="$PROJECT_DIR$/src/FavoDeMel.Application/Queries/Pedido/ObterPedidoHandler.cs" />
+        <option value="$PROJECT_DIR$/src/FavoDeMel.Application/Queries/Comanda/ObterComandaHandler.cs" />
+        <option value="$PROJECT_DIR$/src/FavoDeMel.Application/Queries/Comanda/ObterComandasAbertasHandler.cs" />
       </list>
     </option>
   </component>
@@ -254,7 +254,7 @@
       <workItem from="1593753337289" duration="754000" />
       <workItem from="1593754120703" duration="137000" />
       <workItem from="1593754326566" duration="29686000" />
-      <workItem from="1593814305981" duration="46801000" />
+      <workItem from="1593814305981" duration="47170000" />
     </task>
     <task id="LOCAL-00001" summary="Start project backend">
       <created>1593644096895</created>
@@ -403,7 +403,14 @@
       <option name="project" value="LOCAL" />
       <updated>1593916085392</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Aiciona campo Id no retorno de pedido e comanda">
+      <created>1593916812225</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1593916812225</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -444,7 +451,8 @@
     <MESSAGE value="Fix retorno fechar commanda" />
     <MESSAGE value="remove código não necessário" />
     <MESSAGE value="Validação campo quantidade do pedido" />
-    <option name="LAST_COMMIT_MESSAGE" value="Validação campo quantidade do pedido" />
+    <MESSAGE value="Aiciona campo Id no retorno de pedido e comanda" />
+    <option name="LAST_COMMIT_MESSAGE" value="Aiciona campo Id no retorno de pedido e comanda" />
   </component>
   <component name="WindowStateProjectService">
     <state x="205" y="23" key="#Favo-de-mel.WebApi:_Favo_de_mel.WebApi" timestamp="1593750711524">

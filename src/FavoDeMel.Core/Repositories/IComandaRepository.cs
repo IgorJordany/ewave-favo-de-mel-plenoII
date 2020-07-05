@@ -9,6 +9,7 @@ namespace FavoDeMel.Core.Repositories
     {
         Task Incluir(Comanda comanda);
         Task<List<Comanda>> ListarComandasAbertas();
+        Task<List<Comanda>> ListarComandas();
         Task<Comanda> ConsultarPorId(Guid id);
         Task<bool> ExisteComandaAbertaParaMesa(byte mesa);
         Task<bool> ExisteComandaAbertaPorId(Guid id);

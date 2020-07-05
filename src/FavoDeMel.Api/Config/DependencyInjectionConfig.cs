@@ -42,7 +42,8 @@ namespace FavoDeMel.Api.Config
             services.AddScoped<ObterPedidosCozinhaHandler, ObterPedidosCozinhaHandler>();
             services.AddScoped<ObterComandaHandler, ObterComandaHandler>();
             services.AddScoped<ObterPedidoHandler, ObterPedidoHandler>();
-            
+            services.AddScoped<ObterComandasHandler, ObterComandasHandler>();
+
             services.AddScoped<IUow, Uow>();
             
             return services;

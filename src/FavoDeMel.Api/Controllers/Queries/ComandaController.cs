@@ -11,13 +11,16 @@ namespace FavoDeMel.Api.Controllers.Queries
     {
         private readonly ObterComandasAbertasHandler _obterComandasAbertasHandler;
         private readonly ObterComandaHandler _obterComandaHandler;
+        private readonly ObterComandasHandler _obterComandasHandler;
 
         public ComandaController(
             ObterComandasAbertasHandler obterComandasAbertasHandler,
-            ObterComandaHandler obterComandaHandler)
+            ObterComandaHandler obterComandaHandler,
+            ObterComandasHandler obterComandasHandler)
         {
             _obterComandasAbertasHandler = obterComandasAbertasHandler;
             _obterComandaHandler = obterComandaHandler;
+            _obterComandasHandler = obterComandasHandler;
         }
         
         [HttpGet("abertas")]
@@ -32,6 +35,13 @@ namespace FavoDeMel.Api.Controllers.Queries
         {
             var response = await _obterComandaHandler.Handle(new ObterComandaRequest{ComandaId = comandaId});
             
+            return response;
+        }
+        
+        [HttpGet("")]
+        public async Task<ObterComandasResponse> ObterComandas()
+        {
+            var response = await _obterComandasHandler.Handle(new ObterComandasRequest());
             return response;
         }
     }
