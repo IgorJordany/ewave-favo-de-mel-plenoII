@@ -1,6 +1,5 @@
 using System;
 using System.Threading.Tasks;
-using FavoDeMel.Application.Commands.Base;
 using FavoDeMel.Application.Commands.Pedido;
 using FavoDeMel.Infrastructure.Abstractions;
 using Microsoft.AspNetCore.Mvc;
@@ -29,7 +28,7 @@ namespace FavoDeMel.Api.Controllers.Commands
         }
 
         [HttpPost("{pedidoId}/cancelar")]
-        public async Task<ICommandResponse> CancelarPedido([FromRoute] Guid pedidoId)
+        public async Task<CancelarPedidoResponse> CancelarPedido([FromRoute] Guid pedidoId)
         {
             var command = new CancelarPedidoCommand
             {
@@ -44,7 +43,7 @@ namespace FavoDeMel.Api.Controllers.Commands
         }
 
         [HttpPost("{pedidoId}/iniciar-preparo")]
-        public async Task<ICommandResponse> IniciarPreparoPedido([FromRoute] Guid pedidoId)
+        public async Task<IniciarPreparoPedidoResponse> IniciarPreparoPedido([FromRoute] Guid pedidoId)
         {
             var command = new IniciarPreparoPedidoCommand
             {
@@ -59,7 +58,7 @@ namespace FavoDeMel.Api.Controllers.Commands
         }
         
         [HttpPost("{pedidoId}/finalizar")]
-        public async Task<ICommandResponse> FinalizarPreparoPedido([FromRoute] Guid pedidoId)
+        public async Task<FinalizarPedidoResponse> FinalizarPreparoPedido([FromRoute] Guid pedidoId)
         {
             var command = new FinalizarPedidoCommand
             {

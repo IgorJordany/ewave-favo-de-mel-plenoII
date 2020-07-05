@@ -22,7 +22,7 @@ namespace FavoDeMel.Api.Controllers.Commands
         }
         
         [HttpPost("inserir")]
-        public async Task<ICommandResponse> InserirItem([FromBody] InserirItemCommand command)
+        public async Task<InserirItemResponse> InserirItem([FromBody] InserirItemCommand command)
         {
             var response = await _inserirItemCommandHandler.Handler(command);
             
