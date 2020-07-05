@@ -50,15 +50,6 @@ namespace FavoDeMel.Core.Entities
             
             Status = PedidoStatus.Pronto;
             DataPronto = DateTime.Now;
-            
-            // if (Cozinha && Status == PedidoStatus.EmPreparo)
-            // {
-            //     //finalizar
-            // }
-            // if (!Cozinha && Status == PedidoStatus.AguardandoPreparo)
-            // {
-            //     //finalizar
-            // }
         }
         
         public void IniciarPreparo()
