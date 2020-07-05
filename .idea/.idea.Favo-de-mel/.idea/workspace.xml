@@ -10,7 +10,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="595afcd1-38d5-4305-84d9-77ffc4724ae3" name="Default Changelist" comment="" />
+    <list default="true" id="595afcd1-38d5-4305-84d9-77ffc4724ae3" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Favo-de-mel/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Favo-de-mel/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FavoDeMel.Core/Entities/Pedido.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/FavoDeMel.Core/Entities/Pedido.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/FavoDeMel.Tests/Entities/PedidoTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/test/FavoDeMel.Tests/Entities/PedidoTests.cs" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -123,9 +127,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/FavoDeMel.Infrastructure/Data/Mapping/PedidoMaping.cs" />
-        <option value="$PROJECT_DIR$/src/FavoDeMel.Infrastructure/Data/Mapping/CommandaMaping.cs" />
-        <option value="$PROJECT_DIR$/src/FavoDeMel.Core/Entities/Comanda.cs" />
         <option value="$PROJECT_DIR$/src/FavoDeMel.Infrastructure/Repositories/PedidoRepository.cs" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/FavoDeMel.Application/Commands/Base/T.cs" />
@@ -142,7 +143,6 @@
         <option value="$PROJECT_DIR$/src/FavoDeMel.Application/Commands/Comanda/AbrirComandaCommand.cs" />
         <option value="$PROJECT_DIR$/src/FavoDeMel.Application/Commands/Base/CommandResponse.cs" />
         <option value="$PROJECT_DIR$/src/FavoDeMel.Application/Shared/IBaseResponse.cs" />
-        <option value="$PROJECT_DIR$/src/FavoDeMel.Api/Controllers/Commands/ItemController.cs" />
         <option value="$PROJECT_DIR$/src/FavoDeMel.Api/Controllers/Commands/ComandaController.cs" />
         <option value="$PROJECT_DIR$/src/FavoDeMel.Application/Commands/Base/IResponse.cs" />
         <option value="$PROJECT_DIR$/src/FavoDeMel.Application/Commands/Base/Response.cs" />
@@ -150,7 +150,6 @@
         <option value="$PROJECT_DIR$/src/FavoDeMel.Api/Controllers/Queries/ComandaController.cs" />
         <option value="$PROJECT_DIR$/src/FavoDeMel.Application/Queries/Comanda/ObterComandasAbertasRequest.cs" />
         <option value="$PROJECT_DIR$/src/FavoDeMel.Application/Queries/Comanda/ObterComandasAbertasResponse.cs" />
-        <option value="$PROJECT_DIR$/src/FavoDeMel.Application/BaseResponse/PedidoResponse.cs" />
         <option value="$PROJECT_DIR$/src/FavoDeMel.Application/Queries/Comanda/ObterComandaResponse.cs" />
         <option value="$PROJECT_DIR$/src/FavoDeMel.Application/BaseResponse/ComandaResponse.cs" />
         <option value="$PROJECT_DIR$/src/FavoDeMel.Application/Queries/Comanda/ObterComandaHandler.cs" />
@@ -174,6 +173,11 @@
         <option value="$PROJECT_DIR$/src/FavoDeMel.Application/Commands/Pedido/CancelarPedidoCommandHandler.cs" />
         <option value="$PROJECT_DIR$/src/FavoDeMel.Application/Commands/Pedido/FinalizarPedidoCommandHandler.cs" />
         <option value="$PROJECT_DIR$/src/FavoDeMel.Application/Commands/Pedido/IniciarPreparoPedidoCommandHandler.cs" />
+        <option value="$PROJECT_DIR$/src/FavoDeMel.Api/Controllers/Commands/ItemController.cs" />
+        <option value="$PROJECT_DIR$/src/FavoDeMel.Api/Controllers/Commands/PedidoController.cs" />
+        <option value="$PROJECT_DIR$/src/FavoDeMel.Application/BaseResponse/PedidoResponse.cs" />
+        <option value="$PROJECT_DIR$/src/FavoDeMel.Core/Entities/Pedido.cs" />
+        <option value="$PROJECT_DIR$/test/FavoDeMel.Tests/Entities/PedidoTests.cs" />
       </list>
     </option>
   </component>
@@ -250,7 +254,7 @@
       <workItem from="1593753337289" duration="754000" />
       <workItem from="1593754120703" duration="137000" />
       <workItem from="1593754326566" duration="29686000" />
-      <workItem from="1593814305981" duration="43661000" />
+      <workItem from="1593814305981" duration="45344000" />
     </task>
     <task id="LOCAL-00001" summary="Start project backend">
       <created>1593644096895</created>
@@ -364,7 +368,14 @@
       <option name="project" value="LOCAL" />
       <updated>1593912110354</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Refact do refact no response">
+      <created>1593912429673</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1593912429673</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -400,7 +411,8 @@
     <MESSAGE value="Chuva de endpoints" />
     <MESSAGE value="Refact response commands" />
     <MESSAGE value="Refact response para estrutura bonita no swagger" />
-    <option name="LAST_COMMIT_MESSAGE" value="Refact response para estrutura bonita no swagger" />
+    <MESSAGE value="Refact do refact no response" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refact do refact no response" />
   </component>
   <component name="WindowStateProjectService">
     <state x="205" y="23" key="#Favo-de-mel.WebApi:_Favo_de_mel.WebApi" timestamp="1593750711524">
@@ -419,86 +431,86 @@
       <screen x="0" y="23" width="1440" height="800" />
     </state>
     <state width="525" height="445" key="DebuggerActiveHint/0.23.1440.800@0.23.1440.800" timestamp="1593897746961" />
-    <state width="1398" height="199" key="GridCell.Tab.0.bottom" timestamp="1593912027554">
+    <state width="1398" height="199" key="GridCell.Tab.0.bottom" timestamp="1593914769723">
       <screen x="0" y="23" width="1440" height="800" />
     </state>
-    <state width="1398" height="199" key="GridCell.Tab.0.bottom/0.23.1440.800@0.23.1440.800" timestamp="1593912027554" />
-    <state width="1398" height="199" key="GridCell.Tab.0.center" timestamp="1593912027554">
+    <state width="1398" height="199" key="GridCell.Tab.0.bottom/0.23.1440.800@0.23.1440.800" timestamp="1593914769723" />
+    <state width="1398" height="199" key="GridCell.Tab.0.center" timestamp="1593914769722">
       <screen x="0" y="23" width="1440" height="800" />
     </state>
-    <state width="1398" height="199" key="GridCell.Tab.0.center/0.23.1440.800@0.23.1440.800" timestamp="1593912027554" />
-    <state width="1398" height="199" key="GridCell.Tab.0.left" timestamp="1593912027553">
+    <state width="1398" height="199" key="GridCell.Tab.0.center/0.23.1440.800@0.23.1440.800" timestamp="1593914769722" />
+    <state width="1398" height="199" key="GridCell.Tab.0.left" timestamp="1593914769722">
       <screen x="0" y="23" width="1440" height="800" />
     </state>
-    <state width="1398" height="199" key="GridCell.Tab.0.left/0.23.1440.800@0.23.1440.800" timestamp="1593912027553" />
-    <state width="1398" height="199" key="GridCell.Tab.0.right" timestamp="1593912027554">
+    <state width="1398" height="199" key="GridCell.Tab.0.left/0.23.1440.800@0.23.1440.800" timestamp="1593914769722" />
+    <state width="1398" height="199" key="GridCell.Tab.0.right" timestamp="1593914769722">
       <screen x="0" y="23" width="1440" height="800" />
     </state>
-    <state width="1398" height="199" key="GridCell.Tab.0.right/0.23.1440.800@0.23.1440.800" timestamp="1593912027554" />
-    <state width="1398" height="199" key="GridCell.Tab.1.bottom" timestamp="1593912027556">
+    <state width="1398" height="199" key="GridCell.Tab.0.right/0.23.1440.800@0.23.1440.800" timestamp="1593914769722" />
+    <state width="1398" height="199" key="GridCell.Tab.1.bottom" timestamp="1593914769724">
       <screen x="0" y="23" width="1440" height="800" />
     </state>
-    <state width="1398" height="199" key="GridCell.Tab.1.bottom/0.23.1440.800@0.23.1440.800" timestamp="1593912027556" />
-    <state width="1398" height="199" key="GridCell.Tab.1.center" timestamp="1593912027555">
+    <state width="1398" height="199" key="GridCell.Tab.1.bottom/0.23.1440.800@0.23.1440.800" timestamp="1593914769724" />
+    <state width="1398" height="199" key="GridCell.Tab.1.center" timestamp="1593914769723">
       <screen x="0" y="23" width="1440" height="800" />
     </state>
-    <state width="1398" height="199" key="GridCell.Tab.1.center/0.23.1440.800@0.23.1440.800" timestamp="1593912027555" />
-    <state width="1398" height="199" key="GridCell.Tab.1.left" timestamp="1593912027555">
+    <state width="1398" height="199" key="GridCell.Tab.1.center/0.23.1440.800@0.23.1440.800" timestamp="1593914769723" />
+    <state width="1398" height="199" key="GridCell.Tab.1.left" timestamp="1593914769723">
       <screen x="0" y="23" width="1440" height="800" />
     </state>
-    <state width="1398" height="199" key="GridCell.Tab.1.left/0.23.1440.800@0.23.1440.800" timestamp="1593912027555" />
-    <state width="1398" height="199" key="GridCell.Tab.1.right" timestamp="1593912027556">
+    <state width="1398" height="199" key="GridCell.Tab.1.left/0.23.1440.800@0.23.1440.800" timestamp="1593914769723" />
+    <state width="1398" height="199" key="GridCell.Tab.1.right" timestamp="1593914769724">
       <screen x="0" y="23" width="1440" height="800" />
     </state>
-    <state width="1398" height="199" key="GridCell.Tab.1.right/0.23.1440.800@0.23.1440.800" timestamp="1593912027556" />
-    <state width="1398" height="199" key="GridCell.Tab.2.bottom" timestamp="1593912027557">
+    <state width="1398" height="199" key="GridCell.Tab.1.right/0.23.1440.800@0.23.1440.800" timestamp="1593914769724" />
+    <state width="1398" height="199" key="GridCell.Tab.2.bottom" timestamp="1593914769725">
       <screen x="0" y="23" width="1440" height="800" />
     </state>
-    <state width="1398" height="199" key="GridCell.Tab.2.bottom/0.23.1440.800@0.23.1440.800" timestamp="1593912027557" />
-    <state width="1398" height="199" key="GridCell.Tab.2.center" timestamp="1593912027556">
+    <state width="1398" height="199" key="GridCell.Tab.2.bottom/0.23.1440.800@0.23.1440.800" timestamp="1593914769725" />
+    <state width="1398" height="199" key="GridCell.Tab.2.center" timestamp="1593914769725">
       <screen x="0" y="23" width="1440" height="800" />
     </state>
-    <state width="1398" height="199" key="GridCell.Tab.2.center/0.23.1440.800@0.23.1440.800" timestamp="1593912027556" />
-    <state width="1398" height="199" key="GridCell.Tab.2.left" timestamp="1593912027556">
+    <state width="1398" height="199" key="GridCell.Tab.2.center/0.23.1440.800@0.23.1440.800" timestamp="1593914769725" />
+    <state width="1398" height="199" key="GridCell.Tab.2.left" timestamp="1593914769725">
       <screen x="0" y="23" width="1440" height="800" />
     </state>
-    <state width="1398" height="199" key="GridCell.Tab.2.left/0.23.1440.800@0.23.1440.800" timestamp="1593912027556" />
-    <state width="1398" height="199" key="GridCell.Tab.2.right" timestamp="1593912027557">
+    <state width="1398" height="199" key="GridCell.Tab.2.left/0.23.1440.800@0.23.1440.800" timestamp="1593914769725" />
+    <state width="1398" height="199" key="GridCell.Tab.2.right" timestamp="1593914769725">
       <screen x="0" y="23" width="1440" height="800" />
     </state>
-    <state width="1398" height="199" key="GridCell.Tab.2.right/0.23.1440.800@0.23.1440.800" timestamp="1593912027557" />
-    <state width="1398" height="199" key="GridCell.Tab.3.bottom" timestamp="1593912027557">
+    <state width="1398" height="199" key="GridCell.Tab.2.right/0.23.1440.800@0.23.1440.800" timestamp="1593914769725" />
+    <state width="1398" height="199" key="GridCell.Tab.3.bottom" timestamp="1593914769726">
       <screen x="0" y="23" width="1440" height="800" />
     </state>
-    <state width="1398" height="199" key="GridCell.Tab.3.bottom/0.23.1440.800@0.23.1440.800" timestamp="1593912027557" />
-    <state width="1398" height="199" key="GridCell.Tab.3.center" timestamp="1593912027557">
+    <state width="1398" height="199" key="GridCell.Tab.3.bottom/0.23.1440.800@0.23.1440.800" timestamp="1593914769726" />
+    <state width="1398" height="199" key="GridCell.Tab.3.center" timestamp="1593914769726">
       <screen x="0" y="23" width="1440" height="800" />
     </state>
-    <state width="1398" height="199" key="GridCell.Tab.3.center/0.23.1440.800@0.23.1440.800" timestamp="1593912027557" />
-    <state width="1398" height="199" key="GridCell.Tab.3.left" timestamp="1593912027557">
+    <state width="1398" height="199" key="GridCell.Tab.3.center/0.23.1440.800@0.23.1440.800" timestamp="1593914769726" />
+    <state width="1398" height="199" key="GridCell.Tab.3.left" timestamp="1593914769725">
       <screen x="0" y="23" width="1440" height="800" />
     </state>
-    <state width="1398" height="199" key="GridCell.Tab.3.left/0.23.1440.800@0.23.1440.800" timestamp="1593912027557" />
-    <state width="1398" height="199" key="GridCell.Tab.3.right" timestamp="1593912027557">
+    <state width="1398" height="199" key="GridCell.Tab.3.left/0.23.1440.800@0.23.1440.800" timestamp="1593914769725" />
+    <state width="1398" height="199" key="GridCell.Tab.3.right" timestamp="1593914769726">
       <screen x="0" y="23" width="1440" height="800" />
     </state>
-    <state width="1398" height="199" key="GridCell.Tab.3.right/0.23.1440.800@0.23.1440.800" timestamp="1593912027557" />
-    <state width="1398" height="199" key="GridCell.Tab.4.bottom" timestamp="1593912027558">
+    <state width="1398" height="199" key="GridCell.Tab.3.right/0.23.1440.800@0.23.1440.800" timestamp="1593914769726" />
+    <state width="1398" height="199" key="GridCell.Tab.4.bottom" timestamp="1593914769726">
       <screen x="0" y="23" width="1440" height="800" />
     </state>
-    <state width="1398" height="199" key="GridCell.Tab.4.bottom/0.23.1440.800@0.23.1440.800" timestamp="1593912027558" />
-    <state width="1398" height="199" key="GridCell.Tab.4.center" timestamp="1593912027558">
+    <state width="1398" height="199" key="GridCell.Tab.4.bottom/0.23.1440.800@0.23.1440.800" timestamp="1593914769726" />
+    <state width="1398" height="199" key="GridCell.Tab.4.center" timestamp="1593914769726">
       <screen x="0" y="23" width="1440" height="800" />
     </state>
-    <state width="1398" height="199" key="GridCell.Tab.4.center/0.23.1440.800@0.23.1440.800" timestamp="1593912027558" />
-    <state width="1398" height="199" key="GridCell.Tab.4.left" timestamp="1593912027558">
+    <state width="1398" height="199" key="GridCell.Tab.4.center/0.23.1440.800@0.23.1440.800" timestamp="1593914769726" />
+    <state width="1398" height="199" key="GridCell.Tab.4.left" timestamp="1593914769726">
       <screen x="0" y="23" width="1440" height="800" />
     </state>
-    <state width="1398" height="199" key="GridCell.Tab.4.left/0.23.1440.800@0.23.1440.800" timestamp="1593912027558" />
-    <state width="1398" height="199" key="GridCell.Tab.4.right" timestamp="1593912027558">
+    <state width="1398" height="199" key="GridCell.Tab.4.left/0.23.1440.800@0.23.1440.800" timestamp="1593914769726" />
+    <state width="1398" height="199" key="GridCell.Tab.4.right" timestamp="1593914769726">
       <screen x="0" y="23" width="1440" height="800" />
     </state>
-    <state width="1398" height="199" key="GridCell.Tab.4.right/0.23.1440.800@0.23.1440.800" timestamp="1593912027558" />
+    <state width="1398" height="199" key="GridCell.Tab.4.right/0.23.1440.800@0.23.1440.800" timestamp="1593914769726" />
     <state x="447" y="120" key="Rider.ProjectTemplateDialog.Size" timestamp="1593753591920">
       <screen x="0" y="23" width="1440" height="800" />
     </state>
@@ -519,9 +531,41 @@
       <screen x="0" y="23" width="1440" height="800" />
     </state>
     <state x="355" y="257" width="741" height="548" key="find.popup/0.23.1440.800@0.23.1440.800" timestamp="1593907489712" />
-    <state x="383" y="144" width="672" height="678" key="search.everywhere.popup" timestamp="1593910302407">
+    <state x="383" y="144" width="672" height="678" key="search.everywhere.popup" timestamp="1593914141917">
       <screen x="0" y="23" width="1440" height="800" />
     </state>
-    <state x="383" y="144" width="672" height="678" key="search.everywhere.popup/0.23.1440.800@0.23.1440.800" timestamp="1593910302407" />
+    <state x="383" y="144" width="672" height="678" key="search.everywhere.popup/0.23.1440.800@0.23.1440.800" timestamp="1593914141917" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/src/FavoDeMel.Core/Entities/Pedido.cs</url>
+          <line>44</line>
+          <properties documentPath="$PROJECT_DIR$/src/FavoDeMel.Core/Entities/Pedido.cs" initialLine="44">
+            <startOffsets>
+              <option value="1439" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1490" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/src/FavoDeMel.Core/Entities/Pedido.cs</url>
+          <line>65</line>
+          <properties documentPath="$PROJECT_DIR$/src/FavoDeMel.Core/Entities/Pedido.cs" initialLine="65">
+            <startOffsets>
+              <option value="2078" />
+            </startOffsets>
+            <endOffsets>
+              <option value="2135" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

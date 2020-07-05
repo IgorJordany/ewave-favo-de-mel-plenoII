@@ -19,13 +19,14 @@ namespace FavoDeMel.Core.Entities
 
         public Pedido(Guid comandaId, Guid itemId, byte quantidade, bool cozinha, decimal valor)
         {
-            Status = PedidoStatus.AguardandoPreparo;
             DataCriacao = DateTime.Now;
             ComandaId = comandaId;
             ItemId = itemId;
             Quantidade = quantidade;
             Cozinha = cozinha;
             Valor = valor;
+            
+            Status = cozinha ? PedidoStatus.AguardandoPreparo : PedidoStatus.Pronto;
         }
         
         public void Cancelar()
@@ -41,8 +42,7 @@ namespace FavoDeMel.Core.Entities
         
         public void Finalizar()
         {
-            if (!(Cozinha && Status == PedidoStatus.EmPreparo
-                || !Cozinha && Status == PedidoStatus.AguardandoPreparo))
+            if (!(Cozinha && Status == PedidoStatus.EmPreparo))
             {
                 AddNotification(nameof(Status), "Pedido não pode ser finalizado");
                 return;

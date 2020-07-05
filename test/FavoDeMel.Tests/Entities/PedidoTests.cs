@@ -103,8 +103,6 @@ namespace Favo_de_mel.WebApi.Tests.Entities
         {
             var pedido = PedidoCozinhaAdicionadoGenerator(false);
             
-            pedido.Finalizar();
-
             pedido.Cancelar();
 
             using (new AssertionScope())
@@ -145,21 +143,6 @@ namespace Favo_de_mel.WebApi.Tests.Entities
                 
                 pedido.Notifications.First().Property.Should().Be("Status");
                 pedido.Notifications.First().Message.Should().Be("Pedido não pode ser finalizado");
-            }
-        }
-        
-        [Fact]
-        public void Deve_finalizar_pedido_que_nao_eh_cozinha()
-        {
-            var pedido = PedidoCozinhaAdicionadoGenerator(false);
-            
-            pedido.Finalizar();
-            
-            using (new AssertionScope())
-            {
-                pedido.Notifications.Any().Should().BeFalse();
-
-                pedido.Status.Should().Be(PedidoStatus.Pronto);
             }
         }
     }
