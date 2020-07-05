@@ -25,14 +25,18 @@ namespace FavoDeMel.Infrastructure.Repositories
 
         public Task<List<Comanda>> ListarComandasAbertas()
         {
-            var comandas = _databaseContext.Comandas.Where(c => c.Status == ComandaStatus.Aberta);
+            var comandas = _databaseContext.Comandas
+                .Include(c => c.Pedidos)
+                .Where(c => c.Status == ComandaStatus.Aberta);
             return Task.FromResult(comandas.ToList());
         }
 
         public Task<List<Comanda>> ListarComandas()
         {
-            var comandas = _databaseContext.Comandas;
-            return Task.FromResult(comandas.ToList());        }
+            var comandas = _databaseContext.Comandas
+                .Include(c=> c.Pedidos);
+            return Task.FromResult(comandas.ToList());
+        }
 
         public Task<Comanda> ConsultarPorId(Guid id)
         {

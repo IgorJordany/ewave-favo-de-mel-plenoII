@@ -106,6 +106,9 @@
               <e p="ObterComandasAbertasHandler.cs" t="Include" />
               <e p="ObterComandasAbertasRequest.cs" t="Include" />
               <e p="ObterComandasAbertasResponse.cs" t="Include" />
+              <e p="ObterComandasHandler.cs" t="Include" />
+              <e p="ObterComandasRequest.cs" t="Include" />
+              <e p="ObterComandasResponse.cs" t="Include" />
             </e>
             <e p="Pedido" t="Include">
               <e p="ObterPedidoHandler.cs" t="Include" />
